@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>嘉飽了沒？｜今天嘉義市吃什麼</title>
+  <meta name="description" content="嘉飽了沒？嘉義市美食骰子網站。選早午餐、午餐、晚餐、宵夜，搭配咖哩、燒肉、火鍋、美式、日式、中式、小吃、咖啡甜點，幫你決定今天嘉義市吃什麼。" />
+  <meta name="keywords" content="嘉義吃什麼,嘉義市美食,嘉義美食推薦,嘉義午餐,嘉義晚餐,嘉義小吃,嘉義火鍋,嘉義燒肉,嘉義咖哩" />
+  <meta property="og:title" content="嘉飽了沒？｜今天嘉義市吃什麼" />
+  <meta property="og:description" content="每天一骰，嘉義美食不煩惱。" />
+  <meta property="og:type" content="website" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="blob blob1"></div>
+  <div class="blob blob2"></div>
+  <div class="blob blob3"></div>
+
+  <header class="topbar">
+    <div class="brand">
+      <div class="brand-icon">🍚</div>
+      <div>
+        <h1>嘉飽了沒？</h1>
+        <p>嘉義市吃什麼，一骰就知道</p>
+      </div>
+    </div>
+    <button id="themeBtn" class="circle-btn" aria-label="切換深色模式">🌙</button>
+  </header>
+
+  <main class="container">
+    <section class="hero card">
+      <div class="mascot-row">
+        <span>🐻</span>
+        <span>🎲</span>
+        <span>🍜</span>
+      </div>
+
+      <div class="label">CHIAYI FOOD DICE</div>
+      <h2>今天嘉義市<br><strong>吃什麼？</strong></h2>
+      <p>選條件，或直接按骰子。嘉飽熊幫你決定！</p>
+
+      <button id="rollBtn" class="roll-btn">
+        <span id="diceIcon">🎲</span>
+        <b>幫我決定</b>
+      </button>
+
+      <button id="luckyBtn" class="lucky-btn">我懶得選，隨便啦！</button>
+    </section>
+
+    <section class="card filters">
+      <div class="filter-head">
+        <span>🕒</span>
+        <h3>時段</h3>
+      </div>
+      <div class="chip-scroll" id="timeGroup">
+        <button class="chip active" data-value="不限">都可以</button>
+        <button class="chip" data-value="早午餐">早午餐</button>
+        <button class="chip" data-value="午餐">午餐</button>
+        <button class="chip" data-value="晚餐">晚餐</button>
+        <button class="chip" data-value="宵夜">宵夜</button>
+      </div>
+
+      <div class="filter-head mt">
+        <span>💰</span>
+        <h3>預算</h3>
+      </div>
+      <div class="chip-scroll" id="priceGroup">
+        <button class="chip active" data-value="不限">不限</button>
+        <button class="chip" data-value="$1-200">$200以下</button>
+        <button class="chip" data-value="$200-400">$200-400</button>
+        <button class="chip" data-value="$400-600">$400-600</button>
+        <button class="chip" data-value="$600-800">$600-800</button>
+        <button class="chip" data-value="$800+">$800以上</button>
+      </div>
+
+      <div class="filter-head mt">
+        <span>🍽️</span>
+        <h3>分類</h3>
+      </div>
+      <div class="category-grid" id="typeGroup">
+        <button class="category active" data-value="不限"><span>✨</span><b>不限</b></button>
+        <button class="category" data-value="咖哩"><span>🍛</span><b>咖哩</b></button>
+        <button class="category" data-value="燒肉"><span>🥩</span><b>燒肉</b></button>
+        <button class="category" data-value="火鍋"><span>🍲</span><b>火鍋</b></button>
+        <button class="category" data-value="美式"><span>🍔</span><b>美式</b></button>
+        <button class="category" data-value="日式"><span>🍣</span><b>日式</b></button>
+        <button class="category" data-value="中式"><span>🍚</span><b>中式</b></button>
+        <button class="category" data-value="小吃"><span>🍜</span><b>小吃</b></button>
+        <button class="category" data-value="咖啡甜點"><span>☕</span><b>咖啡甜點</b></button>
+      </div>
+    </section>
+
+    <section class="result card" id="resultCard">
+      <div class="result-top">
+        <span class="badge">今日食運</span>
+        <span id="countText" class="count">共 122 間</span>
+      </div>
+
+      <h3 id="resultName">按骰子開始！</h3>
+      <p id="bearTalk">🐻 嘉飽熊：「不要再問大家吃什麼了，我來幫你。」</p>
+      <p id="resultDesc">已收錄嘉義市咖哩、燒肉、火鍋、美式、日式、中式、小吃、咖啡甜點。</p>
+
+      <div class="meta">
+        <span id="areaText">📍 嘉義市</span>
+        <span id="typeText">🍽️ 分類</span>
+        <span id="priceText">💰 預算</span>
+        <span id="ratingText">⭐ 評分</span>
+        <span id="timeText">🕒 時段</span>
+      </div>
+
+      <div class="actions">
+        <a id="mapLink" class="map-btn disabled" href="#" target="_blank" rel="noopener">打開 Google 地圖</a>
+        <button id="againBtn" class="again-btn">再骰一次</button>
+      </div>
+    </section>
+
+    <section class="card stats">
+      <h3>目前收錄</h3>
+      <div class="stats-grid">
+        <div><b>17</b><span>燒肉</span></div>
+        <div><b>13</b><span>咖哩</span></div>
+        <div><b>20</b><span>火鍋</span></div>
+        <div><b>7</b><span>美式</span></div>
+        <div><b>26</b><span>日式</span></div>
+        <div><b>31</b><span>中式</span></div>
+        <div><b>17</b><span>小吃</span></div>
+        <div><b>23</b><span>咖啡甜點</span></div>
+      </div>
+      <p>店家可重複歸類，所以分類數加總會大於實際店數。</p>
+    </section>
+  </main>
+
+  <footer>© 2026 嘉飽了沒？｜每天一骰，美食不煩惱</footer>
+
+  <script src="restaurants.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

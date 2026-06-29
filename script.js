@@ -2,6 +2,10 @@ let selectedTime = "不限";
 let selectedType = "不限";
 let selectedPrice = "不限";
 let lastName = "";
+let currentRestaurant = null;
+
+const STORAGE_FAVORITES = "jiabaoleme_favorites_v1";
+const STORAGE_TOP_PREFIX = "jiabaoleme_top_";
 
 const talks = [
   "🐻 嘉飽熊：「別想了，今天就是它！」",
@@ -25,6 +29,66 @@ const ratingText = document.querySelector("#ratingText");
 const timeText = document.querySelector("#timeText");
 const mapLink = document.querySelector("#mapLink");
 const countText = document.querySelector("#countText");
+const favoriteBtn = document.querySelector("#favoriteBtn");
+const topList = document.querySelector("#topList");
+const favoriteList = document.querySelector("#favoriteList");
+const clearFavoritesBtn = document.querySelector("#clearFavoritesBtn");
+const rollFavoriteBtn = document.querySelector("#rollFavoriteBtn");
+
+function todayKey() {
+  const now = new Date();
+  const yyyy = now.getFullYear();
+  const mm = String(now.getMonth() + 1).padStart(2, "0");
+  const dd = String(now.getDate()).padStart(2, "0");
+  return `${STORAGE_TOP_PREFIX}${yyyy}-${mm}-${dd}`;
+}
+
+function safeJsonParse(value, fallback) {
+  try {
+    return JSON.parse(value) ?? fallback;
+  } catch {
+    return fallback;
+  }
+}
+
+function getFavorites() {
+  return safeJsonParse(localStorage.getItem(STORAGE_FAVORITES), []);
+}
+
+function saveFavorites(items) {
+  localStorage.setItem(STORAGE_FAVORITES, JSON.stringify(items));
+}
+
+function isFavorite(name) {
+  return getFavorites().some(item => item.name === name);
+}
+
+function getTopData() {
+  return safeJsonParse(localStorage.getItem(todayKey()), {});
+}
+
+function saveTopData(data) {
+  localStorage.setItem(todayKey(), JSON.stringify(data));
+}
+
+function addTopCount(item) {
+  const data = getTopData();
+
+  if (!data[item.name]) {
+    data[item.name] = {
+      name: item.name,
+      area: item.area,
+      types: item.types,
+      price: item.price,
+      rating: item.rating,
+      count: 0
+    };
+  }
+
+  data[item.name].count += 1;
+  saveTopData(data);
+  renderTopList();
+}
 
 function bindGroup(groupId, selector, callback) {
   document.querySelectorAll(`#${groupId} ${selector}`).forEach(btn => {
@@ -54,31 +118,29 @@ function updateCount() {
   countText.textContent = `符合 ${candidates().length} 間`;
 }
 
-function pickOne() {
-  const list = candidates();
-
-  if (!list.length) {
-    resultName.textContent = "這組合暫時沒店家 😵";
-    bearTalk.textContent = "🐻 嘉飽熊：「換個預算、分類或時段再骰一次！」";
-    resultDesc.textContent = "目前資料庫沒有符合條件的店家，之後可以再補更多資料。";
-    areaText.textContent = "📍 嘉義市";
-    typeText.textContent = `🍽️ ${selectedType}`;
-    priceText.textContent = `💰 ${selectedPrice}`;
-    ratingText.textContent = "⭐ —";
-    timeText.textContent = `🕒 ${selectedTime}`;
-    mapLink.href = "#";
-    mapLink.classList.add("disabled");
+function updateFavoriteButton() {
+  if (!currentRestaurant) {
+    favoriteBtn.textContent = "♡ 收藏這間";
+    favoriteBtn.classList.add("disabled");
+    favoriteBtn.classList.remove("saved");
     return;
   }
 
-  let chosen = list[Math.floor(Math.random() * list.length)];
+  favoriteBtn.classList.remove("disabled");
 
-  if (list.length > 1 && chosen.name === lastName) {
-    const other = list.filter(r => r.name !== lastName);
-    chosen = other[Math.floor(Math.random() * other.length)];
+  if (isFavorite(currentRestaurant.name)) {
+    favoriteBtn.textContent = "♥ 已收藏";
+    favoriteBtn.classList.add("saved");
+  } else {
+    favoriteBtn.textContent = "♡ 收藏這間";
+    favoriteBtn.classList.remove("saved");
   }
+}
 
+function setResult(chosen, shouldCount = true) {
+  currentRestaurant = chosen;
   lastName = chosen.name;
+
   resultName.textContent = chosen.name;
   bearTalk.textContent = talks[Math.floor(Math.random() * talks.length)];
   resultDesc.textContent = chosen.desc;
@@ -89,7 +151,43 @@ function pickOne() {
   timeText.textContent = `🕒 ${chosen.times.join(" / ")}`;
   mapLink.href = chosen.map;
   mapLink.classList.remove("disabled");
+
+  updateFavoriteButton();
+
+  if (shouldCount) {
+    addTopCount(chosen);
+  }
+
   document.querySelector("#resultCard").scrollIntoView({behavior:"smooth", block:"center"});
+}
+
+function pickOne() {
+  const list = candidates();
+
+  if (!list.length) {
+    currentRestaurant = null;
+    resultName.textContent = "這組合暫時沒店家 😵";
+    bearTalk.textContent = "🐻 嘉飽熊：「換個預算、分類或時段再骰一次！」";
+    resultDesc.textContent = "目前資料庫沒有符合條件的店家，之後可以再補更多資料。";
+    areaText.textContent = "📍 嘉義市";
+    typeText.textContent = `🍽️ ${selectedType}`;
+    priceText.textContent = `💰 ${selectedPrice}`;
+    ratingText.textContent = "⭐ —";
+    timeText.textContent = `🕒 ${selectedTime}`;
+    mapLink.href = "#";
+    mapLink.classList.add("disabled");
+    updateFavoriteButton();
+    return;
+  }
+
+  let chosen = list[Math.floor(Math.random() * list.length)];
+
+  if (list.length > 1 && chosen.name === lastName) {
+    const other = list.filter(r => r.name !== lastName);
+    chosen = other[Math.floor(Math.random() * other.length)];
+  }
+
+  setResult(chosen, true);
 }
 
 function roll() {
@@ -102,8 +200,121 @@ function roll() {
   setTimeout(pickOne, 620);
 }
 
+function toggleFavorite() {
+  if (!currentRestaurant) return;
+
+  let items = getFavorites();
+  const exists = items.some(item => item.name === currentRestaurant.name);
+
+  if (exists) {
+    items = items.filter(item => item.name !== currentRestaurant.name);
+  } else {
+    items.unshift({
+      name: currentRestaurant.name,
+      area: currentRestaurant.area,
+      types: currentRestaurant.types,
+      price: currentRestaurant.price,
+      rating: currentRestaurant.rating,
+      times: currentRestaurant.times,
+      desc: currentRestaurant.desc,
+      map: currentRestaurant.map
+    });
+  }
+
+  saveFavorites(items);
+  updateFavoriteButton();
+  renderFavoriteList();
+}
+
+function renderTopList() {
+  const data = Object.values(getTopData())
+    .sort((a, b) => b.count - a.count)
+    .slice(0, 5);
+
+  if (!data.length) {
+    topList.innerHTML = `<div class="empty-text">今天還沒有排名。先按骰子，嘉飽熊就會開始統計 🍚</div>`;
+    return;
+  }
+
+  topList.innerHTML = data.map((item, index) => `
+    <div class="cute-item">
+      <div class="rank-badge">${index + 1}</div>
+      <div class="cute-left">
+        <div class="cute-name">${item.name}</div>
+        <div class="cute-meta">📍 ${item.area}　🍽️ ${item.types.join(" / ")}　🎲 ${item.count} 次</div>
+      </div>
+    </div>
+  `).join("");
+}
+
+function renderFavoriteList() {
+  const items = getFavorites();
+
+  if (!items.length) {
+    favoriteList.innerHTML = `<div class="empty-text">還沒有收藏。骰到喜歡的店，就按「♡ 收藏這間」❤️</div>`;
+    return;
+  }
+
+  favoriteList.innerHTML = items.map(item => `
+    <div class="cute-item">
+      <div class="cute-left">
+        <div class="cute-name">${item.name}</div>
+        <div class="cute-meta">📍 ${item.area}　🍽️ ${item.types.join(" / ")}　💰 ${item.price}</div>
+      </div>
+      <button class="remove-fav" data-name="${item.name}">移除</button>
+    </div>
+  `).join("");
+
+  document.querySelectorAll(".remove-fav").forEach(button => {
+    button.addEventListener("click", () => {
+      const name = button.dataset.name;
+      const nextItems = getFavorites().filter(item => item.name !== name);
+      saveFavorites(nextItems);
+      renderFavoriteList();
+      updateFavoriteButton();
+    });
+  });
+}
+
+function rollFromFavorites() {
+  const items = getFavorites();
+
+  if (!items.length) {
+    resultName.textContent = "收藏還是空的 🥺";
+    bearTalk.textContent = "🐻 嘉飽熊：「先收藏幾間愛店，我再從裡面幫你骰！」";
+    resultDesc.textContent = "骰到喜歡的店後，按下收藏，就可以建立你的專屬美食清單。";
+    document.querySelector("#resultCard").scrollIntoView({behavior:"smooth", block:"center"});
+    return;
+  }
+
+  diceIcon.classList.remove("rolling");
+  void diceIcon.offsetWidth;
+  diceIcon.classList.add("rolling");
+
+  resultName.textContent = "從收藏裡挑選中...";
+  bearTalk.textContent = "🐻 嘉飽熊：「你的愛店我都記得！」";
+  resultDesc.textContent = "等等，從收藏清單幫你抽一間。";
+
+  const chosen = items[Math.floor(Math.random() * items.length)];
+  setTimeout(() => setResult(chosen, true), 520);
+}
+
 document.querySelector("#rollBtn").addEventListener("click", roll);
 document.querySelector("#againBtn").addEventListener("click", roll);
+favoriteBtn.addEventListener("click", toggleFavorite);
+rollFavoriteBtn.addEventListener("click", rollFromFavorites);
+
+clearFavoritesBtn.addEventListener("click", () => {
+  const items = getFavorites();
+  if (!items.length) return;
+
+  const ok = confirm("確定要清空所有收藏嗎？");
+  if (!ok) return;
+
+  saveFavorites([]);
+  renderFavoriteList();
+  updateFavoriteButton();
+});
 
 document.querySelector("#luckyBtn").addEventListener("click", () => {
   selectedTime = "不限";
@@ -123,3 +334,6 @@ document.querySelector("#themeBtn").addEventListener("click", () => {
 });
 
 updateCount();
+renderTopList();
+renderFavoriteList();
+updateFavoriteButton();

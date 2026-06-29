@@ -112,8 +112,28 @@
 
       <div class="actions">
         <a id="mapLink" class="map-btn disabled" href="#" target="_blank" rel="noopener">打開 Google 地圖</a>
+        <button id="favoriteBtn" class="favorite-btn disabled">♡ 收藏這間</button>
         <button id="againBtn" class="again-btn">再骰一次</button>
       </div>
+    </section>
+
+    <section class="card top-section">
+      <div class="section-heading">
+        <h3>🔥 今日 TOP5</h3>
+        <span>此裝置統計</span>
+      </div>
+      <p class="section-subtitle">今天被你骰到最多次的店會出現在這裡，越常被骰到排名越前面。</p>
+      <div id="topList" class="cute-list"></div>
+    </section>
+
+    <section class="card favorite-section">
+      <div class="section-heading">
+        <h3>❤️ 我的收藏</h3>
+        <button id="clearFavoritesBtn" class="tiny-btn">清空</button>
+      </div>
+      <p class="section-subtitle">收藏會存在你的手機或電腦瀏覽器，不用登入。</p>
+      <div id="favoriteList" class="cute-list"></div>
+      <button id="rollFavoriteBtn" class="wide-soft-btn">🎲 從收藏裡骰一間</button>
     </section>
 
     <section class="card stats">

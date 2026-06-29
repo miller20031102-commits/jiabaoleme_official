@@ -1872,5 +1872,948 @@ const restaurants = [
     "rating": "4.4",
     "desc": "牛排餐廳，適合晚餐想吃肉。",
     "map": "https://www.google.com/maps/search/?api=1&query=加敦街 Garden Street 牛排 嘉義市"
+  },
+  {
+    "name": "荳荳小籠湯包",
+    "area": "嘉義市",
+    "types": [
+      "早餐",
+      "小吃"
+    ],
+    "times": [
+      "早午餐",
+      "午餐"
+    ],
+    "price": "$1-200",
+    "rating": "—",
+    "desc": "早餐湯包選項，適合早上不知道吃什麼。",
+    "map": "https://www.google.com/maps/search/?api=1&query=荳荳小籠湯包 嘉義市"
+  },
+  {
+    "name": "永春京站湯包",
+    "area": "嘉義市",
+    "types": [
+      "早餐",
+      "小吃",
+      "中式"
+    ],
+    "times": [
+      "早午餐",
+      "午餐",
+      "晚餐"
+    ],
+    "price": "$1-200",
+    "rating": "—",
+    "desc": "湯包類人氣選項，早餐午餐都適合。",
+    "map": "https://www.google.com/maps/search/?api=1&query=永春京站湯包 嘉義市"
+  },
+  {
+    "name": "早餐好樂 和平店",
+    "area": "東區",
+    "types": [
+      "早餐",
+      "早午餐"
+    ],
+    "times": [
+      "早午餐"
+    ],
+    "price": "$1-200",
+    "rating": "—",
+    "desc": "嘉義早餐店，適合早上快速決定。",
+    "map": "https://www.google.com/maps/search/?api=1&query=早餐好樂 和平店 嘉義市"
+  },
+  {
+    "name": "美麗春天",
+    "area": "嘉義市",
+    "types": [
+      "早餐",
+      "早午餐"
+    ],
+    "times": [
+      "早午餐"
+    ],
+    "price": "$1-200",
+    "rating": "—",
+    "desc": "早餐與早午餐選項。",
+    "map": "https://www.google.com/maps/search/?api=1&query=美麗春天 嘉義市"
+  },
+  {
+    "name": "土佐",
+    "area": "嘉義市",
+    "types": [
+      "早餐",
+      "早午餐"
+    ],
+    "times": [
+      "早午餐",
+      "午餐"
+    ],
+    "price": "$200-400",
+    "rating": "—",
+    "desc": "早午餐推薦店家。",
+    "map": "https://www.google.com/maps/search/?api=1&query=土佐 嘉義市"
+  },
+  {
+    "name": "孫記早餐",
+    "area": "嘉義市",
+    "types": [
+      "早餐"
+    ],
+    "times": [
+      "早午餐"
+    ],
+    "price": "$1-200",
+    "rating": "—",
+    "desc": "在地早餐選項。",
+    "map": "https://www.google.com/maps/search/?api=1&query=孫記早餐 嘉義市"
+  },
+  {
+    "name": "才記酥餅",
+    "area": "嘉義市",
+    "types": [
+      "早餐",
+      "小吃"
+    ],
+    "times": [
+      "早午餐",
+      "午餐"
+    ],
+    "price": "$1-200",
+    "rating": "—",
+    "desc": "酥餅小吃，適合早餐或點心。",
+    "map": "https://www.google.com/maps/search/?api=1&query=才記酥餅 嘉義市"
+  },
+  {
+    "name": "樂樂碗粿",
+    "area": "嘉義市",
+    "types": [
+      "早餐",
+      "小吃"
+    ],
+    "times": [
+      "早午餐",
+      "午餐"
+    ],
+    "price": "$1-200",
+    "rating": "—",
+    "desc": "碗粿小吃，早餐午餐都適合。",
+    "map": "https://www.google.com/maps/search/?api=1&query=樂樂碗粿 嘉義市"
+  },
+  {
+    "name": "嘉義公園古早味麵食",
+    "area": "東區",
+    "types": [
+      "早餐",
+      "小吃"
+    ],
+    "times": [
+      "早午餐",
+      "午餐"
+    ],
+    "price": "$1-200",
+    "rating": "—",
+    "desc": "古早味麵食，嘉義公園周邊選項。",
+    "map": "https://www.google.com/maps/search/?api=1&query=嘉義公園古早味麵食 嘉義市"
+  },
+  {
+    "name": "山腳甜食",
+    "area": "西區",
+    "types": [
+      "咖啡甜點"
+    ],
+    "times": [
+      "午餐",
+      "晚餐"
+    ],
+    "price": "$200-400",
+    "rating": "—",
+    "desc": "蘭井街甜點店，適合下午茶、約會與飯後甜點。",
+    "map": "https://www.google.com/maps/search/?api=1&query=山腳甜食 嘉義市"
+  },
+  {
+    "name": "弓箭手",
+    "area": "嘉義市",
+    "types": [
+      "咖啡甜點"
+    ],
+    "times": [
+      "午餐",
+      "晚餐"
+    ],
+    "price": "$200-400",
+    "rating": "—",
+    "desc": "咖啡甜點推薦，適合下午放鬆。",
+    "map": "https://www.google.com/maps/search/?api=1&query=弓箭手 嘉義市"
+  },
+  {
+    "name": "起風",
+    "area": "嘉義市",
+    "types": [
+      "咖啡甜點"
+    ],
+    "times": [
+      "午餐",
+      "晚餐"
+    ],
+    "price": "$200-400",
+    "rating": "—",
+    "desc": "咖啡甜點推薦店家。",
+    "map": "https://www.google.com/maps/search/?api=1&query=起風 嘉義市"
+  },
+  {
+    "name": "C'EST C'EST 法式甜點",
+    "area": "嘉義市",
+    "types": [
+      "咖啡甜點"
+    ],
+    "times": [
+      "午餐",
+      "晚餐"
+    ],
+    "price": "$200-400",
+    "rating": "—",
+    "desc": "法式甜點，適合約會與下午茶。",
+    "map": "https://www.google.com/maps/search/?api=1&query=C'EST C'EST 法式甜點 嘉義市"
+  },
+  {
+    "name": "小紅帽冰淇淋專門店",
+    "area": "嘉義市",
+    "types": [
+      "咖啡甜點"
+    ],
+    "times": [
+      "午餐",
+      "晚餐",
+      "宵夜"
+    ],
+    "price": "$1-200",
+    "rating": "—",
+    "desc": "冰淇淋甜點，熱天或飯後很適合。",
+    "map": "https://www.google.com/maps/search/?api=1&query=小紅帽冰淇淋專門店 嘉義市"
+  },
+  {
+    "name": "胡椒餅專賣店 和平路",
+    "area": "東區",
+    "types": [
+      "小吃",
+      "咖啡甜點"
+    ],
+    "times": [
+      "午餐",
+      "晚餐"
+    ],
+    "price": "$1-200",
+    "rating": "—",
+    "desc": "和平路胡椒餅，嘴饞點心選項。",
+    "map": "https://www.google.com/maps/search/?api=1&query=胡椒餅專賣店 和平路 嘉義市"
+  },
+  {
+    "name": "穀谷",
+    "area": "東區",
+    "types": [
+      "中式",
+      "小吃"
+    ],
+    "times": [
+      "午餐",
+      "晚餐"
+    ],
+    "price": "$200-400",
+    "rating": "4.4",
+    "desc": "嘉義人氣餐館，適合午晚餐。",
+    "map": "https://www.google.com/maps/search/?api=1&query=穀谷 嘉義市"
+  },
+  {
+    "name": "泰老饕",
+    "area": "嘉義市",
+    "types": [
+      "異國料理"
+    ],
+    "times": [
+      "午餐",
+      "晚餐"
+    ],
+    "price": "$200-400",
+    "rating": "—",
+    "desc": "泰式料理，想換口味可以骰。",
+    "map": "https://www.google.com/maps/search/?api=1&query=泰老饕 嘉義市"
+  },
+  {
+    "name": "小麵店",
+    "area": "嘉義市",
+    "types": [
+      "小吃",
+      "中式"
+    ],
+    "times": [
+      "午餐",
+      "晚餐"
+    ],
+    "price": "$1-200",
+    "rating": "—",
+    "desc": "簡單麵食小吃，日常吃飯適合。",
+    "map": "https://www.google.com/maps/search/?api=1&query=小麵店 嘉義市"
+  },
+  {
+    "name": "玉映越南河粉",
+    "area": "嘉義市",
+    "types": [
+      "異國料理"
+    ],
+    "times": [
+      "午餐",
+      "晚餐"
+    ],
+    "price": "$200-400",
+    "rating": "—",
+    "desc": "越南河粉，想吃清爽異國料理可選。",
+    "map": "https://www.google.com/maps/search/?api=1&query=玉映越南河粉 嘉義市"
+  },
+  {
+    "name": "南北越南小吃",
+    "area": "嘉義市",
+    "types": [
+      "異國料理",
+      "小吃"
+    ],
+    "times": [
+      "午餐",
+      "晚餐"
+    ],
+    "price": "$1-200",
+    "rating": "—",
+    "desc": "越式小吃，午晚餐都適合。",
+    "map": "https://www.google.com/maps/search/?api=1&query=南北越南小吃 嘉義市"
+  },
+  {
+    "name": "三禾雞肉飯",
+    "area": "嘉義市",
+    "types": [
+      "小吃",
+      "中式"
+    ],
+    "times": [
+      "午餐",
+      "晚餐"
+    ],
+    "price": "$1-200",
+    "rating": "—",
+    "desc": "嘉義雞肉飯選項。",
+    "map": "https://www.google.com/maps/search/?api=1&query=三禾雞肉飯 嘉義市"
+  },
+  {
+    "name": "津川麵食館",
+    "area": "嘉義市",
+    "types": [
+      "小吃",
+      "中式"
+    ],
+    "times": [
+      "午餐",
+      "晚餐"
+    ],
+    "price": "$1-200",
+    "rating": "—",
+    "desc": "麵食館，日常午晚餐選項。",
+    "map": "https://www.google.com/maps/search/?api=1&query=津川麵食館 嘉義市"
+  },
+  {
+    "name": "Just Makan 星馬小館",
+    "area": "嘉義市",
+    "types": [
+      "異國料理"
+    ],
+    "times": [
+      "午餐",
+      "晚餐"
+    ],
+    "price": "$200-400",
+    "rating": "—",
+    "desc": "星馬料理，想吃南洋風味可以骰。",
+    "map": "https://www.google.com/maps/search/?api=1&query=Just Makan 星馬小館 嘉義市"
+  },
+  {
+    "name": "Fusion 印度餐廳",
+    "area": "嘉義市",
+    "types": [
+      "異國料理",
+      "咖哩"
+    ],
+    "times": [
+      "午餐",
+      "晚餐"
+    ],
+    "price": "$200-400",
+    "rating": "—",
+    "desc": "印度料理與咖哩，適合想吃香料。",
+    "map": "https://www.google.com/maps/search/?api=1&query=Fusion 印度餐廳 嘉義市"
+  },
+  {
+    "name": "碳少年",
+    "area": "嘉義市",
+    "types": [
+      "燒烤",
+      "宵夜"
+    ],
+    "times": [
+      "晚餐",
+      "宵夜"
+    ],
+    "price": "$200-400",
+    "rating": "—",
+    "desc": "燒烤聚餐選項，晚上不知道吃什麼可骰。",
+    "map": "https://www.google.com/maps/search/?api=1&query=碳少年 嘉義市"
+  },
+  {
+    "name": "秘醬滷味",
+    "area": "嘉義市",
+    "types": [
+      "小吃",
+      "宵夜"
+    ],
+    "times": [
+      "晚餐",
+      "宵夜"
+    ],
+    "price": "$1-200",
+    "rating": "—",
+    "desc": "滷味宵夜，晚上嘴饞適合。",
+    "map": "https://www.google.com/maps/search/?api=1&query=秘醬滷味 嘉義市"
+  },
+  {
+    "name": "楊記水餃",
+    "area": "嘉義市",
+    "types": [
+      "小吃",
+      "中式"
+    ],
+    "times": [
+      "午餐",
+      "晚餐"
+    ],
+    "price": "$1-200",
+    "rating": "—",
+    "desc": "水餃小吃，日常吃飯好選。",
+    "map": "https://www.google.com/maps/search/?api=1&query=楊記水餃 嘉義市"
+  },
+  {
+    "name": "大眾川味麵食館",
+    "area": "嘉義市",
+    "types": [
+      "小吃",
+      "中式"
+    ],
+    "times": [
+      "午餐",
+      "晚餐"
+    ],
+    "price": "$1-200",
+    "rating": "—",
+    "desc": "川味麵食館，想吃麵可選。",
+    "map": "https://www.google.com/maps/search/?api=1&query=大眾川味麵食館 嘉義市"
+  },
+  {
+    "name": "元生補湯",
+    "area": "嘉義市",
+    "types": [
+      "小吃",
+      "中式"
+    ],
+    "times": [
+      "午餐",
+      "晚餐"
+    ],
+    "price": "$1-200",
+    "rating": "—",
+    "desc": "補湯小吃，想喝熱湯可選。",
+    "map": "https://www.google.com/maps/search/?api=1&query=元生補湯 嘉義市"
+  },
+  {
+    "name": "體育館海鮮碳烤",
+    "area": "東區",
+    "types": [
+      "燒烤",
+      "宵夜"
+    ],
+    "times": [
+      "晚餐",
+      "宵夜"
+    ],
+    "price": "$400-600",
+    "rating": "—",
+    "desc": "海鮮碳烤，適合晚上聚餐。",
+    "map": "https://www.google.com/maps/search/?api=1&query=體育館海鮮碳烤 嘉義市"
+  },
+  {
+    "name": "竹香園",
+    "area": "嘉義市",
+    "types": [
+      "中式",
+      "聚餐"
+    ],
+    "times": [
+      "午餐",
+      "晚餐"
+    ],
+    "price": "$200-400",
+    "rating": "—",
+    "desc": "聚餐型餐廳，適合多人吃飯。",
+    "map": "https://www.google.com/maps/search/?api=1&query=竹香園 嘉義市"
+  },
+  {
+    "name": "米宜豆乳雞",
+    "area": "嘉義市",
+    "types": [
+      "小吃",
+      "宵夜"
+    ],
+    "times": [
+      "晚餐",
+      "宵夜"
+    ],
+    "price": "$1-200",
+    "rating": "—",
+    "desc": "豆乳雞宵夜選項。",
+    "map": "https://www.google.com/maps/search/?api=1&query=米宜豆乳雞 嘉義市"
+  },
+  {
+    "name": "一涼製冰所",
+    "area": "嘉義市",
+    "types": [
+      "咖啡甜點",
+      "宵夜"
+    ],
+    "times": [
+      "午餐",
+      "晚餐",
+      "宵夜"
+    ],
+    "price": "$1-200",
+    "rating": "—",
+    "desc": "冰品甜點，飯後與宵夜都適合。",
+    "map": "https://www.google.com/maps/search/?api=1&query=一涼製冰所 嘉義市"
+  },
+  {
+    "name": "來來鹽酥雞",
+    "area": "嘉義市",
+    "types": [
+      "小吃",
+      "宵夜"
+    ],
+    "times": [
+      "晚餐",
+      "宵夜"
+    ],
+    "price": "$1-200",
+    "rating": "—",
+    "desc": "經典鹽酥雞宵夜。",
+    "map": "https://www.google.com/maps/search/?api=1&query=來來鹽酥雞 嘉義市"
+  },
+  {
+    "name": "大胖林福州麵",
+    "area": "嘉義市",
+    "types": [
+      "小吃",
+      "中式"
+    ],
+    "times": [
+      "午餐",
+      "晚餐"
+    ],
+    "price": "$1-200",
+    "rating": "—",
+    "desc": "福州麵小吃，午晚餐適合。",
+    "map": "https://www.google.com/maps/search/?api=1&query=大胖林福州麵 嘉義市"
+  },
+  {
+    "name": "西市鱔魚麵 長榮街",
+    "area": "西區",
+    "types": [
+      "小吃",
+      "中式"
+    ],
+    "times": [
+      "午餐",
+      "晚餐"
+    ],
+    "price": "$1-200",
+    "rating": "—",
+    "desc": "鱔魚麵小吃，嘉義麵食選項。",
+    "map": "https://www.google.com/maps/search/?api=1&query=西市鱔魚麵 長榮街 嘉義市"
+  },
+  {
+    "name": "吳記排骨酥 國華街",
+    "area": "西區",
+    "types": [
+      "小吃"
+    ],
+    "times": [
+      "午餐",
+      "晚餐",
+      "宵夜"
+    ],
+    "price": "$1-200",
+    "rating": "—",
+    "desc": "排骨酥小吃，國華街周邊選項。",
+    "map": "https://www.google.com/maps/search/?api=1&query=吳記排骨酥 國華街 嘉義市"
+  },
+  {
+    "name": "金馬肉粥",
+    "area": "嘉義市",
+    "types": [
+      "小吃",
+      "中式"
+    ],
+    "times": [
+      "早午餐",
+      "午餐"
+    ],
+    "price": "$1-200",
+    "rating": "—",
+    "desc": "肉粥小吃，早餐午餐適合。",
+    "map": "https://www.google.com/maps/search/?api=1&query=金馬肉粥 嘉義市"
+  },
+  {
+    "name": "北興肉包",
+    "area": "嘉義市",
+    "types": [
+      "早餐",
+      "小吃"
+    ],
+    "times": [
+      "早午餐",
+      "午餐"
+    ],
+    "price": "$1-200",
+    "rating": "—",
+    "desc": "肉包早餐與點心選項。",
+    "map": "https://www.google.com/maps/search/?api=1&query=北興肉包 嘉義市"
+  },
+  {
+    "name": "548特製意麵四神湯",
+    "area": "嘉義市",
+    "types": [
+      "小吃",
+      "中式"
+    ],
+    "times": [
+      "午餐",
+      "晚餐"
+    ],
+    "price": "$1-200",
+    "rating": "—",
+    "desc": "意麵與四神湯，平價小吃。",
+    "map": "https://www.google.com/maps/search/?api=1&query=548特製意麵四神湯 嘉義市"
+  },
+  {
+    "name": "茂生壽司屋",
+    "area": "嘉義市",
+    "types": [
+      "日式",
+      "小吃"
+    ],
+    "times": [
+      "午餐",
+      "晚餐"
+    ],
+    "price": "$1-200",
+    "rating": "—",
+    "desc": "壽司小吃，想吃日式可選。",
+    "map": "https://www.google.com/maps/search/?api=1&query=茂生壽司屋 嘉義市"
+  },
+  {
+    "name": "鐵道羊肉 北興街橋下羊肉攤",
+    "area": "嘉義市",
+    "types": [
+      "小吃",
+      "宵夜"
+    ],
+    "times": [
+      "晚餐",
+      "宵夜"
+    ],
+    "price": "$1-200",
+    "rating": "—",
+    "desc": "羊肉攤，晚餐宵夜適合。",
+    "map": "https://www.google.com/maps/search/?api=1&query=鐵道羊肉 北興街橋下羊肉攤 嘉義市"
+  },
+  {
+    "name": "意麵燻茶鵝",
+    "area": "嘉義市",
+    "types": [
+      "小吃",
+      "中式"
+    ],
+    "times": [
+      "午餐",
+      "晚餐"
+    ],
+    "price": "$1-200",
+    "rating": "—",
+    "desc": "意麵與燻茶鵝小吃。",
+    "map": "https://www.google.com/maps/search/?api=1&query=意麵燻茶鵝 嘉義市"
+  },
+  {
+    "name": "阿忠牛肉湯",
+    "area": "嘉義市",
+    "types": [
+      "小吃",
+      "中式",
+      "宵夜"
+    ],
+    "times": [
+      "午餐",
+      "晚餐",
+      "宵夜"
+    ],
+    "price": "$1-200",
+    "rating": "—",
+    "desc": "牛肉湯，午晚餐與宵夜都可。",
+    "map": "https://www.google.com/maps/search/?api=1&query=阿忠牛肉湯 嘉義市"
+  },
+  {
+    "name": "公明路切仔麵",
+    "area": "嘉義市",
+    "types": [
+      "小吃",
+      "中式"
+    ],
+    "times": [
+      "午餐",
+      "晚餐"
+    ],
+    "price": "$1-200",
+    "rating": "—",
+    "desc": "切仔麵小吃，嘉義在地味。",
+    "map": "https://www.google.com/maps/search/?api=1&query=公明路切仔麵 嘉義市"
+  },
+  {
+    "name": "阿宏炒米苔目",
+    "area": "西區",
+    "types": [
+      "小吃",
+      "中式"
+    ],
+    "times": [
+      "午餐",
+      "晚餐"
+    ],
+    "price": "$1-200",
+    "rating": "—",
+    "desc": "國華街50多年老店，回頭客很多。",
+    "map": "https://www.google.com/maps/search/?api=1&query=阿宏炒米苔目 嘉義市"
+  },
+  {
+    "name": "COP bar-Cocktails Of Pioneers",
+    "area": "西區",
+    "types": [
+      "酒吧",
+      "宵夜"
+    ],
+    "times": [
+      "宵夜"
+    ],
+    "price": "$400-600",
+    "rating": "—",
+    "desc": "西門街酒吧，適合下班小酌與約會。",
+    "map": "https://www.google.com/maps/search/?api=1&query=COP bar-Cocktails Of Pioneers 嘉義市"
+  },
+  {
+    "name": "Bar Door to Dream",
+    "area": "西區",
+    "types": [
+      "酒吧",
+      "宵夜"
+    ],
+    "times": [
+      "宵夜"
+    ],
+    "price": "$400-600",
+    "rating": "—",
+    "desc": "西榮街酒吧，適合晚上小酌。",
+    "map": "https://www.google.com/maps/search/?api=1&query=Bar Door to Dream 嘉義市"
+  },
+  {
+    "name": "CASA",
+    "area": "東區",
+    "types": [
+      "酒吧",
+      "宵夜"
+    ],
+    "times": [
+      "宵夜"
+    ],
+    "price": "$400-600",
+    "rating": "—",
+    "desc": "光彩街酒吧，約會與朋友聚會都適合。",
+    "map": "https://www.google.com/maps/search/?api=1&query=CASA 嘉義市"
+  },
+  {
+    "name": "Bar SKITZ 過門",
+    "area": "東區",
+    "types": [
+      "酒吧",
+      "宵夜"
+    ],
+    "times": [
+      "宵夜"
+    ],
+    "price": "$400-600",
+    "rating": "—",
+    "desc": "民權路酒吧，夜晚小酌選項。",
+    "map": "https://www.google.com/maps/search/?api=1&query=Bar SKITZ 過門 嘉義市"
+  },
+  {
+    "name": "秉森酒室",
+    "area": "西區",
+    "types": [
+      "酒吧",
+      "宵夜"
+    ],
+    "times": [
+      "宵夜"
+    ],
+    "price": "$400-600",
+    "rating": "—",
+    "desc": "林森西路酒室，適合放鬆喝一杯。",
+    "map": "https://www.google.com/maps/search/?api=1&query=秉森酒室 嘉義市"
+  },
+  {
+    "name": "斗酒",
+    "area": "東區",
+    "types": [
+      "酒吧",
+      "宵夜"
+    ],
+    "times": [
+      "宵夜"
+    ],
+    "price": "$400-600",
+    "rating": "—",
+    "desc": "成仁街酒吧，嘉義夜晚選項。",
+    "map": "https://www.google.com/maps/search/?api=1&query=斗酒 嘉義市"
+  },
+  {
+    "name": "誠侍酒吧",
+    "area": "西區",
+    "types": [
+      "酒吧",
+      "宵夜"
+    ],
+    "times": [
+      "宵夜"
+    ],
+    "price": "$400-600",
+    "rating": "—",
+    "desc": "國華街酒吧，適合小酌。",
+    "map": "https://www.google.com/maps/search/?api=1&query=誠侍酒吧 嘉義市"
+  },
+  {
+    "name": "HOT Hi-end Of Tiki",
+    "area": "西區",
+    "types": [
+      "酒吧",
+      "宵夜"
+    ],
+    "times": [
+      "宵夜"
+    ],
+    "price": "$400-600",
+    "rating": "—",
+    "desc": "Tiki風格酒吧，適合想喝特別一點。",
+    "map": "https://www.google.com/maps/search/?api=1&query=HOT Hi-end Of Tiki 嘉義市"
+  },
+  {
+    "name": "O'my bar",
+    "area": "西區",
+    "types": [
+      "酒吧",
+      "宵夜"
+    ],
+    "times": [
+      "宵夜"
+    ],
+    "price": "$400-600",
+    "rating": "—",
+    "desc": "國華街酒吧，晚上聚會可選。",
+    "map": "https://www.google.com/maps/search/?api=1&query=O'my bar 嘉義市"
+  },
+  {
+    "name": "BLACK i 黑眼圈",
+    "area": "西區",
+    "types": [
+      "酒吧",
+      "宵夜"
+    ],
+    "times": [
+      "宵夜"
+    ],
+    "price": "$400-600",
+    "rating": "—",
+    "desc": "大同路 Live & Lounge，適合夜生活。",
+    "map": "https://www.google.com/maps/search/?api=1&query=BLACK i 黑眼圈 嘉義市"
+  },
+  {
+    "name": "米半",
+    "area": "嘉義市",
+    "types": [
+      "義式",
+      "早午餐"
+    ],
+    "times": [
+      "午餐",
+      "晚餐"
+    ],
+    "price": "$200-400",
+    "rating": "—",
+    "desc": "假日建議提前排隊或訂位的人氣店。",
+    "map": "https://www.google.com/maps/search/?api=1&query=米半 嘉義市"
+  },
+  {
+    "name": "小洋蔥",
+    "area": "嘉義市",
+    "types": [
+      "義式",
+      "早午餐"
+    ],
+    "times": [
+      "午餐",
+      "晚餐"
+    ],
+    "price": "$200-400",
+    "rating": "—",
+    "desc": "網友大推愛店，義式與早午餐都適合。",
+    "map": "https://www.google.com/maps/search/?api=1&query=小洋蔥 嘉義市"
+  },
+  {
+    "name": "岬島",
+    "area": "嘉義市",
+    "types": [
+      "義式",
+      "咖啡甜點"
+    ],
+    "times": [
+      "午餐",
+      "晚餐"
+    ],
+    "price": "$200-400",
+    "rating": "—",
+    "desc": "有捲捲麵，也推薦明太子干貝奶油義大利麵。",
+    "map": "https://www.google.com/maps/search/?api=1&query=岬島 嘉義市"
+  },
+  {
+    "name": "山越拉麵",
+    "area": "嘉義市",
+    "types": [
+      "日式"
+    ],
+    "times": [
+      "午餐",
+      "晚餐"
+    ],
+    "price": "$200-400",
+    "rating": "—",
+    "desc": "濃郁系拉麵，拉麵控可試。",
+    "map": "https://www.google.com/maps/search/?api=1&query=山越拉麵 嘉義市"
   }
 ];

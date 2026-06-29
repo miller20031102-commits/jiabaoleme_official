@@ -203,3 +203,9 @@ footer{text-align:center;padding:4px 16px 28px;color:var(--muted);font-size:12px
     grid-template-columns:repeat(3,1fr);
   }
 }
+
+/* v4 category tuning */
+@media(max-width:380px){
+  .category b{font-size:13px}
+  .category span{font-size:24px}
+}

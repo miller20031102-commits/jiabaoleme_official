@@ -2815,5 +2815,440 @@ const restaurants = [
     "rating": "—",
     "desc": "濃郁系拉麵，拉麵控可試。",
     "map": "https://www.google.com/maps/search/?api=1&query=山越拉麵 嘉義市"
+  },
+  {
+    "name": "無名碗粿",
+    "area": "嘉義市",
+    "types": [
+      "小吃"
+    ],
+    "times": [
+      "午餐",
+      "晚餐"
+    ],
+    "price": "$1-200",
+    "rating": "—",
+    "desc": "無名碗粿，嘉義在地推薦店家。",
+    "map": "https://www.google.com/maps/search/?api=1&query=無名碗粿 嘉義市"
+  },
+  {
+    "name": "鹿港施蛋餅",
+    "area": "嘉義市",
+    "types": [
+      "小吃"
+    ],
+    "times": [
+      "午餐",
+      "晚餐"
+    ],
+    "price": "$1-200",
+    "rating": "—",
+    "desc": "鹿港施蛋餅，嘉義在地推薦店家。",
+    "map": "https://www.google.com/maps/search/?api=1&query=鹿港施蛋餅 嘉義市"
+  },
+  {
+    "name": "無名米糕",
+    "area": "嘉義市",
+    "types": [
+      "小吃"
+    ],
+    "times": [
+      "午餐",
+      "晚餐"
+    ],
+    "price": "$1-200",
+    "rating": "—",
+    "desc": "無名米糕，嘉義在地推薦店家。",
+    "map": "https://www.google.com/maps/search/?api=1&query=無名米糕 嘉義市"
+  },
+  {
+    "name": "小自由廚房",
+    "area": "嘉義市",
+    "types": [
+      "小吃"
+    ],
+    "times": [
+      "午餐",
+      "晚餐"
+    ],
+    "price": "$1-200",
+    "rating": "—",
+    "desc": "小自由廚房，嘉義在地推薦店家。",
+    "map": "https://www.google.com/maps/search/?api=1&query=小自由廚房 嘉義市"
+  },
+  {
+    "name": "王家牛雜湯",
+    "area": "嘉義市",
+    "types": [
+      "小吃"
+    ],
+    "times": [
+      "午餐",
+      "晚餐"
+    ],
+    "price": "$1-200",
+    "rating": "—",
+    "desc": "王家牛雜湯，嘉義在地推薦店家。",
+    "map": "https://www.google.com/maps/search/?api=1&query=王家牛雜湯 嘉義市"
+  },
+  {
+    "name": "桔吉力",
+    "area": "嘉義市",
+    "types": [
+      "小吃"
+    ],
+    "times": [
+      "午餐",
+      "晚餐"
+    ],
+    "price": "$1-200",
+    "rating": "—",
+    "desc": "桔吉力，嘉義在地推薦店家。",
+    "map": "https://www.google.com/maps/search/?api=1&query=桔吉力 嘉義市"
+  },
+  {
+    "name": "阿娥手作蛋餅",
+    "area": "嘉義市",
+    "types": [
+      "小吃"
+    ],
+    "times": [
+      "午餐",
+      "晚餐"
+    ],
+    "price": "$1-200",
+    "rating": "—",
+    "desc": "阿娥手作蛋餅，嘉義在地推薦店家。",
+    "map": "https://www.google.com/maps/search/?api=1&query=阿娥手作蛋餅 嘉義市"
+  },
+  {
+    "name": "丸仔榮小吃店",
+    "area": "嘉義市",
+    "types": [
+      "小吃"
+    ],
+    "times": [
+      "午餐",
+      "晚餐"
+    ],
+    "price": "$1-200",
+    "rating": "—",
+    "desc": "丸仔榮小吃店，嘉義在地推薦店家。",
+    "map": "https://www.google.com/maps/search/?api=1&query=丸仔榮小吃店 嘉義市"
+  },
+  {
+    "name": "阿吉鱔魚麵",
+    "area": "嘉義市",
+    "types": [
+      "小吃"
+    ],
+    "times": [
+      "午餐",
+      "晚餐"
+    ],
+    "price": "$1-200",
+    "rating": "—",
+    "desc": "阿吉鱔魚麵，嘉義在地推薦店家。",
+    "map": "https://www.google.com/maps/search/?api=1&query=阿吉鱔魚麵 嘉義市"
+  },
+  {
+    "name": "樂檸漢堡",
+    "area": "嘉義市",
+    "types": [
+      "小吃"
+    ],
+    "times": [
+      "午餐",
+      "晚餐"
+    ],
+    "price": "$1-200",
+    "rating": "—",
+    "desc": "樂檸漢堡，嘉義在地推薦店家。",
+    "map": "https://www.google.com/maps/search/?api=1&query=樂檸漢堡 嘉義市"
+  },
+  {
+    "name": "軍輝路小籠包",
+    "area": "嘉義市",
+    "types": [
+      "小吃"
+    ],
+    "times": [
+      "午餐",
+      "晚餐"
+    ],
+    "price": "$1-200",
+    "rating": "—",
+    "desc": "軍輝路小籠包，嘉義在地推薦店家。",
+    "map": "https://www.google.com/maps/search/?api=1&query=軍輝路小籠包 嘉義市"
+  },
+  {
+    "name": "蔡氏鴨庄",
+    "area": "嘉義市",
+    "types": [
+      "小吃"
+    ],
+    "times": [
+      "午餐",
+      "晚餐"
+    ],
+    "price": "$1-200",
+    "rating": "—",
+    "desc": "蔡氏鴨庄，嘉義在地推薦店家。",
+    "map": "https://www.google.com/maps/search/?api=1&query=蔡氏鴨庄 嘉義市"
+  },
+  {
+    "name": "清豐濤月",
+    "area": "嘉義市",
+    "types": [
+      "小吃"
+    ],
+    "times": [
+      "午餐",
+      "晚餐"
+    ],
+    "price": "$1-200",
+    "rating": "—",
+    "desc": "清豐濤月，嘉義在地推薦店家。",
+    "map": "https://www.google.com/maps/search/?api=1&query=清豐濤月 嘉義市"
+  },
+  {
+    "name": "1961海鮮炭烤",
+    "area": "嘉義市",
+    "types": [
+      "小吃"
+    ],
+    "times": [
+      "午餐",
+      "晚餐"
+    ],
+    "price": "$1-200",
+    "rating": "—",
+    "desc": "1961海鮮炭烤，嘉義在地推薦店家。",
+    "map": "https://www.google.com/maps/search/?api=1&query=1961海鮮炭烤 嘉義市"
+  },
+  {
+    "name": "打貓冰菓室",
+    "area": "嘉義市",
+    "types": [
+      "小吃"
+    ],
+    "times": [
+      "午餐",
+      "晚餐"
+    ],
+    "price": "$1-200",
+    "rating": "—",
+    "desc": "打貓冰菓室，嘉義在地推薦店家。",
+    "map": "https://www.google.com/maps/search/?api=1&query=打貓冰菓室 嘉義市"
+  },
+  {
+    "name": "阿娥豆花",
+    "area": "嘉義市",
+    "types": [
+      "小吃"
+    ],
+    "times": [
+      "午餐",
+      "晚餐"
+    ],
+    "price": "$1-200",
+    "rating": "—",
+    "desc": "阿娥豆花，嘉義在地推薦店家。",
+    "map": "https://www.google.com/maps/search/?api=1&query=阿娥豆花 嘉義市"
+  },
+  {
+    "name": "一銀仙草",
+    "area": "嘉義市",
+    "types": [
+      "小吃"
+    ],
+    "times": [
+      "午餐",
+      "晚餐"
+    ],
+    "price": "$1-200",
+    "rating": "—",
+    "desc": "一銀仙草，嘉義在地推薦店家。",
+    "map": "https://www.google.com/maps/search/?api=1&query=一銀仙草 嘉義市"
+  },
+  {
+    "name": "純情轉賣所",
+    "area": "嘉義市",
+    "types": [
+      "小吃"
+    ],
+    "times": [
+      "午餐",
+      "晚餐"
+    ],
+    "price": "$1-200",
+    "rating": "—",
+    "desc": "純情轉賣所，嘉義在地推薦店家。",
+    "map": "https://www.google.com/maps/search/?api=1&query=純情轉賣所 嘉義市"
+  },
+  {
+    "name": "巴倫司康",
+    "area": "嘉義市",
+    "types": [
+      "小吃"
+    ],
+    "times": [
+      "午餐",
+      "晚餐"
+    ],
+    "price": "$1-200",
+    "rating": "—",
+    "desc": "巴倫司康，嘉義在地推薦店家。",
+    "map": "https://www.google.com/maps/search/?api=1&query=巴倫司康 嘉義市"
+  },
+  {
+    "name": "映月橋老師傅",
+    "area": "嘉義市",
+    "types": [
+      "小吃"
+    ],
+    "times": [
+      "午餐",
+      "晚餐"
+    ],
+    "price": "$1-200",
+    "rating": "—",
+    "desc": "映月橋老師傅，嘉義在地推薦店家。",
+    "map": "https://www.google.com/maps/search/?api=1&query=映月橋老師傅 嘉義市"
+  },
+  {
+    "name": "龍喜嗲",
+    "area": "嘉義市",
+    "types": [
+      "小吃"
+    ],
+    "times": [
+      "午餐",
+      "晚餐"
+    ],
+    "price": "$1-200",
+    "rating": "—",
+    "desc": "龍喜嗲，嘉義在地推薦店家。",
+    "map": "https://www.google.com/maps/search/?api=1&query=龍喜嗲 嘉義市"
+  },
+  {
+    "name": "榮興茶行",
+    "area": "嘉義市",
+    "types": [
+      "小吃"
+    ],
+    "times": [
+      "午餐",
+      "晚餐"
+    ],
+    "price": "$1-200",
+    "rating": "—",
+    "desc": "榮興茶行，嘉義在地推薦店家。",
+    "map": "https://www.google.com/maps/search/?api=1&query=榮興茶行 嘉義市"
+  },
+  {
+    "name": "嘉義新莊紅茶",
+    "area": "嘉義市",
+    "types": [
+      "小吃"
+    ],
+    "times": [
+      "午餐",
+      "晚餐"
+    ],
+    "price": "$1-200",
+    "rating": "—",
+    "desc": "嘉義新莊紅茶，嘉義在地推薦店家。",
+    "map": "https://www.google.com/maps/search/?api=1&query=嘉義新莊紅茶 嘉義市"
+  },
+  {
+    "name": "健康鮮果屋",
+    "area": "嘉義市",
+    "types": [
+      "小吃"
+    ],
+    "times": [
+      "午餐",
+      "晚餐"
+    ],
+    "price": "$1-200",
+    "rating": "—",
+    "desc": "健康鮮果屋，嘉義在地推薦店家。",
+    "map": "https://www.google.com/maps/search/?api=1&query=健康鮮果屋 嘉義市"
+  },
+  {
+    "name": "興加臭豆腐",
+    "area": "嘉義市",
+    "types": [
+      "小吃"
+    ],
+    "times": [
+      "午餐",
+      "晚餐"
+    ],
+    "price": "$1-200",
+    "rating": "—",
+    "desc": "興加臭豆腐，嘉義在地推薦店家。",
+    "map": "https://www.google.com/maps/search/?api=1&query=興加臭豆腐 嘉義市"
+  },
+  {
+    "name": "珍珍",
+    "area": "嘉義市",
+    "types": [
+      "小吃"
+    ],
+    "times": [
+      "午餐",
+      "晚餐"
+    ],
+    "price": "$1-200",
+    "rating": "—",
+    "desc": "珍珍，嘉義在地推薦店家。",
+    "map": "https://www.google.com/maps/search/?api=1&query=珍珍 嘉義市"
+  },
+  {
+    "name": "炒螺肉",
+    "area": "嘉義市",
+    "types": [
+      "小吃"
+    ],
+    "times": [
+      "午餐",
+      "晚餐"
+    ],
+    "price": "$1-200",
+    "rating": "—",
+    "desc": "炒螺肉，嘉義在地推薦店家。",
+    "map": "https://www.google.com/maps/search/?api=1&query=炒螺肉 嘉義市"
+  },
+  {
+    "name": "阿賢割包",
+    "area": "嘉義市",
+    "types": [
+      "小吃"
+    ],
+    "times": [
+      "午餐",
+      "晚餐"
+    ],
+    "price": "$1-200",
+    "rating": "—",
+    "desc": "阿賢割包，嘉義在地推薦店家。",
+    "map": "https://www.google.com/maps/search/?api=1&query=阿賢割包 嘉義市"
+  },
+  {
+    "name": "赫赫麵店",
+    "area": "嘉義市",
+    "types": [
+      "小吃"
+    ],
+    "times": [
+      "午餐",
+      "晚餐"
+    ],
+    "price": "$1-200",
+    "rating": "—",
+    "desc": "赫赫麵店，嘉義在地推薦店家。",
+    "map": "https://www.google.com/maps/search/?api=1&query=赫赫麵店 嘉義市"
   }
 ];

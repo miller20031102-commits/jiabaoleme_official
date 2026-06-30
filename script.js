@@ -27,6 +27,7 @@ const typeText = document.querySelector("#typeText");
 const priceText = document.querySelector("#priceText");
 const ratingText = document.querySelector("#ratingText");
 const timeText = document.querySelector("#timeText");
+const tagText = document.querySelector("#tagText");
 const mapLink = document.querySelector("#mapLink");
 const countText = document.querySelector("#countText");
 const favoriteBtn = document.querySelector("#favoriteBtn");
@@ -118,6 +119,12 @@ function updateCount() {
   countText.textContent = `符合 ${candidates().length} 間`;
 }
 
+function renderTags(item) {
+  if (!tagText) return;
+  const tags = item && item.tags && item.tags.length ? item.tags : ["嘉義脆友推薦"];
+  tagText.innerHTML = tags.slice(0, 4).map(tag => `<span>🏷️ ${tag}</span>`).join("");
+}
+
 function updateFavoriteButton() {
   if (!currentRestaurant) {
     favoriteBtn.textContent = "♡ 收藏這間";
@@ -151,8 +158,10 @@ function setResult(chosen, shouldCount = true) {
   timeText.textContent = `🕒 ${chosen.times.join(" / ")}`;
   mapLink.href = chosen.map;
   mapLink.classList.remove("disabled");
+  renderTags(chosen);
 
-  updateFavoriteButton();
+  renderTags({ tags: ["嘉義脆友推薦", "334間店家"] });
+updateFavoriteButton();
 
   if (shouldCount) {
     addTopCount(chosen);
@@ -176,6 +185,7 @@ function pickOne() {
     timeText.textContent = `🕒 ${selectedTime}`;
     mapLink.href = "#";
     mapLink.classList.add("disabled");
+    renderTags({ tags: ["沒有符合店家"] });
     updateFavoriteButton();
     return;
   }
@@ -217,7 +227,8 @@ function toggleFavorite() {
       rating: currentRestaurant.rating,
       times: currentRestaurant.times,
       desc: currentRestaurant.desc,
-      map: currentRestaurant.map
+      map: currentRestaurant.map,
+      tags: currentRestaurant.tags || ["嘉義脆友推薦"]
     });
   }
 
@@ -283,6 +294,7 @@ function rollFromFavorites() {
     resultName.textContent = "收藏還是空的 🥺";
     bearTalk.textContent = "🐻 嘉飽熊：「先收藏幾間愛店，我再從裡面幫你骰！」";
     resultDesc.textContent = "骰到喜歡的店後，按下收藏，就可以建立你的專屬美食清單。";
+    renderTags({ tags: ["先收藏愛店"] });
     document.querySelector("#resultCard").scrollIntoView({behavior:"smooth", block:"center"});
     return;
   }

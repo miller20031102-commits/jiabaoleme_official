@@ -104,8 +104,7 @@ const restaurants = [
       "日式"
     ],
     "times": [
-      "晚餐",
-      "宵夜"
+      "晚餐"
     ],
     "price": "$800+",
     "rating": "4.9",
@@ -1032,8 +1031,7 @@ const restaurants = [
     ],
     "times": [
       "午餐",
-      "晚餐",
-      "宵夜"
+      "晚餐"
     ],
     "price": "$200-400",
     "rating": "4.9",
@@ -1373,7 +1371,6 @@ const restaurants = [
     "times": [
       "午餐",
       "晚餐",
-      "宵夜",
       "下午茶"
     ],
     "price": "$1-200",
@@ -1555,8 +1552,7 @@ const restaurants = [
     ],
     "times": [
       "午餐",
-      "晚餐",
-      "宵夜"
+      "晚餐"
     ],
     "price": "$400-600",
     "rating": "4.8",
@@ -1692,8 +1688,7 @@ const restaurants = [
     ],
     "times": [
       "午餐",
-      "晚餐",
-      "宵夜"
+      "晚餐"
     ],
     "price": "$800+",
     "rating": "4.9",
@@ -1921,7 +1916,8 @@ const restaurants = [
     "area": "東區",
     "types": [
       "小吃",
-      "中式"
+      "中式",
+      "雞肉飯"
     ],
     "times": [
       "午餐",
@@ -1932,7 +1928,9 @@ const restaurants = [
     "desc": "嘉義代表性名店，想吃觀光級嘉義味就它。",
     "map": "https://www.google.com/maps/search/?api=1&query=林聰明沙鍋魚頭 嘉義市",
     "tags": [
-      "嘉義脆友推薦"
+      "嘉義脆友推薦",
+      "雞肉飯模式",
+      "嘉義名店"
     ]
   },
   {
@@ -1959,7 +1957,8 @@ const restaurants = [
     "area": "東區",
     "types": [
       "小吃",
-      "中式"
+      "中式",
+      "雞肉飯"
     ],
     "times": [
       "午餐",
@@ -1970,7 +1969,8 @@ const restaurants = [
     "desc": "嘉義必吃火雞肉飯選項。",
     "map": "https://www.google.com/maps/search/?api=1&query=檜町火雞肉飯 嘉義市",
     "tags": [
-      "嘉義脆友推薦"
+      "嘉義脆友推薦",
+      "雞肉飯模式"
     ]
   },
   {
@@ -2143,7 +2143,8 @@ const restaurants = [
     "area": "東區",
     "types": [
       "小吃",
-      "中式"
+      "中式",
+      "雞肉飯"
     ],
     "times": [
       "晚餐",
@@ -2154,7 +2155,8 @@ const restaurants = [
     "desc": "晚上想吃火雞肉飯可選。",
     "map": "https://www.google.com/maps/search/?api=1&query=阿樓師火雞肉飯 嘉義市",
     "tags": [
-      "嘉義脆友推薦"
+      "嘉義脆友推薦",
+      "雞肉飯模式"
     ]
   },
   {
@@ -2277,8 +2279,7 @@ const restaurants = [
       "美式"
     ],
     "times": [
-      "晚餐",
-      "宵夜"
+      "晚餐"
     ],
     "price": "$200-400",
     "rating": "4.4",
@@ -2348,7 +2349,6 @@ const restaurants = [
     "name": "荳荳小籠湯包",
     "area": "嘉義市",
     "types": [
-      "早餐",
       "小吃"
     ],
     "times": [
@@ -2367,7 +2367,6 @@ const restaurants = [
     "name": "永春京站湯包",
     "area": "嘉義市",
     "types": [
-      "早餐",
       "小吃",
       "中式"
     ],
@@ -2405,7 +2404,7 @@ const restaurants = [
     "name": "美麗春天",
     "area": "嘉義市",
     "types": [
-      "早餐"
+      "小吃"
     ],
     "times": [
       "早午餐"
@@ -2422,7 +2421,7 @@ const restaurants = [
     "name": "土佐",
     "area": "嘉義市",
     "types": [
-      "早餐"
+      "小吃"
     ],
     "times": [
       "早午餐",
@@ -2458,7 +2457,6 @@ const restaurants = [
     "name": "才記酥餅",
     "area": "嘉義市",
     "types": [
-      "早餐",
       "小吃"
     ],
     "times": [
@@ -2477,7 +2475,6 @@ const restaurants = [
     "name": "樂樂碗粿",
     "area": "嘉義市",
     "types": [
-      "早餐",
       "小吃"
     ],
     "times": [
@@ -2496,7 +2493,6 @@ const restaurants = [
     "name": "嘉義公園古早味麵食",
     "area": "東區",
     "types": [
-      "早餐",
       "小吃"
     ],
     "times": [
@@ -2602,7 +2598,6 @@ const restaurants = [
     "times": [
       "午餐",
       "晚餐",
-      "宵夜",
       "下午茶"
     ],
     "price": "$1-200",
@@ -2729,25 +2724,6 @@ const restaurants = [
     ]
   },
   {
-    "name": "三禾雞肉飯",
-    "area": "嘉義市",
-    "types": [
-      "小吃",
-      "中式"
-    ],
-    "times": [
-      "午餐",
-      "晚餐"
-    ],
-    "price": "$1-200",
-    "rating": "—",
-    "desc": "嘉義雞肉飯選項。",
-    "map": "https://www.google.com/maps/search/?api=1&query=三禾雞肉飯 嘉義市",
-    "tags": [
-      "嘉義脆友推薦"
-    ]
-  },
-  {
     "name": "津川麵食館",
     "area": "嘉義市",
     "types": [
@@ -2807,8 +2783,7 @@ const restaurants = [
     "name": "碳少年",
     "area": "嘉義市",
     "types": [
-      "燒烤",
-      "宵夜"
+      "燒烤"
     ],
     "times": [
       "晚餐",
@@ -2826,8 +2801,7 @@ const restaurants = [
     "name": "秘醬滷味",
     "area": "嘉義市",
     "types": [
-      "小吃",
-      "宵夜"
+      "小吃"
     ],
     "times": [
       "晚餐",
@@ -2902,8 +2876,7 @@ const restaurants = [
     "name": "體育館海鮮碳烤",
     "area": "東區",
     "types": [
-      "燒烤",
-      "宵夜"
+      "燒烤"
     ],
     "times": [
       "晚餐",
@@ -2939,8 +2912,7 @@ const restaurants = [
     "name": "米宜豆乳雞",
     "area": "嘉義市",
     "types": [
-      "小吃",
-      "宵夜"
+      "小吃"
     ],
     "times": [
       "晚餐",
@@ -2958,13 +2930,11 @@ const restaurants = [
     "name": "一涼製冰所",
     "area": "嘉義市",
     "types": [
-      "咖啡甜點",
-      "宵夜"
+      "咖啡甜點"
     ],
     "times": [
       "午餐",
       "晚餐",
-      "宵夜",
       "下午茶"
     ],
     "price": "$1-200",
@@ -2980,8 +2950,7 @@ const restaurants = [
     "name": "來來鹽酥雞",
     "area": "嘉義市",
     "types": [
-      "小吃",
-      "宵夜"
+      "小吃"
     ],
     "times": [
       "晚餐",
@@ -3075,7 +3044,6 @@ const restaurants = [
     "name": "北興肉包",
     "area": "嘉義市",
     "types": [
-      "早餐",
       "小吃"
     ],
     "times": [
@@ -3133,8 +3101,7 @@ const restaurants = [
     "name": "鐵道羊肉 北興街橋下羊肉攤",
     "area": "嘉義市",
     "types": [
-      "小吃",
-      "宵夜"
+      "小吃"
     ],
     "times": [
       "晚餐",
@@ -3172,8 +3139,7 @@ const restaurants = [
     "area": "嘉義市",
     "types": [
       "小吃",
-      "中式",
-      "宵夜"
+      "中式"
     ],
     "times": [
       "午餐",
@@ -3230,11 +3196,10 @@ const restaurants = [
     "name": "COP bar-Cocktails Of Pioneers",
     "area": "西區",
     "types": [
-      "酒吧",
-      "宵夜"
+      "酒吧"
     ],
     "times": [
-      "宵夜"
+      "晚餐"
     ],
     "price": "$400-600",
     "rating": "—",
@@ -3250,11 +3215,10 @@ const restaurants = [
     "name": "Bar Door to Dream",
     "area": "西區",
     "types": [
-      "酒吧",
-      "宵夜"
+      "酒吧"
     ],
     "times": [
-      "宵夜"
+      "晚餐"
     ],
     "price": "$400-600",
     "rating": "—",
@@ -3270,11 +3234,10 @@ const restaurants = [
     "name": "CASA",
     "area": "東區",
     "types": [
-      "酒吧",
-      "宵夜"
+      "酒吧"
     ],
     "times": [
-      "宵夜"
+      "晚餐"
     ],
     "price": "$400-600",
     "rating": "—",
@@ -3290,11 +3253,10 @@ const restaurants = [
     "name": "Bar SKITZ 過門",
     "area": "東區",
     "types": [
-      "酒吧",
-      "宵夜"
+      "酒吧"
     ],
     "times": [
-      "宵夜"
+      "晚餐"
     ],
     "price": "$400-600",
     "rating": "—",
@@ -3310,11 +3272,10 @@ const restaurants = [
     "name": "秉森酒室",
     "area": "西區",
     "types": [
-      "酒吧",
-      "宵夜"
+      "酒吧"
     ],
     "times": [
-      "宵夜"
+      "晚餐"
     ],
     "price": "$400-600",
     "rating": "—",
@@ -3330,11 +3291,10 @@ const restaurants = [
     "name": "斗酒",
     "area": "東區",
     "types": [
-      "酒吧",
-      "宵夜"
+      "酒吧"
     ],
     "times": [
-      "宵夜"
+      "晚餐"
     ],
     "price": "$400-600",
     "rating": "—",
@@ -3350,11 +3310,10 @@ const restaurants = [
     "name": "誠侍酒吧",
     "area": "西區",
     "types": [
-      "酒吧",
-      "宵夜"
+      "酒吧"
     ],
     "times": [
-      "宵夜"
+      "晚餐"
     ],
     "price": "$400-600",
     "rating": "—",
@@ -3370,11 +3329,10 @@ const restaurants = [
     "name": "HOT Hi-end Of Tiki",
     "area": "西區",
     "types": [
-      "酒吧",
-      "宵夜"
+      "酒吧"
     ],
     "times": [
-      "宵夜"
+      "晚餐"
     ],
     "price": "$400-600",
     "rating": "—",
@@ -3390,11 +3348,10 @@ const restaurants = [
     "name": "O'my bar",
     "area": "西區",
     "types": [
-      "酒吧",
-      "宵夜"
+      "酒吧"
     ],
     "times": [
-      "宵夜"
+      "晚餐"
     ],
     "price": "$400-600",
     "rating": "—",
@@ -3410,11 +3367,10 @@ const restaurants = [
     "name": "BLACK i 黑眼圈",
     "area": "西區",
     "types": [
-      "酒吧",
-      "宵夜"
+      "酒吧"
     ],
     "times": [
-      "宵夜"
+      "晚餐"
     ],
     "price": "$400-600",
     "rating": "—",
@@ -3431,7 +3387,7 @@ const restaurants = [
     "area": "嘉義市",
     "types": [
       "義式",
-      "早餐"
+      "小吃"
     ],
     "times": [
       "午餐",
@@ -3452,7 +3408,7 @@ const restaurants = [
     "area": "嘉義市",
     "types": [
       "義式",
-      "早餐"
+      "小吃"
     ],
     "times": [
       "午餐",
@@ -4263,8 +4219,7 @@ const restaurants = [
     "area": "嘉義市",
     "types": [
       "小吃",
-      "日式",
-      "宵夜"
+      "日式"
     ],
     "times": [
       "午餐",
@@ -4446,7 +4401,6 @@ const restaurants = [
     "name": "王家祖傳本產牛雜湯",
     "area": "嘉義市",
     "types": [
-      "早餐",
       "小吃",
       "中式"
     ],
@@ -4486,8 +4440,7 @@ const restaurants = [
     "name": "好吃又香阿婆滷味",
     "area": "嘉義市",
     "types": [
-      "小吃",
-      "宵夜"
+      "小吃"
     ],
     "times": [
       "晚餐",
@@ -4549,8 +4502,7 @@ const restaurants = [
       "中式"
     ],
     "times": [
-      "晚餐",
-      "宵夜"
+      "晚餐"
     ],
     "price": "$200-400",
     "rating": "4.3",
@@ -4706,12 +4658,10 @@ const restaurants = [
     "name": "阿宏海產熱炒",
     "area": "嘉義市",
     "types": [
-      "熱炒",
-      "宵夜"
+      "熱炒"
     ],
     "times": [
-      "晚餐",
-      "宵夜"
+      "晚餐"
     ],
     "price": "$400-600",
     "rating": "4.2",
@@ -4745,12 +4695,10 @@ const restaurants = [
     "name": "發哥黑白切海鮮快炒",
     "area": "嘉義市",
     "types": [
-      "熱炒",
-      "宵夜"
+      "熱炒"
     ],
     "times": [
-      "晚餐",
-      "宵夜"
+      "晚餐"
     ],
     "price": "$400-600",
     "rating": "4.5",
@@ -4766,12 +4714,10 @@ const restaurants = [
     "area": "嘉義市",
     "types": [
       "燒烤",
-      "熱炒",
-      "宵夜"
+      "熱炒"
     ],
     "times": [
-      "晚餐",
-      "宵夜"
+      "晚餐"
     ],
     "price": "$400-600",
     "rating": "4.4",
@@ -4806,12 +4752,10 @@ const restaurants = [
     "name": "紅豆海鮮快炒",
     "area": "嘉義市",
     "types": [
-      "熱炒",
-      "宵夜"
+      "熱炒"
     ],
     "times": [
-      "晚餐",
-      "宵夜"
+      "晚餐"
     ],
     "price": "$200-400",
     "rating": "4.1",
@@ -4943,12 +4887,10 @@ const restaurants = [
     "name": "伊氛局海鮮平價熱炒",
     "area": "嘉義市",
     "types": [
-      "熱炒",
-      "宵夜"
+      "熱炒"
     ],
     "times": [
-      "晚餐",
-      "宵夜"
+      "晚餐"
     ],
     "price": "$400-600",
     "rating": "5.0",
@@ -5042,12 +4984,10 @@ const restaurants = [
     "name": "島嶼塔可",
     "area": "嘉義市",
     "types": [
-      "異國料理",
-      "宵夜"
+      "異國料理"
     ],
     "times": [
-      "晚餐",
-      "宵夜"
+      "晚餐"
     ],
     "price": "$1-200",
     "rating": "4.7",
@@ -5083,8 +5023,7 @@ const restaurants = [
     "area": "嘉義市",
     "types": [
       "異國料理",
-      "小吃",
-      "宵夜"
+      "小吃"
     ],
     "times": [
       "午餐",
@@ -5105,8 +5044,7 @@ const restaurants = [
     "area": "嘉義市",
     "types": [
       "小吃",
-      "中式",
-      "宵夜"
+      "中式"
     ],
     "times": [
       "午餐",
@@ -5145,12 +5083,10 @@ const restaurants = [
     "name": "嘉義安和胡椒蝦",
     "area": "嘉義市",
     "types": [
-      "熱炒",
-      "宵夜"
+      "熱炒"
     ],
     "times": [
-      "晚餐",
-      "宵夜"
+      "晚餐"
     ],
     "price": "$200-400",
     "rating": "4.1",
@@ -5186,12 +5122,10 @@ const restaurants = [
     "area": "嘉義市",
     "types": [
       "酒吧",
-      "日式",
-      "宵夜"
+      "日式"
     ],
     "times": [
-      "晚餐",
-      "宵夜"
+      "晚餐"
     ],
     "price": "$400-600",
     "rating": "4.5",
@@ -5208,8 +5142,7 @@ const restaurants = [
     "name": "興烤串海鮮鍋燒",
     "area": "嘉義市",
     "types": [
-      "燒烤",
-      "宵夜"
+      "燒烤"
     ],
     "times": [
       "晚餐",
@@ -5495,8 +5428,7 @@ const restaurants = [
       "酒吧"
     ],
     "times": [
-      "晚餐",
-      "宵夜"
+      "晚餐"
     ],
     "price": "$800+",
     "rating": "4.8",
@@ -5535,8 +5467,7 @@ const restaurants = [
       "異國料理"
     ],
     "times": [
-      "晚餐",
-      "宵夜"
+      "晚餐"
     ],
     "price": "$200-400",
     "rating": "3.9",
@@ -5552,12 +5483,10 @@ const restaurants = [
     "area": "嘉義市",
     "types": [
       "酒吧",
-      "熱炒",
-      "宵夜"
+      "熱炒"
     ],
     "times": [
-      "晚餐",
-      "宵夜"
+      "晚餐"
     ],
     "price": "$400-600",
     "rating": "4.6",
@@ -5613,12 +5542,10 @@ const restaurants = [
     "name": "The JiaJiu Place 呷酒餐酒館",
     "area": "嘉義市",
     "types": [
-      "酒吧",
-      "宵夜"
+      "酒吧"
     ],
     "times": [
-      "晚餐",
-      "宵夜"
+      "晚餐"
     ],
     "price": "$400-600",
     "rating": "4.8",
@@ -5775,12 +5702,10 @@ const restaurants = [
     "name": "伴醉 Banzui",
     "area": "嘉義市",
     "types": [
-      "酒吧",
-      "宵夜"
+      "酒吧"
     ],
     "times": [
-      "晚餐",
-      "宵夜"
+      "晚餐"
     ],
     "price": "$400-600",
     "rating": "5.0",
@@ -6021,12 +5946,10 @@ const restaurants = [
     "area": "嘉義市",
     "types": [
       "酒吧",
-      "日式",
-      "宵夜"
+      "日式"
     ],
     "times": [
-      "晚餐",
-      "宵夜"
+      "晚餐"
     ],
     "price": "$200-400",
     "rating": "4.2",
@@ -6164,12 +6087,10 @@ const restaurants = [
     "name": "88快炒",
     "area": "嘉義市",
     "types": [
-      "熱炒",
-      "宵夜"
+      "熱炒"
     ],
     "times": [
-      "晚餐",
-      "宵夜"
+      "晚餐"
     ],
     "price": "$1-200",
     "rating": "4.6",
@@ -6563,8 +6484,7 @@ const restaurants = [
     "name": "黑棟當歸鴨 光華總店",
     "area": "嘉義市",
     "types": [
-      "小吃",
-      "宵夜"
+      "小吃"
     ],
     "times": [
       "晚餐",
@@ -6850,12 +6770,10 @@ const restaurants = [
     "name": "阿紘素食",
     "area": "嘉義市",
     "types": [
-      "素食",
-      "宵夜"
+      "素食"
     ],
     "times": [
-      "晚餐",
-      "宵夜"
+      "晚餐"
     ],
     "price": "$1-200",
     "rating": "4.8",
@@ -6886,7 +6804,7 @@ const restaurants = [
   },
   {
     "name": "皇家豆花",
-    "area": "嘉義",
+    "area": "嘉義市",
     "types": [
       "咖啡甜點"
     ],
@@ -6904,7 +6822,7 @@ const restaurants = [
   },
   {
     "name": "山柒-披薩製所",
-    "area": "嘉義",
+    "area": "嘉義市",
     "types": [
       "義式",
       "咖啡甜點"
@@ -6923,7 +6841,7 @@ const restaurants = [
   },
   {
     "name": "灰燼雞蛋糕",
-    "area": "嘉義",
+    "area": "嘉義市",
     "types": [
       "咖啡甜點"
     ],
@@ -6941,7 +6859,7 @@ const restaurants = [
   },
   {
     "name": "友刈包",
-    "area": "嘉義",
+    "area": "嘉義市",
     "types": [
       "小吃"
     ],
@@ -6959,7 +6877,7 @@ const restaurants = [
   },
   {
     "name": "瘋Beef 丼飽處",
-    "area": "嘉義",
+    "area": "嘉義市",
     "types": [
       "日式"
     ],
@@ -6977,7 +6895,7 @@ const restaurants = [
   },
   {
     "name": "花亭壽司",
-    "area": "嘉義",
+    "area": "嘉義市",
     "types": [
       "日式"
     ],
@@ -6995,7 +6913,7 @@ const restaurants = [
   },
   {
     "name": "松阪家",
-    "area": "嘉義",
+    "area": "嘉義市",
     "types": [
       "日式"
     ],
@@ -7013,7 +6931,7 @@ const restaurants = [
   },
   {
     "name": "新御野飯館",
-    "area": "嘉義",
+    "area": "嘉義市",
     "types": [
       "日式"
     ],
@@ -7031,7 +6949,7 @@ const restaurants = [
   },
   {
     "name": "濟濟一堂",
-    "area": "嘉義",
+    "area": "嘉義市",
     "types": [
       "中式"
     ],
@@ -7049,7 +6967,7 @@ const restaurants = [
   },
   {
     "name": "感恩火雞肉飯",
-    "area": "嘉義",
+    "area": "嘉義市",
     "types": [
       "小吃",
       "中式"
@@ -7068,15 +6986,15 @@ const restaurants = [
   },
   {
     "name": "阿忠羊肉",
-    "area": "嘉義",
+    "area": "嘉義市",
     "types": [
       "小吃",
-      "中式",
-      "宵夜"
+      "中式"
     ],
     "times": [
       "午餐",
-      "晚餐"
+      "晚餐",
+      "宵夜"
     ],
     "price": "$200-400",
     "rating": "4.5",
@@ -7088,7 +7006,7 @@ const restaurants = [
   },
   {
     "name": "碖 炭火夯肉飯",
-    "area": "嘉義",
+    "area": "嘉義市",
     "types": [
       "小吃",
       "中式"
@@ -7107,14 +7025,14 @@ const restaurants = [
   },
   {
     "name": "炸的三角骨專賣",
-    "area": "嘉義",
+    "area": "嘉義市",
     "types": [
-      "小吃",
-      "宵夜"
+      "小吃"
     ],
     "times": [
       "午餐",
-      "晚餐"
+      "晚餐",
+      "宵夜"
     ],
     "price": "$200-400",
     "rating": "4.5",
@@ -7126,7 +7044,7 @@ const restaurants = [
   },
   {
     "name": "北門沙鍋魚頭",
-    "area": "嘉義",
+    "area": "嘉義市",
     "types": [
       "小吃",
       "中式"
@@ -7145,7 +7063,7 @@ const restaurants = [
   },
   {
     "name": "雄讚溫體肉品現撈海鮮極品鍋",
-    "area": "嘉義",
+    "area": "嘉義市",
     "types": [
       "火鍋"
     ],
@@ -7160,5 +7078,1365 @@ const restaurants = [
       "嘉義脆友推薦"
     ],
     "map": "https://www.google.com/maps/search/?api=1&query=雄讚溫體肉品現撈海鮮極品鍋 嘉義"
+  },
+  {
+    "name": "阿溪雞肉飯",
+    "area": "西區",
+    "types": [
+      "雞肉飯",
+      "小吃",
+      "中式"
+    ],
+    "times": [
+      "早午餐",
+      "午餐"
+    ],
+    "price": "$1-200",
+    "rating": "4.2",
+    "desc": "在地人氣雞肉飯，早午餐不知道吃什麼可以骰這間。",
+    "tags": [
+      "雞肉飯模式",
+      "嘉義經典",
+      "在地人氣"
+    ],
+    "map": "https://www.google.com/maps/search/?api=1&query=阿溪雞肉飯 嘉義市"
+  },
+  {
+    "name": "桃城三禾火雞肉飯",
+    "area": "東區",
+    "types": [
+      "雞肉飯",
+      "小吃",
+      "中式"
+    ],
+    "times": [
+      "早午餐",
+      "午餐",
+      "晚餐"
+    ],
+    "price": "$1-200",
+    "rating": "4.4",
+    "desc": "高人氣火雞肉飯，想吃嘉義經典小吃很適合。",
+    "tags": [
+      "雞肉飯模式",
+      "嘉義經典",
+      "人氣名店"
+    ],
+    "map": "https://www.google.com/maps/search/?api=1&query=桃城三禾火雞肉飯 嘉義市"
+  },
+  {
+    "name": "蕭老師火雞肉飯",
+    "area": "西區",
+    "types": [
+      "雞肉飯",
+      "小吃",
+      "中式"
+    ],
+    "times": [
+      "早午餐",
+      "午餐",
+      "晚餐"
+    ],
+    "price": "$1-200",
+    "rating": "4.2",
+    "desc": "嘉義火雞肉飯名單常客，日常吃飯很穩。",
+    "tags": [
+      "雞肉飯模式",
+      "嘉義經典"
+    ],
+    "map": "https://www.google.com/maps/search/?api=1&query=蕭老師火雞肉飯 嘉義市"
+  },
+  {
+    "name": "可口火雞肉飯",
+    "area": "東區",
+    "types": [
+      "雞肉飯",
+      "小吃",
+      "中式"
+    ],
+    "times": [
+      "早午餐",
+      "午餐",
+      "晚餐"
+    ],
+    "price": "$1-200",
+    "rating": "4.4",
+    "desc": "簡單耐吃的火雞肉飯，適合不知道吃什麼時快速決定。",
+    "tags": [
+      "雞肉飯模式",
+      "嘉義經典"
+    ],
+    "map": "https://www.google.com/maps/search/?api=1&query=可口火雞肉飯 嘉義市"
+  },
+  {
+    "name": "正統火雞肉飯",
+    "area": "東區",
+    "types": [
+      "雞肉飯",
+      "小吃",
+      "中式"
+    ],
+    "times": [
+      "早午餐",
+      "午餐",
+      "晚餐"
+    ],
+    "price": "$1-200",
+    "rating": "4.5",
+    "desc": "高評價火雞肉飯，想吃一碗嘉義味可以骰它。",
+    "tags": [
+      "雞肉飯模式",
+      "高評價",
+      "嘉義經典"
+    ],
+    "map": "https://www.google.com/maps/search/?api=1&query=正統火雞肉飯 嘉義市"
+  },
+  {
+    "name": "和平嘉義火雞肉飯",
+    "area": "東區",
+    "types": [
+      "雞肉飯",
+      "小吃",
+      "中式"
+    ],
+    "times": [
+      "早午餐",
+      "午餐",
+      "晚餐"
+    ],
+    "price": "$1-200",
+    "rating": "4.2",
+    "desc": "嘉義人氣火雞肉飯，早午餐或晚餐都能考慮。",
+    "tags": [
+      "雞肉飯模式",
+      "嘉義經典",
+      "人氣名店"
+    ],
+    "map": "https://www.google.com/maps/search/?api=1&query=和平嘉義火雞肉飯 嘉義市"
+  },
+  {
+    "name": "嘉義車頭火雞肉飯（永香珍食堂）",
+    "area": "西區",
+    "types": [
+      "雞肉飯",
+      "小吃",
+      "中式"
+    ],
+    "times": [
+      "早午餐",
+      "午餐",
+      "晚餐"
+    ],
+    "price": "$1-200",
+    "rating": "4.3",
+    "desc": "車站附近想吃嘉義火雞肉飯，可以把命運交給這碗。",
+    "tags": [
+      "雞肉飯模式",
+      "車站周邊",
+      "嘉義經典"
+    ],
+    "map": "https://www.google.com/maps/search/?api=1&query=嘉義車頭火雞肉飯 永香珍食堂 嘉義市"
+  },
+  {
+    "name": "嘉義公園火雞肉飯",
+    "area": "東區",
+    "types": [
+      "雞肉飯",
+      "小吃",
+      "中式"
+    ],
+    "times": [
+      "早午餐",
+      "午餐"
+    ],
+    "price": "$1-200",
+    "rating": "4.4",
+    "desc": "嘉義公園附近的火雞肉飯，早上或中午想吃很可以。",
+    "tags": [
+      "雞肉飯模式",
+      "嘉義公園",
+      "嘉義經典"
+    ],
+    "map": "https://www.google.com/maps/search/?api=1&query=嘉義公園火雞肉飯 嘉義市"
+  },
+  {
+    "name": "嘉義噴水雞肉飯-小雅旗艦店",
+    "area": "東區",
+    "types": [
+      "雞肉飯",
+      "小吃",
+      "中式"
+    ],
+    "times": [
+      "午餐",
+      "晚餐"
+    ],
+    "price": "$200-400",
+    "rating": "3.9",
+    "desc": "噴水雞肉飯小雅旗艦店，想吃知名品牌路線可以骰這間。",
+    "tags": [
+      "雞肉飯模式",
+      "知名品牌"
+    ],
+    "map": "https://www.google.com/maps/search/?api=1&query=嘉義噴水雞肉飯 小雅旗艦店 嘉義市"
+  },
+  {
+    "name": "簡單火雞肉飯",
+    "area": "東區",
+    "types": [
+      "雞肉飯",
+      "小吃",
+      "中式"
+    ],
+    "times": [
+      "早午餐",
+      "午餐"
+    ],
+    "price": "$1-200",
+    "rating": "4.2",
+    "desc": "嘉義火雞肉飯人氣店，簡單吃一碗就很滿足。",
+    "tags": [
+      "雞肉飯模式",
+      "嘉義經典",
+      "人氣名店"
+    ],
+    "map": "https://www.google.com/maps/search/?api=1&query=簡單火雞肉飯 嘉義市"
+  },
+  {
+    "name": "家禾火雞肉飯",
+    "area": "西區",
+    "types": [
+      "雞肉飯",
+      "小吃",
+      "中式"
+    ],
+    "times": [
+      "早午餐",
+      "午餐",
+      "晚餐"
+    ],
+    "price": "$1-200",
+    "rating": "4.3",
+    "desc": "西區火雞肉飯選擇，想吃平價小吃可以骰這間。",
+    "tags": [
+      "雞肉飯模式",
+      "西區",
+      "嘉義經典"
+    ],
+    "map": "https://www.google.com/maps/search/?api=1&query=家禾火雞肉飯 嘉義市"
+  },
+  {
+    "name": "嘉義人火雞肉飯",
+    "area": "東區",
+    "types": [
+      "雞肉飯",
+      "小吃",
+      "中式"
+    ],
+    "times": [
+      "早午餐",
+      "午餐"
+    ],
+    "price": "$1-200",
+    "rating": "4.0",
+    "desc": "名字就很嘉義人的火雞肉飯，選擇困難時交給嘉飽熊。",
+    "tags": [
+      "雞肉飯模式",
+      "嘉義人從小吃到大"
+    ],
+    "map": "https://www.google.com/maps/search/?api=1&query=嘉義人火雞肉飯 嘉義市"
+  },
+  {
+    "name": "文化火雞肉飯",
+    "area": "西區",
+    "types": [
+      "雞肉飯",
+      "小吃",
+      "中式"
+    ],
+    "times": [
+      "早午餐",
+      "午餐",
+      "晚餐"
+    ],
+    "price": "$1-200",
+    "rating": "4.5",
+    "desc": "文化路周邊高評價火雞肉飯，逛街前後都很適合。",
+    "tags": [
+      "雞肉飯模式",
+      "文化路周邊",
+      "高評價"
+    ],
+    "map": "https://www.google.com/maps/search/?api=1&query=文化火雞肉飯 嘉義市"
+  },
+  {
+    "name": "古早火雞肉飯",
+    "area": "東區",
+    "types": [
+      "雞肉飯",
+      "小吃"
+    ],
+    "times": [
+      "早午餐",
+      "午餐",
+      "晚餐"
+    ],
+    "price": "$1-200",
+    "rating": "4.5",
+    "desc": "古早味火雞肉飯，想吃嘉義樸實日常味可以選它。",
+    "tags": [
+      "雞肉飯模式",
+      "古早味",
+      "高評價"
+    ],
+    "map": "https://www.google.com/maps/search/?api=1&query=古早火雞肉飯 嘉義市"
+  },
+  {
+    "name": "蕃茄村 嘉義興美店",
+    "area": "東區",
+    "types": [
+      "小吃"
+    ],
+    "times": [
+      "早午餐"
+    ],
+    "price": "$1-200",
+    "rating": "4.5",
+    "desc": "早餐店，適合早午餐快速解決。",
+    "tags": [
+      "新收錄",
+      "早餐模式"
+    ],
+    "map": "https://www.google.com/maps/search/?api=1&query=蕃茄村 嘉義興美店"
+  },
+  {
+    "name": "HAENG BOK 哼飽！",
+    "area": "嘉義市",
+    "types": [
+      "義式",
+      "咖啡甜點",
+      "小吃"
+    ],
+    "times": [
+      "早午餐",
+      "午餐",
+      "下午茶"
+    ],
+    "price": "$200-400",
+    "rating": "4.7",
+    "desc": "販售早午餐、義大利麵、燉飯與下午茶。",
+    "tags": [
+      "新收錄",
+      "嘉義熊推薦"
+    ],
+    "map": "https://www.google.com/maps/search/?api=1&query=HAENG BOK 哼飽 嘉義"
+  },
+  {
+    "name": "丸龜",
+    "area": "嘉義市",
+    "types": [
+      "日式"
+    ],
+    "times": [
+      "午餐",
+      "晚餐"
+    ],
+    "price": "$200-400",
+    "rating": "4.5",
+    "desc": "日式料理新收錄。",
+    "tags": [
+      "新收錄"
+    ],
+    "map": "https://www.google.com/maps/search/?api=1&query=丸龜 嘉義"
+  },
+  {
+    "name": "質醞 Essence Bistro 餐酒館",
+    "area": "東區",
+    "types": [
+      "餐酒館",
+      "義式"
+    ],
+    "times": [
+      "晚餐"
+    ],
+    "price": "$400-600",
+    "rating": "4.7",
+    "desc": "餐酒館路線，適合晚餐、聚餐或約會。",
+    "tags": [
+      "新收錄",
+      "約會推薦"
+    ],
+    "map": "https://www.google.com/maps/search/?api=1&query=質醞 Essence Bistro 嘉義"
+  },
+  {
+    "name": "天子意麵",
+    "area": "嘉義市",
+    "types": [
+      "小吃",
+      "中式"
+    ],
+    "times": [
+      "晚餐",
+      "宵夜"
+    ],
+    "price": "$1-200",
+    "rating": "4.5",
+    "desc": "嘉義意麵與宵夜選擇。",
+    "tags": [
+      "新收錄",
+      "宵夜模式"
+    ],
+    "map": "https://www.google.com/maps/search/?api=1&query=天子意麵 嘉義"
+  },
+  {
+    "name": "東門火雞肉飯",
+    "area": "東區",
+    "types": [
+      "雞肉飯",
+      "小吃",
+      "中式"
+    ],
+    "times": [
+      "早午餐",
+      "午餐",
+      "晚餐"
+    ],
+    "price": "$1-200",
+    "rating": "4.3",
+    "desc": "嘉義火雞肉飯名單常客，雞肉飯模式必收。",
+    "tags": [
+      "雞肉飯模式",
+      "嘉義人從小吃到大"
+    ],
+    "map": "https://www.google.com/maps/search/?api=1&query=東門火雞肉飯 嘉義市"
+  },
+  {
+    "name": "嘉林火雞肉飯",
+    "area": "嘉義市",
+    "types": [
+      "雞肉飯",
+      "小吃",
+      "中式"
+    ],
+    "times": [
+      "早午餐",
+      "午餐",
+      "晚餐"
+    ],
+    "price": "$1-200",
+    "rating": "4.3",
+    "desc": "網友推薦雞肉飯名單，適合放進嘉義雞肉飯模式。",
+    "tags": [
+      "雞肉飯模式",
+      "網友推薦"
+    ],
+    "map": "https://www.google.com/maps/search/?api=1&query=嘉林火雞肉飯 嘉義市"
+  },
+  {
+    "name": "阿明火雞肉飯",
+    "area": "嘉義市",
+    "types": [
+      "雞肉飯",
+      "小吃",
+      "中式"
+    ],
+    "times": [
+      "早午餐",
+      "午餐",
+      "晚餐"
+    ],
+    "price": "$1-200",
+    "rating": "4.3",
+    "desc": "嘉義火雞肉飯推薦名單之一，雞肉飯模式新增收錄。",
+    "tags": [
+      "雞肉飯模式",
+      "網友推薦"
+    ],
+    "map": "https://www.google.com/maps/search/?api=1&query=阿明火雞肉飯 嘉義市"
+  },
+  {
+    "name": "劉里長雞肉飯",
+    "area": "嘉義市",
+    "types": [
+      "雞肉飯",
+      "小吃",
+      "中式"
+    ],
+    "times": [
+      "早午餐",
+      "午餐",
+      "晚餐"
+    ],
+    "price": "$1-200",
+    "rating": "4.3",
+    "desc": "嘉義雞肉飯討論常見名單，適合讓嘉飽熊幫你骰。",
+    "tags": [
+      "雞肉飯模式",
+      "Threads 爆推"
+    ],
+    "map": "https://www.google.com/maps/search/?api=1&query=劉里長雞肉飯 嘉義市"
+  },
+  {
+    "name": "阿霞火雞肉飯",
+    "area": "嘉義市",
+    "types": [
+      "雞肉飯",
+      "小吃",
+      "中式"
+    ],
+    "times": [
+      "早午餐",
+      "午餐",
+      "晚餐"
+    ],
+    "price": "$1-200",
+    "rating": "4.3",
+    "desc": "嘉義火雞肉飯推薦名單之一，雞肉飯模式新增收錄。",
+    "tags": [
+      "雞肉飯模式",
+      "網友推薦"
+    ],
+    "map": "https://www.google.com/maps/search/?api=1&query=阿霞火雞肉飯 嘉義市"
+  },
+  {
+    "name": "阿宏師火雞肉飯",
+    "area": "嘉義市",
+    "types": [
+      "雞肉飯",
+      "小吃",
+      "中式"
+    ],
+    "times": [
+      "早午餐",
+      "午餐",
+      "晚餐"
+    ],
+    "price": "$1-200",
+    "rating": "4.3",
+    "desc": "嘉義雞肉飯推薦名單新增收錄。",
+    "tags": [
+      "雞肉飯模式",
+      "嘉義人從小吃到大"
+    ],
+    "map": "https://www.google.com/maps/search/?api=1&query=阿宏師火雞肉飯 嘉義市"
+  },
+  {
+    "name": "米伴鐵板料理",
+    "area": "嘉義市",
+    "types": [
+      "鐵板燒"
+    ],
+    "times": [
+      "午餐",
+      "晚餐"
+    ],
+    "price": "$200-400",
+    "rating": "4.5",
+    "desc": "嘉義人氣鐵板燒。",
+    "tags": [
+      "嘉飽熊推薦",
+      "鐵板燒"
+    ],
+    "map": "https://www.google.com/maps/search/?api=1&query=米伴鐵板料理 嘉義"
+  },
+  {
+    "name": "米伴 鐵板料理",
+    "area": "西區",
+    "types": [
+      "鐵板燒"
+    ],
+    "times": [
+      "午餐",
+      "晚餐"
+    ],
+    "price": "$200-400",
+    "rating": "4.6",
+    "desc": "嘉義人氣鐵板燒。",
+    "tags": [
+      "鐵板燒",
+      "嘉飽熊推薦"
+    ],
+    "map": "https://www.google.com/maps/search/?api=1&query=米伴 鐵板料理 嘉義"
+  },
+  {
+    "name": "花漾創意鐵板料理",
+    "area": "東區",
+    "types": [
+      "鐵板燒"
+    ],
+    "times": [
+      "午餐",
+      "晚餐"
+    ],
+    "price": "$800-1,400",
+    "rating": "4.5",
+    "desc": "嘉義鐵板燒推薦店家。",
+    "tags": [
+      "鐵板燒",
+      "嘉飽熊推薦"
+    ],
+    "map": "https://www.google.com/maps/search/?api=1&query=花漾創意鐵板料理 嘉義"
+  },
+  {
+    "name": "踢鐵板燒",
+    "area": "東區",
+    "types": [
+      "鐵板燒"
+    ],
+    "times": [
+      "午餐",
+      "晚餐"
+    ],
+    "price": "$400-600",
+    "rating": "4.3",
+    "desc": "嘉義鐵板燒推薦店家。",
+    "tags": [
+      "鐵板燒",
+      "嘉飽熊推薦"
+    ],
+    "map": "https://www.google.com/maps/search/?api=1&query=踢鐵板燒 嘉義"
+  },
+  {
+    "name": "鑫鴻澄鐵板燒",
+    "area": "西區",
+    "types": [
+      "鐵板燒"
+    ],
+    "times": [
+      "午餐",
+      "晚餐"
+    ],
+    "price": "$200-400",
+    "rating": "4.6",
+    "desc": "嘉義鐵板燒推薦店家。",
+    "tags": [
+      "鐵板燒",
+      "嘉飽熊推薦"
+    ],
+    "map": "https://www.google.com/maps/search/?api=1&query=鑫鴻澄鐵板燒 嘉義"
+  },
+  {
+    "name": "大埔鐵板燒 忠孝店",
+    "area": "東區",
+    "types": [
+      "鐵板燒"
+    ],
+    "times": [
+      "午餐",
+      "晚餐"
+    ],
+    "price": "$200-400",
+    "rating": "4.8",
+    "desc": "嘉義鐵板燒推薦店家。",
+    "tags": [
+      "鐵板燒",
+      "嘉飽熊推薦"
+    ],
+    "map": "https://www.google.com/maps/search/?api=1&query=大埔鐵板燒 忠孝店 嘉義"
+  },
+  {
+    "name": "初物 鐵板燒鍋物",
+    "area": "東區",
+    "types": [
+      "鐵板燒"
+    ],
+    "times": [
+      "午餐",
+      "晚餐"
+    ],
+    "price": "$2000+",
+    "rating": "4.6",
+    "desc": "嘉義鐵板燒推薦店家。",
+    "tags": [
+      "鐵板燒",
+      "嘉飽熊推薦"
+    ],
+    "map": "https://www.google.com/maps/search/?api=1&query=初物 鐵板燒鍋物 嘉義"
+  },
+  {
+    "name": "季花鐵板燒",
+    "area": "東區",
+    "types": [
+      "鐵板燒"
+    ],
+    "times": [
+      "午餐",
+      "晚餐"
+    ],
+    "price": "$1000-2000",
+    "rating": "4.2",
+    "desc": "嘉義鐵板燒推薦店家。",
+    "tags": [
+      "鐵板燒",
+      "嘉飽熊推薦"
+    ],
+    "map": "https://www.google.com/maps/search/?api=1&query=季花鐵板燒 嘉義"
+  },
+  {
+    "name": "新菊鐵板燒",
+    "area": "東區",
+    "types": [
+      "鐵板燒"
+    ],
+    "times": [
+      "午餐",
+      "晚餐"
+    ],
+    "price": "$1800-2000",
+    "rating": "4.2",
+    "desc": "嘉義鐵板燒推薦店家。",
+    "tags": [
+      "鐵板燒",
+      "嘉飽熊推薦"
+    ],
+    "map": "https://www.google.com/maps/search/?api=1&query=新菊鐵板燒 嘉義"
+  },
+  {
+    "name": "紅鼎鐵板燒",
+    "area": "東區",
+    "types": [
+      "鐵板燒"
+    ],
+    "times": [
+      "午餐",
+      "晚餐"
+    ],
+    "price": "$600-800",
+    "rating": "4.3",
+    "desc": "嘉義鐵板燒推薦店家。",
+    "tags": [
+      "鐵板燒",
+      "嘉飽熊推薦"
+    ],
+    "map": "https://www.google.com/maps/search/?api=1&query=紅鼎鐵板燒 嘉義"
+  },
+  {
+    "name": "大葉鐵板燒",
+    "area": "西區",
+    "types": [
+      "鐵板燒"
+    ],
+    "times": [
+      "午餐",
+      "晚餐"
+    ],
+    "price": "$400-600",
+    "rating": "4.3",
+    "desc": "嘉義鐵板燒推薦店家。",
+    "tags": [
+      "鐵板燒",
+      "嘉飽熊推薦"
+    ],
+    "map": "https://www.google.com/maps/search/?api=1&query=大葉鐵板燒 嘉義"
+  },
+  {
+    "name": "秋嵐鐵板料理",
+    "area": "西區",
+    "types": [
+      "鐵板燒"
+    ],
+    "times": [
+      "午餐",
+      "晚餐"
+    ],
+    "price": "$800-1000",
+    "rating": "4.8",
+    "desc": "嘉義鐵板燒推薦店家。",
+    "tags": [
+      "鐵板燒",
+      "嘉飽熊推薦"
+    ],
+    "map": "https://www.google.com/maps/search/?api=1&query=秋嵐鐵板料理 嘉義"
+  },
+  {
+    "name": "T到鐵板",
+    "area": "東區",
+    "types": [
+      "鐵板燒"
+    ],
+    "times": [
+      "午餐",
+      "晚餐"
+    ],
+    "price": "$200-400",
+    "rating": "4.6",
+    "desc": "嘉義鐵板燒推薦店家。",
+    "tags": [
+      "鐵板燒",
+      "嘉飽熊推薦"
+    ],
+    "map": "https://www.google.com/maps/search/?api=1&query=T到鐵板 嘉義"
+  },
+  {
+    "name": "1961海鮮碳烤",
+    "area": "東區",
+    "types": [
+      "燒烤",
+      "海鮮"
+    ],
+    "times": [
+      "晚餐",
+      "宵夜"
+    ],
+    "price": "$400-600",
+    "rating": "4.4",
+    "desc": "嘉義燒烤與宵夜推薦。",
+    "tags": [
+      "嘉飽熊推薦"
+    ],
+    "map": "https://www.google.com/maps/search/?api=1&query=1961海鮮碳烤 嘉義"
+  },
+  {
+    "name": "碳所音樂餐廳",
+    "area": "西區",
+    "types": [
+      "酒吧",
+      "燒烤"
+    ],
+    "times": [
+      "晚餐"
+    ],
+    "price": "$400-600",
+    "rating": "4.7",
+    "desc": "嘉義燒烤與宵夜推薦。",
+    "tags": [
+      "嘉飽熊推薦"
+    ],
+    "map": "https://www.google.com/maps/search/?api=1&query=碳所音樂餐廳 嘉義"
+  },
+  {
+    "name": "嘉樂福碳烤 烤肉 燒烤 BBQ（嘉佳福）",
+    "area": "西區",
+    "types": [
+      "燒烤"
+    ],
+    "times": [
+      "晚餐",
+      "宵夜"
+    ],
+    "price": "$1-200",
+    "rating": "4.3",
+    "desc": "嘉義燒烤與宵夜推薦。",
+    "tags": [
+      "嘉飽熊推薦"
+    ],
+    "map": "https://www.google.com/maps/search/?api=1&query=嘉樂福碳烤 烤肉 燒烤 BBQ（嘉佳福） 嘉義"
+  },
+  {
+    "name": "燃 手串",
+    "area": "西區",
+    "types": [
+      "燒烤",
+      "日式"
+    ],
+    "times": [
+      "晚餐",
+      "宵夜"
+    ],
+    "price": "$200-400",
+    "rating": "4.2",
+    "desc": "嘉義燒烤與宵夜推薦。",
+    "tags": [
+      "嘉飽熊推薦"
+    ],
+    "map": "https://www.google.com/maps/search/?api=1&query=燃 手串 嘉義"
+  },
+  {
+    "name": "欣葉海鮮燒烤熱炒",
+    "area": "東區",
+    "types": [
+      "燒烤",
+      "熱炒",
+      "海鮮"
+    ],
+    "times": [
+      "晚餐"
+    ],
+    "price": "$400-600",
+    "rating": "4.5",
+    "desc": "嘉義燒烤與宵夜推薦。",
+    "tags": [
+      "嘉飽熊推薦"
+    ],
+    "map": "https://www.google.com/maps/search/?api=1&query=欣葉海鮮燒烤熱炒 嘉義"
+  },
+  {
+    "name": "饗烤肉",
+    "area": "嘉義市",
+    "types": [
+      "燒烤"
+    ],
+    "times": [
+      "晚餐",
+      "宵夜"
+    ],
+    "price": "$200-400",
+    "rating": "4.5",
+    "desc": "嘉義燒烤與宵夜推薦。",
+    "tags": [
+      "嘉飽熊推薦"
+    ],
+    "map": "https://www.google.com/maps/search/?api=1&query=饗烤肉 嘉義"
+  },
+  {
+    "name": "忠鑫快炒",
+    "area": "東區",
+    "types": [
+      "熱炒",
+      "中式"
+    ],
+    "times": [
+      "晚餐"
+    ],
+    "price": "$1-200",
+    "rating": "4.9",
+    "desc": "嘉義在地推薦店家。",
+    "tags": [
+      "嘉飽熊推薦"
+    ],
+    "map": "https://www.google.com/maps/search/?api=1&query=忠鑫快炒 嘉義"
+  },
+  {
+    "name": "88 快炒",
+    "area": "東區",
+    "types": [
+      "熱炒",
+      "中式"
+    ],
+    "times": [
+      "晚餐"
+    ],
+    "price": "$1-200",
+    "rating": "4.6",
+    "desc": "嘉義在地推薦店家。",
+    "tags": [
+      "嘉飽熊推薦"
+    ],
+    "map": "https://www.google.com/maps/search/?api=1&query=88 快炒 嘉義"
+  },
+  {
+    "name": "福芳酒食FUFUN",
+    "area": "東區",
+    "types": [
+      "熱炒",
+      "居酒屋"
+    ],
+    "times": [
+      "晚餐"
+    ],
+    "price": "$400-600",
+    "rating": "4.6",
+    "desc": "嘉義在地推薦店家。",
+    "tags": [
+      "嘉飽熊推薦"
+    ],
+    "map": "https://www.google.com/maps/search/?api=1&query=福芳酒食FUFUN 嘉義"
+  },
+  {
+    "name": "常旺熱炒",
+    "area": "西區",
+    "types": [
+      "熱炒",
+      "海鮮"
+    ],
+    "times": [
+      "晚餐"
+    ],
+    "price": "$200-400",
+    "rating": "4.6",
+    "desc": "嘉義在地推薦店家。",
+    "tags": [
+      "嘉飽熊推薦"
+    ],
+    "map": "https://www.google.com/maps/search/?api=1&query=常旺熱炒 嘉義"
+  },
+  {
+    "name": "山哥平價熱炒",
+    "area": "西區",
+    "types": [
+      "熱炒"
+    ],
+    "times": [
+      "晚餐"
+    ],
+    "price": "$400-600",
+    "rating": "4.6",
+    "desc": "嘉義在地推薦店家。",
+    "tags": [
+      "嘉飽熊推薦"
+    ],
+    "map": "https://www.google.com/maps/search/?api=1&query=山哥平價熱炒 嘉義"
+  },
+  {
+    "name": "來呷飯 川食堂(嘉義中山店)",
+    "area": "東區",
+    "types": [
+      "中式"
+    ],
+    "times": [
+      "午餐",
+      "晚餐"
+    ],
+    "price": "$200-400",
+    "rating": "4.7",
+    "desc": "嘉義在地推薦店家。",
+    "tags": [
+      "嘉飽熊推薦"
+    ],
+    "map": "https://www.google.com/maps/search/?api=1&query=來呷飯 川食堂(嘉義中山店) 嘉義"
+  },
+  {
+    "name": "大吃大喝 美食熱炒",
+    "area": "西區",
+    "types": [
+      "熱炒"
+    ],
+    "times": [
+      "晚餐"
+    ],
+    "price": "$200-400",
+    "rating": "4.4",
+    "desc": "嘉義在地推薦店家。",
+    "tags": [
+      "嘉飽熊推薦"
+    ],
+    "map": "https://www.google.com/maps/search/?api=1&query=大吃大喝 美食熱炒 嘉義"
+  },
+  {
+    "name": "熱炒九九",
+    "area": "西區",
+    "types": [
+      "熱炒"
+    ],
+    "times": [
+      "晚餐"
+    ],
+    "price": "$1-200",
+    "rating": "4.7",
+    "desc": "嘉義在地推薦店家。",
+    "tags": [
+      "嘉飽熊推薦"
+    ],
+    "map": "https://www.google.com/maps/search/?api=1&query=熱炒九九 嘉義"
+  },
+  {
+    "name": "澄澄 Kitchen& Market",
+    "area": "東區",
+    "types": [
+      "義式",
+      "咖啡甜點"
+    ],
+    "times": [
+      "午餐",
+      "晚餐"
+    ],
+    "price": "$400-1000",
+    "rating": "4.9",
+    "desc": "嘉義在地推薦店家。",
+    "tags": [
+      "嘉飽熊推薦"
+    ],
+    "map": "https://www.google.com/maps/search/?api=1&query=澄澄 Kitchen& Market 嘉義"
+  },
+  {
+    "name": "胖胖哥熱炒",
+    "area": "西區",
+    "types": [
+      "熱炒"
+    ],
+    "times": [
+      "晚餐"
+    ],
+    "price": "$1-200",
+    "rating": "4.9",
+    "desc": "嘉義在地推薦店家。",
+    "tags": [
+      "嘉飽熊推薦"
+    ],
+    "map": "https://www.google.com/maps/search/?api=1&query=胖胖哥熱炒 嘉義"
+  },
+  {
+    "name": "暮暮製所早午餐",
+    "area": "東區",
+    "types": [
+      "早餐"
+    ],
+    "times": [
+      "早餐",
+      "早午餐"
+    ],
+    "price": "$200-400",
+    "rating": "4.8",
+    "desc": "嘉義早餐與早午餐推薦。",
+    "tags": [
+      "早餐推薦",
+      "嘉飽熊推薦"
+    ],
+    "map": "https://www.google.com/maps/search/?api=1&query=暮暮製所早午餐 嘉義"
+  },
+  {
+    "name": "Nose man鼻孔先生手作早午餐",
+    "area": "東區",
+    "types": [
+      "早餐"
+    ],
+    "times": [
+      "早餐",
+      "早午餐"
+    ],
+    "price": "$1-200",
+    "rating": "4.6",
+    "desc": "嘉義早餐與早午餐推薦。",
+    "tags": [
+      "早餐推薦",
+      "嘉飽熊推薦"
+    ],
+    "map": "https://www.google.com/maps/search/?api=1&query=Nose man鼻孔先生手作早午餐 嘉義"
+  },
+  {
+    "name": "綠洲oasis",
+    "area": "東區",
+    "types": [
+      "小吃"
+    ],
+    "times": [
+      "早餐",
+      "早午餐"
+    ],
+    "price": "$200-400",
+    "rating": "4.5",
+    "desc": "嘉義早餐與早午餐推薦。",
+    "tags": [
+      "早餐推薦",
+      "嘉飽熊推薦"
+    ],
+    "map": "https://www.google.com/maps/search/?api=1&query=綠洲oasis 嘉義"
+  },
+  {
+    "name": "二樂 TWO HOT CAFÉ",
+    "area": "西區",
+    "types": [
+      "小吃"
+    ],
+    "times": [
+      "早餐",
+      "早午餐"
+    ],
+    "price": "$200-400",
+    "rating": "4.5",
+    "desc": "嘉義早餐與早午餐推薦。",
+    "tags": [
+      "早餐推薦",
+      "嘉飽熊推薦"
+    ],
+    "map": "https://www.google.com/maps/search/?api=1&query=二樂 TWO HOT CAFÉ 嘉義"
+  },
+  {
+    "name": "早窩Cafe•Brunch",
+    "area": "東區",
+    "types": [
+      "早餐"
+    ],
+    "times": [
+      "早餐",
+      "早午餐"
+    ],
+    "price": "$200-400",
+    "rating": "4.7",
+    "desc": "嘉義早餐與早午餐推薦。",
+    "tags": [
+      "早餐推薦",
+      "嘉飽熊推薦"
+    ],
+    "map": "https://www.google.com/maps/search/?api=1&query=早窩Cafe•Brunch 嘉義"
+  },
+  {
+    "name": "Two's 早•午食",
+    "area": "東區",
+    "types": [
+      "小吃"
+    ],
+    "times": [
+      "早餐",
+      "早午餐"
+    ],
+    "price": "$200-400",
+    "rating": "4.4",
+    "desc": "嘉義早餐與早午餐推薦。",
+    "tags": [
+      "早餐推薦",
+      "嘉飽熊推薦"
+    ],
+    "map": "https://www.google.com/maps/search/?api=1&query=Two's 早•午食 嘉義"
+  },
+  {
+    "name": "早點起床",
+    "area": "東區",
+    "types": [
+      "早餐"
+    ],
+    "times": [
+      "早餐",
+      "早午餐"
+    ],
+    "price": "$1-200",
+    "rating": "4.4",
+    "desc": "嘉義早餐與早午餐推薦。",
+    "tags": [
+      "早餐推薦",
+      "嘉飽熊推薦"
+    ],
+    "map": "https://www.google.com/maps/search/?api=1&query=早點起床 嘉義"
+  },
+  {
+    "name": "Nonamelab",
+    "area": "西區",
+    "types": [
+      "小吃"
+    ],
+    "times": [
+      "早餐",
+      "早午餐"
+    ],
+    "price": "$200-400",
+    "rating": "4.4",
+    "desc": "嘉義早餐與早午餐推薦。",
+    "tags": [
+      "早餐推薦",
+      "嘉飽熊推薦"
+    ],
+    "map": "https://www.google.com/maps/search/?api=1&query=Nonamelab 嘉義"
+  },
+  {
+    "name": "王家早點",
+    "area": "西區",
+    "types": [
+      "早餐"
+    ],
+    "times": [
+      "早餐",
+      "早午餐"
+    ],
+    "price": "$1-200",
+    "rating": "4.5",
+    "desc": "嘉義早餐與早午餐推薦。",
+    "tags": [
+      "早餐推薦",
+      "嘉飽熊推薦"
+    ],
+    "map": "https://www.google.com/maps/search/?api=1&query=王家早點 嘉義"
+  },
+  {
+    "name": "可口味早餐店",
+    "area": "東區",
+    "types": [
+      "早餐"
+    ],
+    "times": [
+      "早餐",
+      "早午餐"
+    ],
+    "price": "$1-200",
+    "rating": "4.4",
+    "desc": "嘉義早餐與早午餐推薦。",
+    "tags": [
+      "早餐推薦",
+      "嘉飽熊推薦"
+    ],
+    "map": "https://www.google.com/maps/search/?api=1&query=可口味早餐店 嘉義"
+  },
+  {
+    "name": "嘉義南門包氏炭燒杏仁茶",
+    "area": "東區",
+    "types": [
+      "小吃"
+    ],
+    "times": [
+      "早餐"
+    ],
+    "price": "$1-200",
+    "rating": "4.3",
+    "desc": "嘉義早餐與早午餐推薦。",
+    "tags": [
+      "早餐推薦",
+      "嘉飽熊推薦"
+    ],
+    "map": "https://www.google.com/maps/search/?api=1&query=嘉義南門包氏炭燒杏仁茶 嘉義"
+  },
+  {
+    "name": "早晨小姐Good morning",
+    "area": "東區",
+    "types": [
+      "早餐"
+    ],
+    "times": [
+      "早餐",
+      "早午餐"
+    ],
+    "price": "$200-400",
+    "rating": "4.1",
+    "desc": "嘉義早餐與早午餐推薦。",
+    "tags": [
+      "早餐推薦",
+      "嘉飽熊推薦"
+    ],
+    "map": "https://www.google.com/maps/search/?api=1&query=早晨小姐Good morning 嘉義"
+  },
+  {
+    "name": "阿焜早點",
+    "area": "西區",
+    "types": [
+      "早餐"
+    ],
+    "times": [
+      "早餐",
+      "早午餐"
+    ],
+    "price": "$1-200",
+    "rating": "4.3",
+    "desc": "嘉義早餐與早午餐推薦。",
+    "tags": [
+      "早餐推薦",
+      "嘉飽熊推薦"
+    ],
+    "map": "https://www.google.com/maps/search/?api=1&query=阿焜早點 嘉義"
+  },
+  {
+    "name": "柒早早午餐",
+    "area": "西區",
+    "types": [
+      "早餐"
+    ],
+    "times": [
+      "早餐",
+      "早午餐"
+    ],
+    "price": "$1-200",
+    "rating": "4.7",
+    "desc": "嘉義早餐與早午餐推薦。",
+    "tags": [
+      "早餐推薦",
+      "嘉飽熊推薦"
+    ],
+    "map": "https://www.google.com/maps/search/?api=1&query=柒早早午餐 嘉義"
+  },
+  {
+    "name": "卡古（カク）早午餐",
+    "area": "西區",
+    "types": [
+      "早餐"
+    ],
+    "times": [
+      "早餐",
+      "早午餐"
+    ],
+    "price": "$1-200",
+    "rating": "4.6",
+    "desc": "嘉義早餐與早午餐推薦。",
+    "tags": [
+      "早餐推薦",
+      "嘉飽熊推薦"
+    ],
+    "map": "https://www.google.com/maps/search/?api=1&query=卡古（カク）早午餐 嘉義"
   }
 ];

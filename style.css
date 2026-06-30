@@ -234,3 +234,29 @@ footer{text-align:center;padding:4px 16px 28px;color:var(--muted);font-size:12px
   font-size:13px;
   font-weight:900;
 }
+
+
+/* 雞肉飯模式 */
+.special-modes{
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  margin:18px 0 0;
+  flex-wrap:wrap;
+}
+.mode-btn{
+  border:1px solid rgba(255,168,61,.35);
+  background:linear-gradient(135deg,#fff4d7,#ffe3a0);
+  color:var(--text);
+  padding:12px 20px;
+  border-radius:999px;
+  font-size:16px;
+  font-weight:900;
+  cursor:pointer;
+  box-shadow:0 8px 20px rgba(112,72,26,.12);
+}
+.mode-btn:active{transform:translateY(1px) scale(.99)}
+body.dark .mode-btn{
+  background:linear-gradient(135deg,#3a2d1f,#5a3d1d);
+  border-color:rgba(255,207,104,.28);
+}

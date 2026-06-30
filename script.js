@@ -15,6 +15,7 @@ const talks = [
   "🐻 嘉飽熊：「今天不用再問朋友吃什麼了。」",
   "🐻 嘉飽熊：「出發！吃飽比較重要。」",
   "🐻 嘉飽熊：「這間感覺可以，衝一波。」",
+  "🐻 嘉飽熊：「雞肉飯模式啟動，嘉義人的靈魂來了。」",
   "🐻 嘉飽熊：「晚點再猶豫，現在先吃。」"
 ];
 
@@ -160,7 +161,7 @@ function setResult(chosen, shouldCount = true) {
   mapLink.classList.remove("disabled");
   renderTags(chosen);
 
-  renderTags({ tags: ["嘉義脆友推薦", "334間店家"] });
+  renderTags({ tags: ["嘉義脆友推薦", "435間店家"] });
 updateFavoriteButton();
 
   if (shouldCount) {
@@ -310,6 +311,7 @@ function rollFromFavorites() {
   const chosen = items[Math.floor(Math.random() * items.length)];
   setTimeout(() => setResult(chosen, true), 520);
 }
+
 
 document.querySelector("#rollBtn").addEventListener("click", roll);
 document.querySelector("#againBtn").addEventListener("click", roll);

@@ -6371,7 +6371,7 @@ const restaurants = [
     ],
     "price": "$1-200",
     "rating": "4.9",
-    "desc": "夢裡麵 東北冷麵拌菜，嘉義脆友推薦店家。",
+    "desc": "東北冷麵與拌菜，清爽有特色，放在小吃與異國料理分類。",
     "map": "https://www.google.com/maps/search/?api=1&query=夢裡麵 東北冷麵拌菜 嘉義市",
     "tags": [
       "嘉義脆友推薦",
@@ -6412,7 +6412,7 @@ const restaurants = [
     ],
     "price": "$200-400",
     "rating": "4.8",
-    "desc": "Pizzeria CHU朱氏披薩，嘉義脆友推薦店家。",
+    "desc": "義式披薩店，適合聚餐、約會或想吃披薩的午晚餐。",
     "map": "https://www.google.com/maps/search/?api=1&query=Pizzeria CHU朱氏披薩 嘉義市",
     "tags": [
       "嘉義脆友推薦",
@@ -7471,9 +7471,9 @@ const restaurants = [
     "name": "HAENG BOK 哼飽！",
     "area": "嘉義市",
     "types": [
+      "早餐",
       "義式",
-      "咖啡甜點",
-      "小吃"
+      "咖啡甜點"
     ],
     "times": [
       "早午餐",
@@ -7482,12 +7482,12 @@ const restaurants = [
     ],
     "price": "$200-400",
     "rating": "4.7",
-    "desc": "販售早午餐、義大利麵、燉飯與下午茶。",
+    "desc": "販售早午餐、義大利麵、燉飯與下午茶；不新增早午餐分類，歸在早餐、義式與咖啡甜點。",
+    "map": "https://www.google.com/maps/search/?api=1&query=HAENG BOK 哼飽 嘉義",
     "tags": [
       "新收錄",
       "嘉義熊推薦"
-    ],
-    "map": "https://www.google.com/maps/search/?api=1&query=HAENG BOK 哼飽 嘉義"
+    ]
   },
   {
     "name": "丸龜",
@@ -8762,6 +8762,64 @@ const restaurants = [
       "咖哩",
       "丼飯",
       "定食"
+    ]
+  },
+  {
+    "name": "我們是水龍拉麵",
+    "area": "西區",
+    "types": [
+      "日式"
+    ],
+    "times": [
+      "晚餐"
+    ],
+    "price": "$1-200",
+    "rating": "4.7",
+    "desc": "日式拉麵店。地址：嘉義市西區民生北路38號｜營業時間：16:30–20:30。",
+    "map": "https://www.google.com/maps/search/?api=1&query=我們是水龍拉麵 嘉義市西區民生北路38號",
+    "tags": [
+      "嘉義脆友推薦",
+      "新加入"
+    ]
+  },
+  {
+    "name": "逐鹿炭火燒肉 嘉義店",
+    "area": "嘉義市",
+    "types": [
+      "燒肉"
+    ],
+    "times": [
+      "午餐",
+      "晚餐"
+    ],
+    "price": "$600-800",
+    "rating": "4.6",
+    "desc": "炭火燒肉聚餐選擇，放在燒肉分類，適合午餐與晚餐。",
+    "map": "https://www.google.com/maps/search/?api=1&query=逐鹿炭火燒肉 嘉義店",
+    "tags": [
+      "嘉義脆友推薦",
+      "適合聚餐",
+      "新加入"
+    ]
+  },
+  {
+    "name": "嘉荷",
+    "area": "東區",
+    "types": [
+      "小吃",
+      "中式"
+    ],
+    "times": [
+      "午餐",
+      "晚餐"
+    ],
+    "price": "$1-200",
+    "rating": "4.7",
+    "desc": "巷弄裡的便當工作室。地址：嘉義市東區林森東路269巷1弄68號。",
+    "map": "https://www.google.com/maps/search/?api=1&query=嘉荷 嘉義市東區林森東路269巷1弄68號",
+    "tags": [
+      "嘉義脆友推薦",
+      "新加入"
     ]
   }
 ];

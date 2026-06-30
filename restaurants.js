@@ -345,14 +345,16 @@ const restaurants = [
     "map": "https://www.google.com/maps/search/?api=1&query=好好家慢熟咖哩 嘉義市",
     "tags": [
       "嘉義脆友推薦",
-      "適合聚餐"
+      "適合聚餐",
+      "咖哩"
     ]
   },
   {
     "name": "舊時光新鮮事 老屋咖哩專賣",
     "area": "西區",
     "types": [
-      "咖哩"
+      "咖哩",
+      "日式"
     ],
     "times": [
       "午餐",
@@ -363,14 +365,20 @@ const restaurants = [
     "desc": "老屋咖哩氛圍，適合約會與朋友吃飯。",
     "map": "https://www.google.com/maps/search/?api=1&query=舊時光新鮮事 老屋咖哩專賣 嘉義市",
     "tags": [
-      "嘉義脆友推薦"
+      "嘉義脆友推薦",
+      "咖哩",
+      "寵物友善",
+      "文化路美食",
+      "火車站美食"
     ]
   },
   {
     "name": "大人味 日印咖喱",
     "area": "東區",
     "types": [
-      "咖哩"
+      "咖哩",
+      "日式",
+      "異國料理"
     ],
     "times": [
       "午餐",
@@ -381,14 +389,17 @@ const restaurants = [
     "desc": "日式與印度咖哩風格，選擇不無聊。",
     "map": "https://www.google.com/maps/search/?api=1&query=大人味 日印咖喱 嘉義市",
     "tags": [
-      "嘉義脆友推薦"
+      "嘉義脆友推薦",
+      "咖哩",
+      "咖喱"
     ]
   },
   {
     "name": "國王的菜 印度餐廳",
     "area": "西區",
     "types": [
-      "咖哩"
+      "咖哩",
+      "異國料理"
     ],
     "times": [
       "午餐",
@@ -399,14 +410,17 @@ const restaurants = [
     "desc": "印度料理與咖哩，想換口味很適合。",
     "map": "https://www.google.com/maps/search/?api=1&query=國王的菜 印度餐廳 嘉義市",
     "tags": [
-      "嘉義脆友推薦"
+      "嘉義脆友推薦",
+      "咖哩",
+      "印度料理"
     ]
   },
   {
     "name": "盛食咖哩店 嘉義店",
     "area": "西區",
     "types": [
-      "咖哩"
+      "咖哩",
+      "異國料理"
     ],
     "times": [
       "午餐",
@@ -417,7 +431,8 @@ const restaurants = [
     "desc": "嘉義咖哩熱門選項，午晚餐都可。",
     "map": "https://www.google.com/maps/search/?api=1&query=盛食咖哩店 嘉義店 嘉義市",
     "tags": [
-      "嘉義脆友推薦"
+      "嘉義脆友推薦",
+      "咖哩"
     ]
   },
   {
@@ -436,7 +451,8 @@ const restaurants = [
     "map": "https://www.google.com/maps/search/?api=1&query=白梗咖哩 嘉義市",
     "tags": [
       "嘉義脆友推薦",
-      "適合聚餐"
+      "適合聚餐",
+      "咖哩"
     ]
   },
   {
@@ -456,7 +472,9 @@ const restaurants = [
     "map": "https://www.google.com/maps/search/?api=1&query=胖卡咖哩 嘉義市",
     "tags": [
       "嘉義脆友推薦",
-      "適合聚餐"
+      "適合聚餐",
+      "咖哩",
+      "定食"
     ]
   },
   {
@@ -476,7 +494,9 @@ const restaurants = [
     "map": "https://www.google.com/maps/search/?api=1&query=初·仨食 嘉義市",
     "tags": [
       "嘉義脆友推薦",
-      "適合聚餐"
+      "適合聚餐",
+      "咖哩",
+      "炸豬排"
     ]
   },
   {
@@ -496,7 +516,10 @@ const restaurants = [
     "map": "https://www.google.com/maps/search/?api=1&query=丸野 丼咖喱定食專門店 嘉義市",
     "tags": [
       "嘉義脆友推薦",
-      "適合聚餐"
+      "適合聚餐",
+      "咖哩",
+      "咖喱",
+      "定食"
     ]
   },
   {
@@ -516,7 +539,9 @@ const restaurants = [
     "map": "https://www.google.com/maps/search/?api=1&query=八谷 豬排 咖哩 民族店 嘉義市",
     "tags": [
       "嘉義脆友推薦",
-      "適合聚餐"
+      "適合聚餐",
+      "咖哩",
+      "豬排"
     ]
   },
   {
@@ -536,7 +561,8 @@ const restaurants = [
     "map": "https://www.google.com/maps/search/?api=1&query=初和風精緻咖哩 嘉義市",
     "tags": [
       "嘉義脆友推薦",
-      "適合聚餐"
+      "適合聚餐",
+      "咖哩"
     ]
   },
   {
@@ -548,21 +574,26 @@ const restaurants = [
     ],
     "times": [
       "早午餐",
-      "午餐"
+      "午餐",
+      "早餐"
     ],
     "price": "$1-200",
     "rating": "4.8",
     "desc": "早上也吃得到的咖喱飯與煎粿。",
     "map": "https://www.google.com/maps/search/?api=1&query=香香 煎粿 咖喱飯 專賣店 嘉義市",
     "tags": [
-      "嘉義脆友推薦"
+      "嘉義脆友推薦",
+      "咖哩",
+      "咖喱",
+      "早餐"
     ]
   },
   {
     "name": "主廚帽印度餐廳 嘉義店",
     "area": "西區",
     "types": [
-      "咖哩"
+      "咖哩",
+      "異國料理"
     ],
     "times": [
       "午餐",
@@ -573,7 +604,9 @@ const restaurants = [
     "desc": "印度餐廳，想吃香料與咖哩時可選。",
     "map": "https://www.google.com/maps/search/?api=1&query=主廚帽印度餐廳 嘉義店 嘉義市",
     "tags": [
-      "嘉義脆友推薦"
+      "嘉義脆友推薦",
+      "咖哩",
+      "印度料理"
     ]
   },
   {
@@ -866,7 +899,8 @@ const restaurants = [
     "area": "西區",
     "types": [
       "中式",
-      "美式"
+      "美式",
+      "咖哩"
     ],
     "times": [
       "午餐",
@@ -874,10 +908,12 @@ const restaurants = [
     ],
     "price": "$200-400",
     "rating": "4.6",
-    "desc": "巷弄人氣餐館，建議先預訂。",
+    "desc": "巷弄人氣餐館，建議先預訂，也歸入咖哩分類。",
     "map": "https://www.google.com/maps/search/?api=1&query=巷子裡的小餐館 嘉義市",
     "tags": [
-      "嘉義脆友推薦"
+      "嘉義脆友推薦",
+      "咖哩",
+      "建議預訂"
     ]
   },
   {
@@ -2219,9 +2255,11 @@ const restaurants = [
     "name": "Second Floor 貳樓嘉義秀泰店",
     "area": "西區",
     "types": [
-      "美式"
+      "美式",
+      "早餐"
     ],
     "times": [
+      "早午餐",
       "午餐",
       "晚餐"
     ],
@@ -2381,6 +2419,27 @@ const restaurants = [
     "map": "https://www.google.com/maps/search/?api=1&query=永春京站湯包 嘉義市",
     "tags": [
       "嘉義脆友推薦"
+    ]
+  },
+  {
+    "name": "桔吉力早餐",
+    "area": "西區",
+    "types": [
+      "早餐"
+    ],
+    "times": [
+      "早餐",
+      "早午餐"
+    ],
+    "price": "$1-200",
+    "rating": "4.6",
+    "desc": "嘉義仁愛路人氣早餐／早午餐，常被打成吉吉利；適合想吃吐司、拼盤、鮮奶茶的早上。",
+    "map": "https://www.google.com/maps/search/?api=1&query=桔吉力早餐 嘉義市西區仁愛路",
+    "tags": [
+      "嘉義脆友推薦",
+      "嘉義人從小吃到大",
+      "早餐模式",
+      "吉吉利"
     ]
   },
   {
@@ -2635,7 +2694,8 @@ const restaurants = [
     "area": "東區",
     "types": [
       "中式",
-      "小吃"
+      "小吃",
+      "咖哩"
     ],
     "times": [
       "午餐",
@@ -2643,10 +2703,11 @@ const restaurants = [
     ],
     "price": "$200-400",
     "rating": "4.4",
-    "desc": "嘉義人氣餐館，適合午晚餐。",
+    "desc": "嘉義人氣餐館，適合午晚餐，也歸入咖哩分類。",
     "map": "https://www.google.com/maps/search/?api=1&query=穀谷 嘉義市",
     "tags": [
-      "嘉義脆友推薦"
+      "嘉義脆友推薦",
+      "咖哩"
     ]
   },
   {
@@ -2776,7 +2837,8 @@ const restaurants = [
     "desc": "印度料理與咖哩，適合想吃香料。",
     "map": "https://www.google.com/maps/search/?api=1&query=Fusion 印度餐廳 嘉義市",
     "tags": [
-      "嘉義脆友推薦"
+      "嘉義脆友推薦",
+      "咖哩"
     ]
   },
   {
@@ -3026,18 +3088,21 @@ const restaurants = [
     "area": "嘉義市",
     "types": [
       "小吃",
-      "中式"
+      "中式",
+      "宵夜"
     ],
     "times": [
       "早午餐",
-      "午餐"
+      "午餐",
+      "宵夜"
     ],
     "price": "$1-200",
     "rating": "—",
-    "desc": "肉粥小吃，早餐午餐適合。",
+    "desc": "肉粥小吃，早餐午餐適合，也適合宵夜。",
     "map": "https://www.google.com/maps/search/?api=1&query=金馬肉粥 嘉義市",
     "tags": [
-      "嘉義脆友推薦"
+      "嘉義脆友推薦",
+      "宵夜模式"
     ]
   },
   {
@@ -3386,8 +3451,7 @@ const restaurants = [
     "name": "米半",
     "area": "嘉義市",
     "types": [
-      "義式",
-      "小吃"
+      "鐵板燒"
     ],
     "times": [
       "午餐",
@@ -3411,6 +3475,7 @@ const restaurants = [
       "小吃"
     ],
     "times": [
+      "早午餐",
       "午餐",
       "晚餐"
     ],
@@ -3562,33 +3627,14 @@ const restaurants = [
     ]
   },
   {
-    "name": "桔吉力",
-    "area": "嘉義市",
-    "types": [
-      "小吃"
-    ],
-    "times": [
-      "午餐",
-      "晚餐"
-    ],
-    "price": "$1-200",
-    "rating": "—",
-    "desc": "桔吉力，嘉義在地推薦店家。",
-    "map": "https://www.google.com/maps/search/?api=1&query=桔吉力 嘉義市",
-    "tags": [
-      "嘉義脆友推薦",
-      "新加入"
-    ]
-  },
-  {
     "name": "阿娥手作蛋餅",
     "area": "嘉義市",
     "types": [
-      "小吃"
+      "早餐"
     ],
     "times": [
-      "午餐",
-      "晚餐"
+      "早餐",
+      "早午餐"
     ],
     "price": "$1-200",
     "rating": "—",
@@ -4025,8 +4071,8 @@ const restaurants = [
       "早餐"
     ],
     "times": [
-      "早午餐",
-      "午餐"
+      "早餐",
+      "早午餐"
     ],
     "price": "$200-400",
     "rating": "4.5",
@@ -4459,12 +4505,11 @@ const restaurants = [
     "name": "叉里包",
     "area": "嘉義市",
     "types": [
-      "小吃",
-      "中式"
+      "早餐"
     ],
     "times": [
-      "午餐",
-      "晚餐"
+      "早餐",
+      "早午餐"
     ],
     "price": "$200-400",
     "rating": "4.8",
@@ -4695,18 +4740,21 @@ const restaurants = [
     "name": "發哥黑白切海鮮快炒",
     "area": "嘉義市",
     "types": [
-      "熱炒"
+      "熱炒",
+      "宵夜"
     ],
     "times": [
-      "晚餐"
+      "晚餐",
+      "宵夜"
     ],
     "price": "$400-600",
     "rating": "4.5",
-    "desc": "發哥黑白切海鮮快炒，嘉義脆友推薦店家。",
+    "desc": "發哥黑白切海鮮快炒，嘉義脆友推薦店家，也適合宵夜。",
     "map": "https://www.google.com/maps/search/?api=1&query=發哥黑白切海鮮快炒 嘉義市",
     "tags": [
       "嘉義脆友推薦",
-      "新加入"
+      "新加入",
+      "宵夜模式"
     ]
   },
   {
@@ -4958,7 +5006,8 @@ const restaurants = [
     "tags": [
       "嘉義脆友推薦",
       "新加入",
-      "適合聚餐"
+      "適合聚餐",
+      "咖哩"
     ]
   },
   {
@@ -5023,7 +5072,8 @@ const restaurants = [
     "area": "嘉義市",
     "types": [
       "異國料理",
-      "小吃"
+      "小吃",
+      "宵夜"
     ],
     "times": [
       "午餐",
@@ -5032,11 +5082,12 @@ const restaurants = [
     ],
     "price": "$200-400",
     "rating": "4.8",
-    "desc": "女巫貓葵，嘉義脆友推薦店家。",
+    "desc": "女巫貓葵，嘉義脆友推薦店家，也適合宵夜。",
     "map": "https://www.google.com/maps/search/?api=1&query=女巫貓葵 嘉義市",
     "tags": [
       "嘉義脆友推薦",
-      "新加入"
+      "新加入",
+      "宵夜模式"
     ]
   },
   {
@@ -5445,19 +5496,22 @@ const restaurants = [
     "name": "阿信美食",
     "area": "嘉義市",
     "types": [
-      "小吃"
+      "小吃",
+      "宵夜"
     ],
     "times": [
       "午餐",
-      "晚餐"
+      "晚餐",
+      "宵夜"
     ],
     "price": "$1-200",
     "rating": "4.0",
-    "desc": "阿信美食，嘉義脆友推薦店家。",
+    "desc": "阿信美食，嘉義脆友推薦店家，也適合宵夜。",
     "map": "https://www.google.com/maps/search/?api=1&query=阿信美食 嘉義市",
     "tags": [
       "嘉義脆友推薦",
-      "新加入"
+      "新加入",
+      "宵夜模式"
     ]
   },
   {
@@ -5943,23 +5997,27 @@ const restaurants = [
   },
   {
     "name": "燃手串",
-    "area": "嘉義市",
+    "area": "西區",
     "types": [
-      "酒吧",
-      "日式"
+      "燒烤",
+      "日式",
+      "宵夜"
     ],
     "times": [
-      "晚餐"
+      "晚餐",
+      "宵夜"
     ],
     "price": "$200-400",
     "rating": "4.2",
-    "desc": "燃手串，嘉義脆友推薦店家。",
+    "desc": "嘉義燒烤手串與宵夜推薦，適合晚餐後想吃串燒。",
     "map": "https://www.google.com/maps/search/?api=1&query=燃手串 嘉義市",
     "tags": [
       "嘉義脆友推薦",
       "新加入",
       "適合聚餐",
-      "約會可選"
+      "約會可選",
+      "宵夜模式",
+      "嘉飽熊推薦"
     ]
   },
   {
@@ -7453,7 +7511,7 @@ const restaurants = [
     "name": "質醞 Essence Bistro 餐酒館",
     "area": "東區",
     "types": [
-      "餐酒館",
+      "酒吧",
       "義式"
     ],
     "times": [
@@ -7464,7 +7522,8 @@ const restaurants = [
     "desc": "餐酒館路線，適合晚餐、聚餐或約會。",
     "tags": [
       "新收錄",
-      "約會推薦"
+      "約會推薦",
+      "餐酒館"
     ],
     "map": "https://www.google.com/maps/search/?api=1&query=質醞 Essence Bistro 嘉義"
   },
@@ -7923,25 +7982,6 @@ const restaurants = [
     "map": "https://www.google.com/maps/search/?api=1&query=嘉樂福碳烤 烤肉 燒烤 BBQ（嘉佳福） 嘉義"
   },
   {
-    "name": "燃 手串",
-    "area": "西區",
-    "types": [
-      "燒烤",
-      "日式"
-    ],
-    "times": [
-      "晚餐",
-      "宵夜"
-    ],
-    "price": "$200-400",
-    "rating": "4.2",
-    "desc": "嘉義燒烤與宵夜推薦。",
-    "tags": [
-      "嘉飽熊推薦"
-    ],
-    "map": "https://www.google.com/maps/search/?api=1&query=燃 手串 嘉義"
-  },
-  {
     "name": "欣葉海鮮燒烤熱炒",
     "area": "東區",
     "types": [
@@ -7950,7 +7990,8 @@ const restaurants = [
       "海鮮"
     ],
     "times": [
-      "晚餐"
+      "晚餐",
+      "宵夜"
     ],
     "price": "$400-600",
     "rating": "4.5",
@@ -7986,6 +8027,7 @@ const restaurants = [
       "中式"
     ],
     "times": [
+      "午餐",
       "晚餐"
     ],
     "price": "$1-200",
@@ -8004,6 +8046,7 @@ const restaurants = [
       "中式"
     ],
     "times": [
+      "午餐",
       "晚餐"
     ],
     "price": "$1-200",
@@ -8197,7 +8240,7 @@ const restaurants = [
     "name": "綠洲oasis",
     "area": "東區",
     "types": [
-      "小吃"
+      "早餐"
     ],
     "times": [
       "早餐",
@@ -8216,7 +8259,7 @@ const restaurants = [
     "name": "二樂 TWO HOT CAFÉ",
     "area": "西區",
     "types": [
-      "小吃"
+      "早餐"
     ],
     "times": [
       "早餐",
@@ -8254,7 +8297,7 @@ const restaurants = [
     "name": "Two's 早•午食",
     "area": "東區",
     "types": [
-      "小吃"
+      "早餐"
     ],
     "times": [
       "早餐",
@@ -8292,7 +8335,7 @@ const restaurants = [
     "name": "Nonamelab",
     "area": "西區",
     "types": [
-      "小吃"
+      "早餐"
     ],
     "times": [
       "早餐",
@@ -8438,5 +8481,287 @@ const restaurants = [
       "嘉飽熊推薦"
     ],
     "map": "https://www.google.com/maps/search/?api=1&query=卡古（カク）早午餐 嘉義"
+  },
+  {
+    "name": "土佐手作早午餐",
+    "area": "嘉義市",
+    "types": [
+      "早餐"
+    ],
+    "times": [
+      "早餐",
+      "早午餐"
+    ],
+    "price": "$1-200",
+    "rating": "4.5",
+    "desc": "嘉義早餐與早午餐推薦。",
+    "tags": [
+      "早餐推薦",
+      "嘉飽熊推薦"
+    ],
+    "map": "https://www.google.com/maps/search/?api=1&query=土佐手作早午餐 嘉義"
+  },
+  {
+    "name": "豆奶攤",
+    "area": "嘉義市",
+    "types": [
+      "早餐",
+      "小吃",
+      "宵夜"
+    ],
+    "times": [
+      "早餐",
+      "宵夜"
+    ],
+    "price": "$1-200",
+    "rating": "4.5",
+    "desc": "嘉義宵夜與豆漿點心選擇，半夜想吃簡單熱食可選。",
+    "map": "https://www.google.com/maps/search/?api=1&query=豆奶攤 嘉義市",
+    "tags": [
+      "宵夜模式",
+      "嘉義脆友推薦"
+    ]
+  },
+  {
+    "name": "四海豆漿",
+    "area": "嘉義市",
+    "types": [
+      "早餐",
+      "小吃",
+      "宵夜"
+    ],
+    "times": [
+      "早餐",
+      "宵夜"
+    ],
+    "price": "$1-200",
+    "rating": "4.5",
+    "desc": "豆漿、燒餅、蛋餅類宵夜選擇，適合想吃輕一點。",
+    "map": "https://www.google.com/maps/search/?api=1&query=四海豆漿 嘉義市",
+    "tags": [
+      "宵夜模式",
+      "嘉義脆友推薦"
+    ]
+  },
+  {
+    "name": "永和60小麵攤",
+    "area": "嘉義市",
+    "types": [
+      "小吃",
+      "麵食",
+      "宵夜"
+    ],
+    "times": [
+      "宵夜"
+    ],
+    "price": "$1-200",
+    "rating": "4.5",
+    "desc": "平價麵攤宵夜，適合晚上想吃熱湯麵。",
+    "map": "https://www.google.com/maps/search/?api=1&query=永和60小麵攤 嘉義市",
+    "tags": [
+      "宵夜模式",
+      "嘉義脆友推薦"
+    ]
+  },
+  {
+    "name": "秀呷店宵夜",
+    "area": "嘉義市",
+    "types": [
+      "小吃",
+      "宵夜"
+    ],
+    "times": [
+      "宵夜"
+    ],
+    "price": "$1-200",
+    "rating": "4.5",
+    "desc": "店名就是宵夜取向，適合晚上嘴饞或晚餐後再吃。",
+    "map": "https://www.google.com/maps/search/?api=1&query=秀呷店宵夜 嘉義市",
+    "tags": [
+      "宵夜模式",
+      "嘉義脆友推薦"
+    ]
+  },
+  {
+    "name": "初次見麵鍋燒",
+    "area": "嘉義市",
+    "types": [
+      "鍋燒",
+      "小吃",
+      "宵夜"
+    ],
+    "times": [
+      "宵夜"
+    ],
+    "price": "$1-200",
+    "rating": "4.5",
+    "desc": "鍋燒麵與熱湯類宵夜，晚上想吃熱食可選。",
+    "map": "https://www.google.com/maps/search/?api=1&query=初次見麵鍋燒 嘉義市",
+    "tags": [
+      "宵夜模式",
+      "嘉義脆友推薦"
+    ]
+  },
+  {
+    "name": "古早味烤玉米",
+    "area": "嘉義市",
+    "types": [
+      "小吃",
+      "宵夜"
+    ],
+    "times": [
+      "宵夜"
+    ],
+    "price": "$1-200",
+    "rating": "4.5",
+    "desc": "古早味烤玉米宵夜，適合散步或飯後嘴饞。",
+    "map": "https://www.google.com/maps/search/?api=1&query=古早味烤玉米 嘉義市",
+    "tags": [
+      "宵夜模式",
+      "嘉義脆友推薦"
+    ]
+  },
+  {
+    "name": "玖壹伍深夜食光",
+    "area": "嘉義市",
+    "types": [
+      "小吃",
+      "宵夜"
+    ],
+    "times": [
+      "宵夜"
+    ],
+    "price": "$1-200",
+    "rating": "4.5",
+    "desc": "深夜食光類型宵夜，適合晚餐後或半夜覓食。",
+    "map": "https://www.google.com/maps/search/?api=1&query=玖壹伍深夜食光 嘉義市",
+    "tags": [
+      "宵夜模式",
+      "嘉義脆友推薦"
+    ]
+  },
+  {
+    "name": "胖叔叔",
+    "area": "嘉義市",
+    "types": [
+      "小吃",
+      "宵夜"
+    ],
+    "times": [
+      "宵夜"
+    ],
+    "price": "$1-200",
+    "rating": "4.5",
+    "desc": "嘉義宵夜小吃選項，適合晚上不知道吃什麼時抽到。",
+    "map": "https://www.google.com/maps/search/?api=1&query=胖叔叔 嘉義市",
+    "tags": [
+      "宵夜模式",
+      "嘉義脆友推薦"
+    ]
+  },
+  {
+    "name": "Mr.Night 古巴三明治",
+    "area": "嘉義市",
+    "types": [
+      "美式",
+      "小吃",
+      "宵夜"
+    ],
+    "times": [
+      "宵夜"
+    ],
+    "price": "$200-400",
+    "rating": "4.5",
+    "desc": "古巴三明治與深夜輕食，適合宵夜想吃不一樣的。",
+    "map": "https://www.google.com/maps/search/?api=1&query=Mr.Night 古巴三明治 嘉義市",
+    "tags": [
+      "宵夜模式",
+      "嘉義脆友推薦"
+    ]
+  },
+  {
+    "name": "泰舍 泰式料理 嘉義康達盛通店",
+    "area": "西區",
+    "types": [
+      "咖哩",
+      "泰式",
+      "異國料理"
+    ],
+    "times": [
+      "午餐",
+      "晚餐"
+    ],
+    "price": "$400-600",
+    "rating": "4.8",
+    "desc": "泰式料理，也歸入咖哩分類。",
+    "map": "https://www.google.com/maps/search/?api=1&query=泰舍 泰式料理 嘉義康達盛通店 嘉義市",
+    "tags": [
+      "嘉義脆友推薦",
+      "咖哩",
+      "泰式"
+    ]
+  },
+  {
+    "name": "裕屋商店｜ヒロヤ商店",
+    "area": "西區",
+    "types": [
+      "咖哩",
+      "日式"
+    ],
+    "times": [
+      "午餐",
+      "晚餐"
+    ],
+    "price": "$200-400",
+    "rating": "4.7",
+    "desc": "日式料理店，也歸入咖哩分類。",
+    "map": "https://www.google.com/maps/search/?api=1&query=裕屋商店 ヒロヤ商店 嘉義市",
+    "tags": [
+      "嘉義脆友推薦",
+      "咖哩",
+      "日式"
+    ]
+  },
+  {
+    "name": "丸飯食事處 嘉鄉店",
+    "area": "西區",
+    "types": [
+      "咖哩",
+      "日式"
+    ],
+    "times": [
+      "午餐",
+      "晚餐"
+    ],
+    "price": "$1-200",
+    "rating": "4.5",
+    "desc": "日式咖哩與食事處，午晚餐皆可。",
+    "map": "https://www.google.com/maps/search/?api=1&query=丸飯食事處 嘉鄉店 嘉義市",
+    "tags": [
+      "嘉義脆友推薦",
+      "咖哩",
+      "日式"
+    ]
+  },
+  {
+    "name": "榮 丼飯 定食",
+    "area": "西區",
+    "types": [
+      "咖哩",
+      "日式"
+    ],
+    "times": [
+      "晚餐"
+    ],
+    "price": "$200-400",
+    "rating": "4.8",
+    "desc": "丼飯與定食，也歸入咖哩分類。",
+    "map": "https://www.google.com/maps/search/?api=1&query=榮 丼飯 定食 新榮路166-1號 嘉義市",
+    "tags": [
+      "嘉義脆友推薦",
+      "咖哩",
+      "丼飯",
+      "定食"
+    ]
   }
 ];

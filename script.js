@@ -19,6 +19,74 @@ const talks = [
   "🐻 嘉飽熊：「晚點再猶豫，現在先吃。」"
 ];
 
+
+const NIGHT_SNACK_WHITELIST = [
+  "豆奶攤",
+  "四海豆漿",
+  "金馬肉粥",
+  "發哥黑白切",
+  "永和60小麵攤",
+  "秀呷店宵夜",
+  "初次見麵鍋燒",
+  "阿信美食",
+  "燃手串",
+  "古早味烤玉米",
+  "玖壹伍深夜食光",
+  "女巫貓葵",
+  "胖叔叔",
+  "Mr.Night 古巴三明治"
+];
+
+const BAR_KEYWORDS = ["酒吧", "bar", "調酒", "cocktail", "酒室", "酒館", "餐酒館", "bistro", "小酌", "微醺"];
+
+function textIncludesAny(text, keywords) {
+  const value = String(text || "").toLowerCase();
+  return keywords.some(keyword => value.includes(String(keyword).toLowerCase()));
+}
+
+function normalizeRestaurantName(value) {
+  return String(value || "")
+    .toLowerCase()
+    .replace(/[\s　·・()（）\-_／/]/g, "");
+}
+
+function isNightSnackWhitelisted(item) {
+  const itemName = normalizeRestaurantName(item.name);
+  return NIGHT_SNACK_WHITELIST.some(name =>
+    itemName.includes(normalizeRestaurantName(name))
+  );
+}
+
+function isBarRestaurant(item) {
+  const joined = [
+    item.name,
+    item.desc,
+    ...(item.types || []),
+    ...(item.tags || [])
+  ].join(" ");
+  return textIncludesAny(joined, BAR_KEYWORDS);
+}
+
+function isNightSnackRestaurant(item) {
+  if (isNightSnackWhitelisted(item)) return true;
+  if (isBarRestaurant(item)) return false;
+
+  return (item.types || []).includes("宵夜") || (item.tags || []).includes("宵夜模式");
+}
+
+function matchTime(item) {
+  if (selectedTime === "不限") return true;
+  if (selectedTime === "宵夜") return isNightSnackRestaurant(item);
+  return (item.times || []).includes(selectedTime);
+}
+
+function matchType(item) {
+  if (selectedType === "不限") return true;
+  if (selectedType === "宵夜") return isNightSnackRestaurant(item);
+  if (selectedType === "酒吧") return isBarRestaurant(item) && !isNightSnackRestaurant(item);
+  return (item.types || []).includes(selectedType);
+}
+
 const diceIcon = document.querySelector("#diceIcon");
 const resultName = document.querySelector("#resultName");
 const resultDesc = document.querySelector("#resultDesc");
@@ -109,8 +177,8 @@ bindGroup("typeGroup", ".category", v => selectedType = v);
 
 function candidates() {
   return restaurants.filter(r => {
-    const timeOk = selectedTime === "不限" || r.times.includes(selectedTime);
-    const typeOk = selectedType === "不限" || r.types.includes(selectedType);
+    const timeOk = matchTime(r);
+    const typeOk = matchType(r);
     const priceOk = selectedPrice === "不限" || r.price === selectedPrice;
     return timeOk && typeOk && priceOk;
   });
@@ -161,8 +229,7 @@ function setResult(chosen, shouldCount = true) {
   mapLink.classList.remove("disabled");
   renderTags(chosen);
 
-  renderTags({ tags: ["嘉義脆友推薦", "435間店家"] });
-updateFavoriteButton();
+  updateFavoriteButton();
 
   if (shouldCount) {
     addTopCount(chosen);

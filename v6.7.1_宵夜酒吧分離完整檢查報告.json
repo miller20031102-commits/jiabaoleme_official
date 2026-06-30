@@ -1,0 +1,29 @@
+{
+  "version": "v6.7.1_full_night_bar_separated_from_user_v6.7",
+  "base_file": "嘉飽了沒_v6.7_規則統一修正版(2).zip",
+  "total_restaurants": 445,
+  "night_snack_filter_count": 15,
+  "bar_filter_count": 17,
+  "night_bar_overlap_count": 0,
+  "added_or_updated_night_snack_whitelist": [
+    "豆奶攤",
+    "四海豆漿",
+    "金馬肉粥",
+    "發哥黑白切",
+    "永和60小麵攤",
+    "秀呷店宵夜",
+    "初次見麵鍋燒",
+    "阿信美食",
+    "燃手串",
+    "古早味烤玉米",
+    "玖壹伍深夜食光",
+    "女巫貓葵",
+    "胖叔叔",
+    "Mr.Night 古巴三明治"
+  ],
+  "notes": [
+    "宵夜分類改為白名單優先，酒吧關鍵字排除。",
+    "酒吧分類排除宵夜白名單，避免 Bar Door to Dream 類酒吧混進宵夜。",
+    "完整版已直接整合到 script.js 與 restaurants.js，不需要額外 hotfix script。"
+  ]
+}

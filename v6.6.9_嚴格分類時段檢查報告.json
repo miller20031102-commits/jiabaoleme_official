@@ -1,0 +1,496 @@
+{
+  "version": "v6.6.9_strict_time_type_fix",
+  "total_restaurants": 436,
+  "changed_count": 10,
+  "warning_count": 4,
+  "time_counts": {
+    "晚餐": 385,
+    "午餐": 343,
+    "早午餐": 72,
+    "下午茶": 42,
+    "宵夜": 23,
+    "早餐": 20
+  },
+  "type_counts": {
+    "小吃": 139,
+    "中式": 114,
+    "日式": 67,
+    "咖啡甜點": 43,
+    "火鍋": 30,
+    "雞肉飯": 23,
+    "早餐": 23,
+    "異國料理": 23,
+    "熱炒": 19,
+    "燒肉": 17,
+    "酒吧": 17,
+    "義式": 17,
+    "鐵板燒": 16,
+    "素食": 16,
+    "咖哩": 15,
+    "美式": 13,
+    "燒烤": 11,
+    "海鮮": 3,
+    "飲料": 1,
+    "餐酒館": 1,
+    "居酒屋": 1
+  },
+  "strict_rules": [
+    "早餐分類只允許早餐店型態；杏仁茶、豆漿、小籠湯包、雞肉飯等只可作為小吃+早餐時段。",
+    "宵夜只允許深夜食物需求：豆奶攤、豆漿、鹹酥雞、滷味、炸物、碳烤、串燒、豆花、麵店。",
+    "酒吧/餐酒館不可出現在宵夜。",
+    "米伴只能是鐵板燒，時段午餐/晚餐。",
+    "桔吉力修正為桔吉力早餐，分類早餐，時段早餐/早午餐。"
+  ],
+  "warnings": [
+    {
+      "name": "早餐好樂 和平店",
+      "issue": "非明確早餐店仍含早餐分類",
+      "types": [
+        "早餐"
+      ],
+      "times": [
+        "早午餐"
+      ]
+    },
+    {
+      "name": "孫記早餐",
+      "issue": "非明確早餐店仍含早餐分類",
+      "types": [
+        "早餐"
+      ],
+      "times": [
+        "早午餐"
+      ]
+    },
+    {
+      "name": "Nose man 鼻孔先生手作早午餐",
+      "issue": "非明確早餐店仍含早餐分類",
+      "types": [
+        "早餐"
+      ],
+      "times": [
+        "早午餐",
+        "午餐"
+      ]
+    },
+    {
+      "name": "好來早午餐",
+      "issue": "非明確早餐店仍含早餐分類",
+      "types": [
+        "早餐"
+      ],
+      "times": [
+        "早午餐",
+        "午餐"
+      ]
+    }
+  ],
+  "sample_changes": [
+    {
+      "name": "桔吉力早餐",
+      "reason": "修正桔吉力被誤判成小吃/午晚餐",
+      "before": {
+        "name": "桔吉力",
+        "area": "嘉義市",
+        "types": [
+          "小吃"
+        ],
+        "times": [
+          "午餐",
+          "晚餐"
+        ],
+        "price": "$1-200",
+        "rating": "—",
+        "desc": "桔吉力，嘉義在地推薦店家。",
+        "map": "https://www.google.com/maps/search/?api=1&query=桔吉力 嘉義市",
+        "tags": [
+          "嘉義脆友推薦",
+          "新加入"
+        ]
+      },
+      "after": {
+        "name": "桔吉力早餐",
+        "area": "西區",
+        "types": [
+          "早餐"
+        ],
+        "times": [
+          "早餐",
+          "早午餐"
+        ],
+        "price": "$1-200",
+        "rating": "—",
+        "desc": "嘉義早餐店，適合蛋餅、吐司、漢堡、鐵板麵等早餐需求。",
+        "map": "https://www.google.com/maps/search/?api=1&query=桔吉力早餐 嘉義市",
+        "tags": [
+          "早餐推薦",
+          "嘉飽熊推薦"
+        ]
+      }
+    },
+    {
+      "name": "土佐手作早午餐",
+      "reason": "補上遺漏早餐店",
+      "before": null,
+      "after": {
+        "name": "土佐手作早午餐",
+        "area": "嘉義市",
+        "types": [
+          "早餐"
+        ],
+        "times": [
+          "早餐",
+          "早午餐"
+        ],
+        "price": "$1-200",
+        "rating": "4.5",
+        "desc": "嘉義早餐與早午餐推薦。",
+        "tags": [
+          "早餐推薦",
+          "嘉飽熊推薦"
+        ],
+        "map": "https://www.google.com/maps/search/?api=1&query=土佐手作早午餐 嘉義"
+      }
+    },
+    {
+      "name": "米半",
+      "reason": "套用全站分類/時段規則",
+      "before": {
+        "name": "米半",
+        "area": "嘉義市",
+        "types": [
+          "義式",
+          "小吃"
+        ],
+        "times": [
+          "午餐",
+          "晚餐"
+        ],
+        "price": "$200-400",
+        "rating": "—",
+        "desc": "假日建議提前排隊或訂位的人氣店。",
+        "map": "https://www.google.com/maps/search/?api=1&query=米半 嘉義市",
+        "tags": [
+          "嘉義脆友推薦",
+          "適合聚餐",
+          "約會可選"
+        ]
+      },
+      "after": {
+        "name": "米半",
+        "area": "嘉義市",
+        "types": [
+          "鐵板燒"
+        ],
+        "times": [
+          "午餐",
+          "晚餐"
+        ],
+        "price": "$200-400",
+        "rating": "—",
+        "desc": "假日建議提前排隊或訂位的人氣店。",
+        "map": "https://www.google.com/maps/search/?api=1&query=米半 嘉義市",
+        "tags": [
+          "嘉義脆友推薦",
+          "適合聚餐",
+          "約會可選"
+        ]
+      }
+    },
+    {
+      "name": "阿娥手作蛋餅",
+      "reason": "套用全站分類/時段規則",
+      "before": {
+        "name": "阿娥手作蛋餅",
+        "area": "嘉義市",
+        "types": [
+          "小吃"
+        ],
+        "times": [
+          "午餐",
+          "晚餐"
+        ],
+        "price": "$1-200",
+        "rating": "—",
+        "desc": "阿娥手作蛋餅，嘉義在地推薦店家。",
+        "map": "https://www.google.com/maps/search/?api=1&query=阿娥手作蛋餅 嘉義市",
+        "tags": [
+          "嘉義脆友推薦",
+          "新加入"
+        ]
+      },
+      "after": {
+        "name": "阿娥手作蛋餅",
+        "area": "嘉義市",
+        "types": [
+          "早餐"
+        ],
+        "times": [
+          "早餐",
+          "早午餐"
+        ],
+        "price": "$1-200",
+        "rating": "—",
+        "desc": "阿娥手作蛋餅，嘉義在地推薦店家。",
+        "map": "https://www.google.com/maps/search/?api=1&query=阿娥手作蛋餅 嘉義市",
+        "tags": [
+          "嘉義脆友推薦",
+          "新加入"
+        ]
+      }
+    },
+    {
+      "name": "飛魚・魚雁商號碳烤吐司專賣店",
+      "reason": "套用全站分類/時段規則",
+      "before": {
+        "name": "飛魚・魚雁商號碳烤吐司專賣店",
+        "area": "嘉義市",
+        "types": [
+          "早餐"
+        ],
+        "times": [
+          "早午餐",
+          "午餐"
+        ],
+        "price": "$200-400",
+        "rating": "4.5",
+        "desc": "飛魚・魚雁商號碳烤吐司專賣店，嘉義脆友推薦店家。",
+        "map": "https://www.google.com/maps/search/?api=1&query=飛魚・魚雁商號碳烤吐司專賣店 嘉義市",
+        "tags": [
+          "嘉義脆友推薦",
+          "新加入"
+        ]
+      },
+      "after": {
+        "name": "飛魚・魚雁商號碳烤吐司專賣店",
+        "area": "嘉義市",
+        "types": [
+          "早餐"
+        ],
+        "times": [
+          "早餐",
+          "早午餐"
+        ],
+        "price": "$200-400",
+        "rating": "4.5",
+        "desc": "飛魚・魚雁商號碳烤吐司專賣店，嘉義脆友推薦店家。",
+        "map": "https://www.google.com/maps/search/?api=1&query=飛魚・魚雁商號碳烤吐司專賣店 嘉義市",
+        "tags": [
+          "嘉義脆友推薦",
+          "新加入"
+        ]
+      }
+    },
+    {
+      "name": "叉里包",
+      "reason": "套用全站分類/時段規則",
+      "before": {
+        "name": "叉里包",
+        "area": "嘉義市",
+        "types": [
+          "小吃",
+          "中式"
+        ],
+        "times": [
+          "午餐",
+          "晚餐"
+        ],
+        "price": "$200-400",
+        "rating": "4.8",
+        "desc": "叉里包，嘉義脆友推薦店家。",
+        "map": "https://www.google.com/maps/search/?api=1&query=叉里包 嘉義市",
+        "tags": [
+          "嘉義脆友推薦",
+          "新加入"
+        ]
+      },
+      "after": {
+        "name": "叉里包",
+        "area": "嘉義市",
+        "types": [
+          "早餐"
+        ],
+        "times": [
+          "早餐",
+          "早午餐"
+        ],
+        "price": "$200-400",
+        "rating": "4.8",
+        "desc": "叉里包，嘉義脆友推薦店家。",
+        "map": "https://www.google.com/maps/search/?api=1&query=叉里包 嘉義市",
+        "tags": [
+          "嘉義脆友推薦",
+          "新加入"
+        ]
+      }
+    },
+    {
+      "name": "綠洲oasis",
+      "reason": "套用全站分類/時段規則",
+      "before": {
+        "name": "綠洲oasis",
+        "area": "東區",
+        "types": [
+          "小吃"
+        ],
+        "times": [
+          "早餐",
+          "早午餐"
+        ],
+        "price": "$200-400",
+        "rating": "4.5",
+        "desc": "嘉義早餐與早午餐推薦。",
+        "tags": [
+          "早餐推薦",
+          "嘉飽熊推薦"
+        ],
+        "map": "https://www.google.com/maps/search/?api=1&query=綠洲oasis 嘉義"
+      },
+      "after": {
+        "name": "綠洲oasis",
+        "area": "東區",
+        "types": [
+          "早餐"
+        ],
+        "times": [
+          "早餐",
+          "早午餐"
+        ],
+        "price": "$200-400",
+        "rating": "4.5",
+        "desc": "嘉義早餐與早午餐推薦。",
+        "tags": [
+          "早餐推薦",
+          "嘉飽熊推薦"
+        ],
+        "map": "https://www.google.com/maps/search/?api=1&query=綠洲oasis 嘉義"
+      }
+    },
+    {
+      "name": "二樂 TWO HOT CAFÉ",
+      "reason": "套用全站分類/時段規則",
+      "before": {
+        "name": "二樂 TWO HOT CAFÉ",
+        "area": "西區",
+        "types": [
+          "小吃"
+        ],
+        "times": [
+          "早餐",
+          "早午餐"
+        ],
+        "price": "$200-400",
+        "rating": "4.5",
+        "desc": "嘉義早餐與早午餐推薦。",
+        "tags": [
+          "早餐推薦",
+          "嘉飽熊推薦"
+        ],
+        "map": "https://www.google.com/maps/search/?api=1&query=二樂 TWO HOT CAFÉ 嘉義"
+      },
+      "after": {
+        "name": "二樂 TWO HOT CAFÉ",
+        "area": "西區",
+        "types": [
+          "早餐"
+        ],
+        "times": [
+          "早餐",
+          "早午餐"
+        ],
+        "price": "$200-400",
+        "rating": "4.5",
+        "desc": "嘉義早餐與早午餐推薦。",
+        "tags": [
+          "早餐推薦",
+          "嘉飽熊推薦"
+        ],
+        "map": "https://www.google.com/maps/search/?api=1&query=二樂 TWO HOT CAFÉ 嘉義"
+      }
+    },
+    {
+      "name": "Two's 早•午食",
+      "reason": "套用全站分類/時段規則",
+      "before": {
+        "name": "Two's 早•午食",
+        "area": "東區",
+        "types": [
+          "小吃"
+        ],
+        "times": [
+          "早餐",
+          "早午餐"
+        ],
+        "price": "$200-400",
+        "rating": "4.4",
+        "desc": "嘉義早餐與早午餐推薦。",
+        "tags": [
+          "早餐推薦",
+          "嘉飽熊推薦"
+        ],
+        "map": "https://www.google.com/maps/search/?api=1&query=Two's 早•午食 嘉義"
+      },
+      "after": {
+        "name": "Two's 早•午食",
+        "area": "東區",
+        "types": [
+          "早餐"
+        ],
+        "times": [
+          "早餐",
+          "早午餐"
+        ],
+        "price": "$200-400",
+        "rating": "4.4",
+        "desc": "嘉義早餐與早午餐推薦。",
+        "tags": [
+          "早餐推薦",
+          "嘉飽熊推薦"
+        ],
+        "map": "https://www.google.com/maps/search/?api=1&query=Two's 早•午食 嘉義"
+      }
+    },
+    {
+      "name": "Nonamelab",
+      "reason": "套用全站分類/時段規則",
+      "before": {
+        "name": "Nonamelab",
+        "area": "西區",
+        "types": [
+          "小吃"
+        ],
+        "times": [
+          "早餐",
+          "早午餐"
+        ],
+        "price": "$200-400",
+        "rating": "4.4",
+        "desc": "嘉義早餐與早午餐推薦。",
+        "tags": [
+          "早餐推薦",
+          "嘉飽熊推薦"
+        ],
+        "map": "https://www.google.com/maps/search/?api=1&query=Nonamelab 嘉義"
+      },
+      "after": {
+        "name": "Nonamelab",
+        "area": "西區",
+        "types": [
+          "早餐"
+        ],
+        "times": [
+          "早餐",
+          "早午餐"
+        ],
+        "price": "$200-400",
+        "rating": "4.4",
+        "desc": "嘉義早餐與早午餐推薦。",
+        "tags": [
+          "早餐推薦",
+          "嘉飽熊推薦"
+        ],
+        "map": "https://www.google.com/maps/search/?api=1&query=Nonamelab 嘉義"
+      }
+    }
+  ]
+}

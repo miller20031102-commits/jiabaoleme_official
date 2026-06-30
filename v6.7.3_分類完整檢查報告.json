@@ -1,0 +1,384 @@
+{
+  "version": "v6.7.3_分類校正版",
+  "base": "嘉飽了沒_v6.7.2_補回桔吉力完整版",
+  "total_restaurants": 444,
+  "why_jijili_looked_missing": "上一版補回桔吉力時，沒有整筆沿用原始資料；它被放回 restaurants.js，但 times 被寫成 早餐/午餐，導致早午餐時段找不到。",
+  "changes": [
+    {
+      "name": "桔吉力早餐",
+      "before": {
+        "types": [
+          "早餐",
+          "早午餐"
+        ],
+        "times": [
+          "早餐",
+          "午餐"
+        ]
+      },
+      "after": {
+        "types": [
+          "早餐"
+        ],
+        "times": [
+          "早餐",
+          "早午餐"
+        ]
+      }
+    },
+    {
+      "name": "豆奶攤",
+      "before": {
+        "types": [
+          "早餐",
+          "小吃",
+          "宵夜"
+        ],
+        "times": [
+          "宵夜"
+        ]
+      },
+      "after": {
+        "types": [
+          "早餐",
+          "小吃",
+          "宵夜"
+        ],
+        "times": [
+          "早餐",
+          "宵夜"
+        ]
+      }
+    },
+    {
+      "name": "四海豆漿",
+      "before": {
+        "types": [
+          "早餐",
+          "小吃",
+          "宵夜"
+        ],
+        "times": [
+          "宵夜"
+        ]
+      },
+      "after": {
+        "types": [
+          "早餐",
+          "小吃",
+          "宵夜"
+        ],
+        "times": [
+          "早餐",
+          "宵夜"
+        ]
+      }
+    },
+    {
+      "name": "Second Floor 貳樓嘉義秀泰店",
+      "before": {
+        "types": [
+          "美式"
+        ],
+        "times": [
+          "午餐",
+          "晚餐"
+        ]
+      },
+      "after": {
+        "types": [
+          "美式",
+          "早餐"
+        ],
+        "times": [
+          "早午餐",
+          "午餐",
+          "晚餐"
+        ]
+      }
+    },
+    {
+      "name": "小洋蔥",
+      "before": {
+        "types": [
+          "義式",
+          "小吃"
+        ],
+        "times": [
+          "午餐",
+          "晚餐"
+        ]
+      },
+      "after": {
+        "types": [
+          "義式",
+          "小吃"
+        ],
+        "times": [
+          "早午餐",
+          "午餐",
+          "晚餐"
+        ]
+      }
+    },
+    {
+      "name": "質醞 Essence Bistro 餐酒館",
+      "before": {
+        "types": [
+          "餐酒館",
+          "義式"
+        ],
+        "tags": [
+          "新收錄",
+          "約會推薦",
+          "餐酒館"
+        ]
+      },
+      "after": {
+        "types": [
+          "酒吧",
+          "義式"
+        ],
+        "tags": [
+          "新收錄",
+          "約會推薦",
+          "餐酒館"
+        ]
+      }
+    },
+    {
+      "name": "燃手串",
+      "before": {
+        "main": {
+          "name": "燃手串",
+          "area": "嘉義市",
+          "types": [
+            "日式",
+            "宵夜"
+          ],
+          "times": [
+            "晚餐",
+            "宵夜"
+          ],
+          "price": "$200-400",
+          "rating": "4.2",
+          "desc": "燃手串，嘉義脆友推薦店家，也適合宵夜。",
+          "map": "https://www.google.com/maps/search/?api=1&query=燃手串 嘉義市",
+          "tags": [
+            "嘉義脆友推薦",
+            "新加入",
+            "適合聚餐",
+            "約會可選",
+            "宵夜模式"
+          ]
+        },
+        "removed_duplicate": {
+          "name": "燃 手串",
+          "area": "西區",
+          "types": [
+            "燒烤",
+            "日式"
+          ],
+          "times": [
+            "晚餐",
+            "宵夜"
+          ],
+          "price": "$200-400",
+          "rating": "4.2",
+          "desc": "嘉義燒烤與宵夜推薦。",
+          "tags": [
+            "嘉飽熊推薦"
+          ],
+          "map": "https://www.google.com/maps/search/?api=1&query=燃 手串 嘉義"
+        }
+      },
+      "after": {
+        "name": "燃手串",
+        "area": "西區",
+        "types": [
+          "燒烤",
+          "日式",
+          "宵夜"
+        ],
+        "times": [
+          "晚餐",
+          "宵夜"
+        ],
+        "price": "$200-400",
+        "rating": "4.2",
+        "desc": "嘉義燒烤手串與宵夜推薦，適合晚餐後想吃串燒。",
+        "map": "https://www.google.com/maps/search/?api=1&query=燃手串 嘉義市",
+        "tags": [
+          "嘉義脆友推薦",
+          "新加入",
+          "適合聚餐",
+          "約會可選",
+          "宵夜模式",
+          "嘉飽熊推薦"
+        ]
+      }
+    }
+  ],
+  "counts_by_type": {
+    "咖哩": 15,
+    "燒肉": 17,
+    "火鍋": 30,
+    "美式": 14,
+    "日式": 66,
+    "中式": 114,
+    "小吃": 148,
+    "咖啡甜點": 43,
+    "早餐": 26,
+    "義式": 17,
+    "異國料理": 23,
+    "酒吧": 17,
+    "宵夜": 15,
+    "熱炒": 19,
+    "鐵板燒": 16,
+    "素食": 16,
+    "燒烤": 11
+  },
+  "counts_by_time": {
+    "早午餐": 74,
+    "午餐": 345,
+    "下午茶": 42,
+    "晚餐": 384,
+    "宵夜": 15
+  },
+  "night_snack_list": [
+    "金馬肉粥",
+    "發哥黑白切海鮮快炒",
+    "女巫貓葵",
+    "阿信美食",
+    "燃手串",
+    "天子意麵",
+    "豆奶攤",
+    "四海豆漿",
+    "永和60小麵攤",
+    "秀呷店宵夜",
+    "初次見麵鍋燒",
+    "古早味烤玉米",
+    "玖壹伍深夜食光",
+    "胖叔叔",
+    "Mr.Night 古巴三明治"
+  ],
+  "bar_list": [
+    "COP bar-Cocktails Of Pioneers",
+    "Bar Door to Dream",
+    "CASA",
+    "Bar SKITZ 過門",
+    "秉森酒室",
+    "斗酒",
+    "誠侍酒吧",
+    "HOT Hi-end Of Tiki",
+    "O'my bar",
+    "BLACK i 黑眼圈",
+    "鵲鷗 Chill",
+    "質醞義式餐酒館 Essence Bistro",
+    "福芳酒食 FUFUN",
+    "The JiaJiu Place 呷酒餐酒館",
+    "伴醉 Banzui",
+    "質醞 Essence Bistro 餐酒館",
+    "碳所音樂餐廳"
+  ],
+  "night_bar_overlap": [],
+  "duplicate_name_candidates_remaining": [
+    [
+      "來呷飯 川食堂 嘉義中山店",
+      "來呷飯 川食堂(嘉義中山店)"
+    ],
+    [
+      "澄澄 Kitchen & Market",
+      "澄澄 Kitchen& Market"
+    ],
+    [
+      "Nose man 鼻孔先生手作早午餐",
+      "Nose man鼻孔先生手作早午餐"
+    ],
+    [
+      "福芳酒食 FUFUN",
+      "福芳酒食FUFUN"
+    ],
+    [
+      "88快炒",
+      "88 快炒"
+    ],
+    [
+      "米伴鐵板料理",
+      "米伴 鐵板料理"
+    ]
+  ],
+  "orphan_type_labels_remaining": [
+    {
+      "name": "山而已原葉茶本舖",
+      "extra_types": [
+        "飲料"
+      ],
+      "visible_types": [
+        "中式"
+      ]
+    },
+    {
+      "name": "1961海鮮碳烤",
+      "extra_types": [
+        "海鮮"
+      ],
+      "visible_types": [
+        "燒烤"
+      ]
+    },
+    {
+      "name": "欣葉海鮮燒烤熱炒",
+      "extra_types": [
+        "海鮮"
+      ],
+      "visible_types": [
+        "燒烤",
+        "熱炒"
+      ]
+    },
+    {
+      "name": "福芳酒食FUFUN",
+      "extra_types": [
+        "居酒屋"
+      ],
+      "visible_types": [
+        "熱炒"
+      ]
+    },
+    {
+      "name": "常旺熱炒",
+      "extra_types": [
+        "海鮮"
+      ],
+      "visible_types": [
+        "熱炒"
+      ]
+    },
+    {
+      "name": "永和60小麵攤",
+      "extra_types": [
+        "麵食"
+      ],
+      "visible_types": [
+        "小吃",
+        "宵夜"
+      ]
+    },
+    {
+      "name": "初次見麵鍋燒",
+      "extra_types": [
+        "鍋燒"
+      ],
+      "visible_types": [
+        "小吃",
+        "宵夜"
+      ]
+    }
+  ],
+  "notes": [
+    "宵夜時段按鈕已改用與宵夜分類相同的白名單判斷，不再直接吃所有 times 含宵夜的店。",
+    "燃手串與「燃 手串」已合併，避免同一間在宵夜出現兩次。",
+    "仍保留部分疑似同店不同寫法作為檢查候選，避免誤刪使用者原本收錄。"
+  ]
+}

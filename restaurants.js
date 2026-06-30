@@ -6883,5 +6883,282 @@ const restaurants = [
       "嘉義脆友推薦",
       "新加入"
     ]
+  },
+  {
+    "name": "皇家豆花",
+    "area": "嘉義",
+    "types": [
+      "咖啡甜點"
+    ],
+    "times": [
+      "午餐",
+      "晚餐"
+    ],
+    "price": "$200-400",
+    "rating": "4.5",
+    "desc": "社群推薦新增店家",
+    "tags": [
+      "嘉義脆友推薦"
+    ],
+    "map": "https://www.google.com/maps/search/?api=1&query=皇家豆花 嘉義"
+  },
+  {
+    "name": "山柒-披薩製所",
+    "area": "嘉義",
+    "types": [
+      "義式",
+      "咖啡甜點"
+    ],
+    "times": [
+      "午餐",
+      "晚餐"
+    ],
+    "price": "$200-400",
+    "rating": "4.5",
+    "desc": "社群推薦新增店家",
+    "tags": [
+      "嘉義脆友推薦"
+    ],
+    "map": "https://www.google.com/maps/search/?api=1&query=山柒-披薩製所 嘉義"
+  },
+  {
+    "name": "灰燼雞蛋糕",
+    "area": "嘉義",
+    "types": [
+      "咖啡甜點"
+    ],
+    "times": [
+      "午餐",
+      "晚餐"
+    ],
+    "price": "$200-400",
+    "rating": "4.5",
+    "desc": "社群推薦新增店家",
+    "tags": [
+      "嘉義脆友推薦"
+    ],
+    "map": "https://www.google.com/maps/search/?api=1&query=灰燼雞蛋糕 嘉義"
+  },
+  {
+    "name": "友刈包",
+    "area": "嘉義",
+    "types": [
+      "小吃"
+    ],
+    "times": [
+      "午餐",
+      "晚餐"
+    ],
+    "price": "$200-400",
+    "rating": "4.5",
+    "desc": "社群推薦新增店家",
+    "tags": [
+      "嘉義脆友推薦"
+    ],
+    "map": "https://www.google.com/maps/search/?api=1&query=友刈包 嘉義"
+  },
+  {
+    "name": "瘋Beef 丼飽處",
+    "area": "嘉義",
+    "types": [
+      "日式"
+    ],
+    "times": [
+      "午餐",
+      "晚餐"
+    ],
+    "price": "$200-400",
+    "rating": "4.5",
+    "desc": "社群推薦新增店家",
+    "tags": [
+      "嘉義脆友推薦"
+    ],
+    "map": "https://www.google.com/maps/search/?api=1&query=瘋Beef 丼飽處 嘉義"
+  },
+  {
+    "name": "花亭壽司",
+    "area": "嘉義",
+    "types": [
+      "日式"
+    ],
+    "times": [
+      "午餐",
+      "晚餐"
+    ],
+    "price": "$200-400",
+    "rating": "4.5",
+    "desc": "社群推薦新增店家",
+    "tags": [
+      "嘉義脆友推薦"
+    ],
+    "map": "https://www.google.com/maps/search/?api=1&query=花亭壽司 嘉義"
+  },
+  {
+    "name": "松阪家",
+    "area": "嘉義",
+    "types": [
+      "日式"
+    ],
+    "times": [
+      "午餐",
+      "晚餐"
+    ],
+    "price": "$200-400",
+    "rating": "4.5",
+    "desc": "社群推薦新增店家",
+    "tags": [
+      "嘉義脆友推薦"
+    ],
+    "map": "https://www.google.com/maps/search/?api=1&query=松阪家 嘉義"
+  },
+  {
+    "name": "新御野飯館",
+    "area": "嘉義",
+    "types": [
+      "日式"
+    ],
+    "times": [
+      "午餐",
+      "晚餐"
+    ],
+    "price": "$200-400",
+    "rating": "4.5",
+    "desc": "社群推薦新增店家",
+    "tags": [
+      "嘉義脆友推薦"
+    ],
+    "map": "https://www.google.com/maps/search/?api=1&query=新御野飯館 嘉義"
+  },
+  {
+    "name": "濟濟一堂",
+    "area": "嘉義",
+    "types": [
+      "中式"
+    ],
+    "times": [
+      "午餐",
+      "晚餐"
+    ],
+    "price": "$200-400",
+    "rating": "4.5",
+    "desc": "社群推薦新增店家",
+    "tags": [
+      "嘉義脆友推薦"
+    ],
+    "map": "https://www.google.com/maps/search/?api=1&query=濟濟一堂 嘉義"
+  },
+  {
+    "name": "感恩火雞肉飯",
+    "area": "嘉義",
+    "types": [
+      "小吃",
+      "中式"
+    ],
+    "times": [
+      "午餐",
+      "晚餐"
+    ],
+    "price": "$200-400",
+    "rating": "4.5",
+    "desc": "社群推薦新增店家",
+    "tags": [
+      "嘉義脆友推薦"
+    ],
+    "map": "https://www.google.com/maps/search/?api=1&query=感恩火雞肉飯 嘉義"
+  },
+  {
+    "name": "阿忠羊肉",
+    "area": "嘉義",
+    "types": [
+      "小吃",
+      "中式",
+      "宵夜"
+    ],
+    "times": [
+      "午餐",
+      "晚餐"
+    ],
+    "price": "$200-400",
+    "rating": "4.5",
+    "desc": "社群推薦新增店家",
+    "tags": [
+      "嘉義脆友推薦"
+    ],
+    "map": "https://www.google.com/maps/search/?api=1&query=阿忠羊肉 嘉義"
+  },
+  {
+    "name": "碖 炭火夯肉飯",
+    "area": "嘉義",
+    "types": [
+      "小吃",
+      "中式"
+    ],
+    "times": [
+      "午餐",
+      "晚餐"
+    ],
+    "price": "$200-400",
+    "rating": "4.5",
+    "desc": "社群推薦新增店家",
+    "tags": [
+      "嘉義脆友推薦"
+    ],
+    "map": "https://www.google.com/maps/search/?api=1&query=碖 炭火夯肉飯 嘉義"
+  },
+  {
+    "name": "炸的三角骨專賣",
+    "area": "嘉義",
+    "types": [
+      "小吃",
+      "宵夜"
+    ],
+    "times": [
+      "午餐",
+      "晚餐"
+    ],
+    "price": "$200-400",
+    "rating": "4.5",
+    "desc": "社群推薦新增店家",
+    "tags": [
+      "嘉義脆友推薦"
+    ],
+    "map": "https://www.google.com/maps/search/?api=1&query=炸的三角骨專賣 嘉義"
+  },
+  {
+    "name": "北門沙鍋魚頭",
+    "area": "嘉義",
+    "types": [
+      "小吃",
+      "中式"
+    ],
+    "times": [
+      "午餐",
+      "晚餐"
+    ],
+    "price": "$200-400",
+    "rating": "4.5",
+    "desc": "社群推薦新增店家",
+    "tags": [
+      "嘉義脆友推薦"
+    ],
+    "map": "https://www.google.com/maps/search/?api=1&query=北門沙鍋魚頭 嘉義"
+  },
+  {
+    "name": "雄讚溫體肉品現撈海鮮極品鍋",
+    "area": "嘉義",
+    "types": [
+      "火鍋"
+    ],
+    "times": [
+      "午餐",
+      "晚餐"
+    ],
+    "price": "$200-400",
+    "rating": "4.5",
+    "desc": "社群推薦新增店家",
+    "tags": [
+      "嘉義脆友推薦"
+    ],
+    "map": "https://www.google.com/maps/search/?api=1&query=雄讚溫體肉品現撈海鮮極品鍋 嘉義"
   }
 ];

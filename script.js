@@ -418,3 +418,26 @@ updateCount();
 renderTopList();
 renderFavoriteList();
 updateFavoriteButton();
+
+
+// v6.7.5 推薦店家入口：正式 Google 表單網址放這裡
+const RECOMMEND_FORM_URL = "https://forms.gle/X3v3eB8JikEPe9L9A";
+
+function setupRecommendStoreButtons() {
+  const buttons = [
+    document.querySelector("#recommendStoreBtn"),
+    document.querySelector("#recommendStoreBtn2")
+  ].filter(Boolean);
+
+  buttons.forEach(btn => {
+    btn.href = RECOMMEND_FORM_URL;
+    btn.addEventListener("click", event => {
+      if (RECOMMEND_FORM_URL.includes("REPLACE_WITH_YOUR_FORM_LINK")) {
+        event.preventDefault();
+        alert("推薦店家表單連結還沒換上！請到 script.js 把 RECOMMEND_FORM_URL 改成你的 Google 表單網址。");
+      }
+    });
+  });
+}
+
+setupRecommendStoreButtons();

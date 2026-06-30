@@ -260,3 +260,159 @@ body.dark .mode-btn{
   background:linear-gradient(135deg,#3a2d1f,#5a3d1d);
   border-color:rgba(255,207,104,.28);
 }
+
+
+/* v6.7.5 回報店家 / 推薦店家入口 */
+.quick-report{
+  margin:18px auto 0;
+  width:min(430px,100%);
+  padding:14px;
+  border:1px dashed rgba(223,126,23,.35);
+  border-radius:22px;
+  background:rgba(255,248,239,.76);
+}
+.quick-report p{
+  margin:0 0 10px;
+  color:var(--muted);
+  font-size:14px;
+  font-weight:900;
+}
+.recommend-mini-btn,
+.recommend-btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:6px;
+  text-decoration:none;
+  border:0;
+  cursor:pointer;
+  font-weight:950;
+}
+.recommend-mini-btn{
+  width:100%;
+  border-radius:999px;
+  padding:12px 16px;
+  background:linear-gradient(135deg,#ffe7a8,#ffb85b);
+  color:#4a2a16;
+  box-shadow:0 8px 0 #df8c28,0 13px 22px rgba(255,168,61,.18);
+}
+.recommend-mini-btn:active{transform:translateY(5px);box-shadow:0 3px 0 #df8c28,0 8px 15px rgba(255,168,61,.14)}
+.recommend-card{
+  margin-top:16px;
+  padding:18px;
+  display:grid;
+  gap:13px;
+  position:relative;
+  overflow:hidden;
+  background:linear-gradient(135deg,rgba(255,255,255,.9),rgba(255,239,214,.82));
+}
+.recommend-card:before{
+  content:"";
+  position:absolute;
+  width:130px;
+  height:130px;
+  border-radius:999px;
+  right:-45px;
+  top:-50px;
+  background:rgba(255,168,61,.18);
+}
+.recommend-icon{
+  width:54px;
+  height:54px;
+  border-radius:20px;
+  display:grid;
+  place-items:center;
+  font-size:30px;
+  background:rgba(255,255,255,.72);
+  border:1px solid var(--line);
+  box-shadow:var(--shadow);
+}
+.recommend-label{
+  display:inline-flex;
+  padding:6px 10px;
+  border-radius:999px;
+  background:rgba(120,189,120,.16);
+  color:#4c984c;
+  font-size:12px;
+  font-weight:950;
+}
+.recommend-copy h3{
+  margin:8px 0 7px;
+  font-size:24px;
+  line-height:1.18;
+  letter-spacing:-.04em;
+}
+.recommend-copy p{
+  margin:0;
+  color:var(--muted);
+  line-height:1.65;
+  font-weight:800;
+}
+.recommend-btn{
+  width:100%;
+  min-height:50px;
+  border-radius:18px;
+  padding:14px 16px;
+  background:linear-gradient(135deg,#78bd78,#5aac5a);
+  color:#fff;
+  box-shadow:0 9px 0 #428d42,0 14px 22px rgba(90,172,90,.18);
+}
+.recommend-btn:active{transform:translateY(5px);box-shadow:0 4px 0 #428d42,0 8px 15px rgba(90,172,90,.14)}
+.recommend-fields{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+}
+.recommend-fields span{
+  padding:7px 10px;
+  border-radius:999px;
+  background:rgba(255,255,255,.65);
+  border:1px solid var(--line);
+  color:var(--muted);
+  font-size:12px;
+  font-weight:900;
+}
+body.dark .quick-report,
+body.dark .recommend-card{
+  background:rgba(43,36,31,.88);
+}
+@media(min-width:650px){
+  .recommend-card{
+    grid-template-columns:auto 1fr;
+    align-items:center;
+  }
+  .recommend-btn,
+  .recommend-fields{
+    grid-column:1 / -1;
+  }
+}
+
+/* v6.7.7 抖內支持入口：放在推薦店家入口後面，避免搶主流程 */
+.donate-card{
+  margin-top:16px;
+  text-align:center;
+  background:linear-gradient(135deg,rgba(255,248,239,.94),rgba(255,235,206,.86));
+}
+.donate-card h3{
+  margin:0 0 10px;
+  font-size:24px;
+  letter-spacing:-.03em;
+}
+.donate-card p{
+  margin:10px auto;
+  max-width:620px;
+  color:var(--muted);
+  line-height:1.65;
+  font-weight:850;
+}
+.donate-qr{
+  max-width:320px;
+  width:100%;
+  border-radius:18px;
+  border:1px solid var(--line);
+  box-shadow:0 16px 38px rgba(112,72,26,.14);
+  margin-top:10px;
+}
+body.dark .donate-card{
+  background:rgba(43,36,31,.88);
+}

@@ -1,0 +1,16 @@
+{
+  "version": "v6.7.6",
+  "base": "v6.7.5 推薦店家入口完整版",
+  "form_url": "https://forms.gle/X3v3eB8JikEPe9L9A",
+  "changes": [
+    "已把推薦店家/回報店家入口連到正式 Google 表單",
+    "index.html 兩個入口 href 已替換",
+    "script.js RECOMMEND_FORM_URL 已替換",
+    "保留 v6.7.5 的咖哩分類與宵夜/酒吧分離規則"
+  ],
+  "checked_files": [
+    "index.html",
+    "script.js",
+    "README.md"
+  ]
+}

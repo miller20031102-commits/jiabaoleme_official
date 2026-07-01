@@ -48,7 +48,7 @@ gtag('config', 'G-E8BYGM1C35');
 
       <div class="label">CHIAYI FOOD DICE</div>
       <h2>今天嘉義市<br><strong>吃什麼？</strong></h2>
-      <p>選條件，或直接按骰子。嘉飽熊幫你決定！</p>
+      <p>選條件、搜尋店名，或直接按骰子。嘉飽熊幫你決定！</p>
 
       <button id="rollBtn" class="roll-btn">
         <span id="diceIcon">🎲</span>
@@ -56,10 +56,25 @@ gtag('config', 'G-E8BYGM1C35');
       </button>
 
       <button id="luckyBtn" class="lucky-btn">我懶得選，隨便啦！</button>
+
+      <div class="special-modes">
+        <button id="chickenModeBtn" class="mode-btn">🐔 雞肉飯模式</button>
+        <button id="resetBtn" class="mode-btn soft">✨ 重置條件</button>
+      </div>
 </section>
 
     <section class="card filters">
       <div class="filter-head">
+        <span>🔎</span>
+        <h3>直接搜尋</h3>
+      </div>
+      <div class="search-box">
+        <input id="searchInput" type="search" inputmode="search" placeholder="輸入店名、雞肉飯、拉麵、咖哩…" autocomplete="off" />
+        <button id="clearSearchBtn" type="button" aria-label="清除搜尋">×</button>
+      </div>
+      <p id="filterHint" class="filter-hint">目前不限條件，直接骰一間嘉義美食。</p>
+
+      <div class="filter-head mt">
         <span>🕒</span>
         <h3>時段</h3>
       </div>
@@ -113,13 +128,13 @@ gtag('config', 'G-E8BYGM1C35');
 
     <section class="result card" id="resultCard">
       <div class="result-top">
-        <span class="badge">今日食運</span>
-        <span id="countText" class="count">符合 445 間</span>
+        <span class="badge" id="modeBadge">今日食運</span>
+        <span id="countText" class="count">符合 460 間</span>
       </div>
 
       <h3 id="resultName">按骰子開始！</h3>
       <p id="bearTalk">🐻 嘉飽熊：「不要再問大家吃什麼了，我來幫你。」</p>
-      <p id="resultDesc">已收錄嘉義市 444 間店家，包含早餐、宵夜、酒吧、義式、異國料理與各式美食。</p>
+      <p id="resultDesc">已收錄嘉義市 460 間店家，包含早餐、宵夜、酒吧、義式、異國料理與各式美食。</p>
 
       <div class="meta">
         <span id="areaText">📍 嘉義市</span>
@@ -136,6 +151,7 @@ gtag('config', 'G-E8BYGM1C35');
         <a id="mapLink" class="map-btn disabled" href="#" target="_blank" rel="noopener">打開 Google 地圖</a>
         <button id="favoriteBtn" class="favorite-btn disabled">♡ 收藏這間</button>
         <button id="againBtn" class="again-btn">再骰一次</button>
+        <button id="copyBtn" class="copy-btn disabled">複製店名</button>
       </div>
     </section>
 
@@ -160,26 +176,27 @@ gtag('config', 'G-E8BYGM1C35');
 
     <section class="card stats">
       <h3>目前收錄</h3>
-      <div class="stats-grid">
-        <div><b>17</b><span>燒肉</span></div>
-        <div><b>21</b><span>咖哩</span></div>
-        <div><b>30</b><span>火鍋</span></div>
-        <div><b>14</b><span>美式</span></div>
-        <div><b>67</b><span>日式</span></div>
-        <div><b>114</b><span>中式</span></div>
-        <div><b>148</b><span>小吃</span></div>
-        <div><b>43</b><span>咖啡甜點</span></div>
-        <div><b>26</b><span>早餐</span></div>
+      <div class="stats-grid" id="statsGrid">
+        <div><b>18</b><span>燒肉</span></div>
+        <div><b>22</b><span>咖哩</span></div>
+        <div><b>32</b><span>火鍋</span></div>
+        <div><b>18</b><span>美式</span></div>
+        <div><b>73</b><span>日式</span></div>
+        <div><b>125</b><span>中式</span></div>
+        <div><b>160</b><span>小吃</span></div>
+        <div><b>44</b><span>咖啡甜點</span></div>
+        <div><b>28</b><span>早餐</span></div>
         <div><b>17</b><span>義式</span></div>
-        <div><b>23</b><span>異國料理</span></div>
+        <div><b>28</b><span>異國料理</span></div>
         <div><b>17</b><span>酒吧</span></div>
-        <div><b>15</b><span>宵夜</span></div>
-        <div><b>19</b><span>熱炒</span></div>
+        <div><b>17</b><span>宵夜</span></div>
+        <div><b>20</b><span>熱炒</span></div>
         <div><b>16</b><span>鐵板燒</span></div>
         <div><b>16</b><span>素食</span></div>
         <div><b>11</b><span>燒烤</span></div>
+        <div><b>26</b><span>雞肉飯</span></div>
       </div>
-      <p>目前共收錄 445 間店家。店家可重複歸類，所以分類數加總會大於實際店數。</p>
+      <p>目前共收錄 470 間店家。店家可重複歸類，所以分類數加總會大於實際店數。</p>
     </section>
 
 
@@ -188,29 +205,26 @@ gtag('config', 'G-E8BYGM1C35');
       <div class="recommend-icon">📮</div>
       <div class="recommend-copy">
         <span class="recommend-label">店家回報入口</span>
-        <h3>你私藏的嘉義好店，也丟給嘉飽熊！</h3>
-        <p>看到漏掉的店、分類錯的店，或想推薦新店，都可以回報。表單會收店名、地址、類型、推薦原因、停車資訊和價格區間。</p>
+        <h3>有漏掉的好店嗎？丟給嘉飽熊！</h3>
+        <p>店名、地址或想補充的特色都可以，資料不用很完整，我會慢慢整理進去。</p>
       </div>
       <a id="recommendStoreBtn2" class="recommend-btn" href="https://forms.gle/X3v3eB8JikEPe9L9A" target="_blank" rel="noopener">
-        ✨ 回報店家 / 推薦店家
+        ✨ 推薦 / 回報店家
       </a>
       <div class="recommend-fields">
         <span>店名</span>
         <span>地址</span>
-        <span>類型</span>
-        <span>推薦原因</span>
-        <span>是否有停車</span>
-        <span>價格區間</span>
+        <span>特色</span>
       </div>
     </section>
 
 
 
     <section class="card donate-card" id="donateSupport">
-      <h3>🧋 支持嘉飽熊繼續更新</h3>
-      <p>這個網站是一間一間人工整理的，如果有幫你找到好吃的，可以請我喝杯飲料，支持我繼續更新更多嘉義美食。</p>
-      <p><strong>⚠️ 請使用「街口支付 App」掃描下方 QR Code。</strong><br>一般手機相機或 Google Lens 掃描可能會跳轉至 TWQR 頁面，無法直接付款。</p>
-      <p>你的支持會變成更多店家、更少選擇障礙，以及更多深夜更新 🌙</p>
+      <h3>🥤 請嘉飽熊喝飲料</h3>
+      <p>這個網站目前是我一間一間整理的。如果有幫你解決「今天到底吃什麼」，可以請我喝杯飲料，讓我繼續補更多嘉義美食。</p>
+      <p><strong>⚠️ 請使用「街口支付 App」掃描下方 QR Code。</strong><br>一般手機相機或 Google Lens 掃描，可能會跳到 TWQR 頁面，無法直接付款。</p>
+      <p>你的支持會變成更多店家、更多分類、更多模式，以及更多深夜更新 🌙</p>
       <img src="jkopay_qr.png" alt="街口支付抖內 QR Code" class="donate-qr">
     </section>
   </main>

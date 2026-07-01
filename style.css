@@ -262,6 +262,92 @@ body.dark .mode-btn{
 }
 
 
+/* v6.7.11 使用者體驗優化 */
+.search-box{
+  display:grid;
+  grid-template-columns:1fr auto;
+  gap:8px;
+  align-items:center;
+  padding:8px;
+  border:1px solid var(--line);
+  border-radius:22px;
+  background:rgba(255,255,255,.68);
+}
+.search-box input{
+  width:100%;
+  min-height:46px;
+  border:0;
+  outline:0;
+  background:transparent;
+  color:var(--text);
+  font-size:16px;
+  font-weight:850;
+  padding:0 10px;
+}
+.search-box input::placeholder{color:var(--muted);font-weight:800}
+.search-box button{
+  width:40px;
+  height:40px;
+  border:1px solid var(--line);
+  border-radius:999px;
+  background:rgba(255,255,255,.78);
+  color:var(--muted);
+  font-size:24px;
+  font-weight:900;
+  cursor:pointer;
+}
+.filter-hint{
+  margin:10px 4px 0;
+  color:var(--muted);
+  font-size:13px;
+  line-height:1.5;
+  font-weight:900;
+}
+.mode-btn.soft{
+  background:rgba(255,255,255,.72);
+  box-shadow:none;
+}
+.badge.mode-chicken{background:linear-gradient(135deg,#ffe6a9,#ffbf63);color:#573117}
+.badge.mode-favorites{background:linear-gradient(135deg,#ffdbe4,#ff9fb8);color:#5b2634}
+.copy-btn{
+  border:0;
+  border-radius:17px;
+  background:rgba(255,255,255,.74);
+  color:var(--text);
+  min-height:48px;
+  padding:0 14px;
+  font-weight:950;
+  cursor:pointer;
+  border:1px solid var(--line);
+}
+.copy-btn.disabled{opacity:.45;pointer-events:none}
+.toast{
+  position:fixed;
+  left:50%;
+  bottom:22px;
+  transform:translate(-50%,18px);
+  z-index:30;
+  width:min(420px,calc(100% - 28px));
+  padding:13px 16px;
+  border-radius:18px;
+  background:rgba(57,41,31,.92);
+  color:#fff7eb;
+  text-align:center;
+  font-weight:950;
+  box-shadow:0 18px 44px rgba(0,0,0,.22);
+  opacity:0;
+  transition:.22s ease;
+  pointer-events:none;
+}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+body.dark .search-box,
+body.dark .search-box button,
+body.dark .copy-btn,
+body.dark .mode-btn.soft{background:rgba(255,255,255,.08)}
+@media(min-width:650px){
+  .actions{grid-template-columns:repeat(4,1fr)}
+}
+
 /* v6.7.5 回報店家 / 推薦店家入口 */
 .quick-report{
   margin:18px auto 0;

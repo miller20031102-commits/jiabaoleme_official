@@ -1,11 +1,14 @@
 let selectedTime = "不限";
 let selectedType = "不限";
 let selectedPrice = "不限";
+let selectedKeyword = "";
 let lastName = "";
 let currentRestaurant = null;
+let currentMode = "normal";
 
 const STORAGE_FAVORITES = "jiabaoleme_favorites_v1";
 const STORAGE_TOP_PREFIX = "jiabaoleme_top_";
+const STORAGE_THEME = "jiabaoleme_theme_v1";
 
 const talks = [
   "🐻 嘉飽熊：「別想了，今天就是它！」",
@@ -104,6 +107,13 @@ const topList = document.querySelector("#topList");
 const favoriteList = document.querySelector("#favoriteList");
 const clearFavoritesBtn = document.querySelector("#clearFavoritesBtn");
 const rollFavoriteBtn = document.querySelector("#rollFavoriteBtn");
+const modeBadge = document.querySelector("#modeBadge");
+const searchInput = document.querySelector("#searchInput");
+const clearSearchBtn = document.querySelector("#clearSearchBtn");
+const resetBtn = document.querySelector("#resetBtn");
+const copyBtn = document.querySelector("#copyBtn");
+const filterHint = document.querySelector("#filterHint");
+const statsGrid = document.querySelector("#statsGrid");
 
 function todayKey() {
   const now = new Date();
@@ -111,6 +121,33 @@ function todayKey() {
   const mm = String(now.getMonth() + 1).padStart(2, "0");
   const dd = String(now.getDate()).padStart(2, "0");
   return `${STORAGE_TOP_PREFIX}${yyyy}-${mm}-${dd}`;
+}
+
+function escapeHTML(value) {
+  return String(value ?? "")
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#039;");
+}
+
+function showToast(message) {
+  let toast = document.querySelector("#toast");
+  if (!toast) {
+    toast = document.createElement("div");
+    toast.id = "toast";
+    toast.className = "toast";
+    document.body.appendChild(toast);
+  }
+  toast.textContent = message;
+  toast.classList.add("show");
+  clearTimeout(showToast.timer);
+  showToast.timer = setTimeout(() => toast.classList.remove("show"), 1700);
+}
+
+function gentleVibrate() {
+  if (navigator.vibrate) navigator.vibrate(18);
 }
 
 function safeJsonParse(value, fallback) {
@@ -166,6 +203,8 @@ function bindGroup(groupId, selector, callback) {
       document.querySelectorAll(`#${groupId} ${selector}`).forEach(b => b.classList.remove("active"));
       btn.classList.add("active");
       callback(btn.dataset.value);
+      currentMode = "normal";
+      setModeBadge("normal");
       updateCount();
     });
   });
@@ -175,23 +214,62 @@ bindGroup("timeGroup", ".chip", v => selectedTime = v);
 bindGroup("priceGroup", ".chip", v => selectedPrice = v);
 bindGroup("typeGroup", ".category", v => selectedType = v);
 
+function keywordText(item) {
+  return [
+    item.name,
+    item.area,
+    item.desc,
+    item.price,
+    item.rating,
+    ...(item.types || []),
+    ...(item.times || []),
+    ...(item.tags || [])
+  ].join(" ").toLowerCase();
+}
+
+function matchKeyword(item) {
+  const keyword = selectedKeyword.trim().toLowerCase();
+  if (!keyword) return true;
+  return keyword.split(/\s+/).every(word => keywordText(item).includes(word));
+}
+
 function candidates() {
   return restaurants.filter(r => {
     const timeOk = matchTime(r);
     const typeOk = matchType(r);
     const priceOk = selectedPrice === "不限" || r.price === selectedPrice;
-    return timeOk && typeOk && priceOk;
+    const keywordOk = matchKeyword(r);
+    return timeOk && typeOk && priceOk && keywordOk;
   });
 }
 
+function updateFilterHint(count) {
+  if (!filterHint) return;
+  const parts = [];
+  if (selectedKeyword.trim()) parts.push(`搜尋「${selectedKeyword.trim()}」`);
+  if (selectedTime !== "不限") parts.push(selectedTime);
+  if (selectedType !== "不限") parts.push(selectedType);
+  if (selectedPrice !== "不限") parts.push(selectedPrice);
+
+  if (!parts.length) {
+    filterHint.textContent = "目前不限條件，直接骰一間嘉義美食。";
+  } else if (count === 0) {
+    filterHint.textContent = `目前條件：${parts.join("＋")}。沒有符合店家，建議放寬一個條件。`;
+  } else {
+    filterHint.textContent = `目前條件：${parts.join("＋")}，共有 ${count} 間可以骰。`;
+  }
+}
+
 function updateCount() {
-  countText.textContent = `符合 ${candidates().length} 間`;
+  const count = candidates().length;
+  countText.textContent = `符合 ${count} 間`;
+  updateFilterHint(count);
 }
 
 function renderTags(item) {
   if (!tagText) return;
   const tags = item && item.tags && item.tags.length ? item.tags : ["嘉義脆友推薦"];
-  tagText.innerHTML = tags.slice(0, 4).map(tag => `<span>🏷️ ${tag}</span>`).join("");
+  tagText.innerHTML = tags.slice(0, 4).map(tag => `<span>🏷️ ${escapeHTML(tag)}</span>`).join("");
 }
 
 function updateFavoriteButton() {
@@ -199,10 +277,12 @@ function updateFavoriteButton() {
     favoriteBtn.textContent = "♡ 收藏這間";
     favoriteBtn.classList.add("disabled");
     favoriteBtn.classList.remove("saved");
+    if (copyBtn) copyBtn.classList.add("disabled");
     return;
   }
 
   favoriteBtn.classList.remove("disabled");
+  if (copyBtn) copyBtn.classList.remove("disabled");
 
   if (isFavorite(currentRestaurant.name)) {
     favoriteBtn.textContent = "♥ 已收藏";
@@ -213,10 +293,25 @@ function updateFavoriteButton() {
   }
 }
 
+function setModeBadge(mode) {
+  if (!modeBadge) return;
+  modeBadge.classList.remove("mode-chicken", "mode-favorites");
+  if (mode === "chicken") {
+    modeBadge.textContent = "雞肉飯模式";
+    modeBadge.classList.add("mode-chicken");
+  } else if (mode === "favorites") {
+    modeBadge.textContent = "收藏模式";
+    modeBadge.classList.add("mode-favorites");
+  } else {
+    modeBadge.textContent = "今日食運";
+  }
+}
+
 function setResult(chosen, shouldCount = true) {
   currentRestaurant = chosen;
   lastName = chosen.name;
 
+  gentleVibrate();
   resultName.textContent = chosen.name;
   bearTalk.textContent = talks[Math.floor(Math.random() * talks.length)];
   resultDesc.textContent = chosen.desc;
@@ -253,7 +348,8 @@ function pickOne() {
     timeText.textContent = `🕒 ${selectedTime}`;
     mapLink.href = "#";
     mapLink.classList.add("disabled");
-    renderTags({ tags: ["沒有符合店家"] });
+    renderTags({ tags: ["沒有符合店家", "可按重置條件"] });
+    showToast("這組條件沒店家，放寬一點會更好骰");
     updateFavoriteButton();
     return;
   }
@@ -269,6 +365,9 @@ function pickOne() {
 }
 
 function roll() {
+  currentMode = "normal";
+  setModeBadge("normal");
+  updateCount();
   diceIcon.classList.remove("rolling");
   void diceIcon.offsetWidth;
   diceIcon.classList.add("rolling");
@@ -276,6 +375,20 @@ function roll() {
   bearTalk.textContent = "🐻 嘉飽熊：「我正在幫你挑！」";
   resultDesc.textContent = "等等，命運美食即將出現。";
   setTimeout(pickOne, 620);
+}
+
+function rerollCurrentMode() {
+  if (currentMode === "chicken") {
+    rollChickenMode();
+    return;
+  }
+
+  if (currentMode === "favorites") {
+    rollFromFavorites();
+    return;
+  }
+
+  roll();
 }
 
 function toggleFavorite() {
@@ -301,6 +414,7 @@ function toggleFavorite() {
   }
 
   saveFavorites(items);
+  showToast(exists ? "已從收藏移除" : "已加入收藏 ❤️");
   updateFavoriteButton();
   renderFavoriteList();
 }
@@ -319,8 +433,8 @@ function renderTopList() {
     <div class="cute-item">
       <div class="rank-badge">${index + 1}</div>
       <div class="cute-left">
-        <div class="cute-name">${item.name}</div>
-        <div class="cute-meta">📍 ${item.area}　🍽️ ${item.types.join(" / ")}　🎲 ${item.count} 次</div>
+        <div class="cute-name">${escapeHTML(item.name)}</div>
+        <div class="cute-meta">📍 ${escapeHTML(item.area)}　🍽️ ${(item.types || []).map(escapeHTML).join(" / ")}　🎲 ${item.count} 次</div>
       </div>
     </div>
   `).join("");
@@ -337,10 +451,10 @@ function renderFavoriteList() {
   favoriteList.innerHTML = items.map(item => `
     <div class="cute-item">
       <div class="cute-left">
-        <div class="cute-name">${item.name}</div>
-        <div class="cute-meta">📍 ${item.area}　🍽️ ${item.types.join(" / ")}　💰 ${item.price}</div>
+        <div class="cute-name">${escapeHTML(item.name)}</div>
+        <div class="cute-meta">📍 ${escapeHTML(item.area)}　🍽️ ${(item.types || []).map(escapeHTML).join(" / ")}　💰 ${escapeHTML(item.price)}</div>
       </div>
-      <button class="remove-fav" data-name="${item.name}">移除</button>
+      <button class="remove-fav" data-name="${escapeHTML(item.name)}">移除</button>
     </div>
   `).join("");
 
@@ -351,12 +465,17 @@ function renderFavoriteList() {
       saveFavorites(nextItems);
       renderFavoriteList();
       updateFavoriteButton();
+      showToast("已移除收藏");
     });
   });
 }
 
 function rollFromFavorites() {
+  currentMode = "favorites";
+  setModeBadge("favorites");
   const items = getFavorites();
+  countText.textContent = `收藏 ${items.length} 間`;
+  if (filterHint) filterHint.textContent = items.length ? "收藏模式：只會從你的收藏清單裡骰。" : "收藏模式：目前還沒有收藏店家。";
 
   if (!items.length) {
     resultName.textContent = "收藏還是空的 🥺";
@@ -380,10 +499,49 @@ function rollFromFavorites() {
 }
 
 
+function chickenModeCandidates() {
+  return restaurants.filter(r => (r.tags || []).includes("雞肉飯模式"));
+}
+
+function rollChickenMode() {
+  currentMode = "chicken";
+  setModeBadge("chicken");
+  const list = chickenModeCandidates();
+  countText.textContent = `雞肉飯 ${list.length} 間`;
+  if (filterHint) filterHint.textContent = "雞肉飯模式：不受時段、預算、分類限制，只從雞肉飯清單骰。";
+
+  if (!list.length) {
+    resultName.textContent = "雞肉飯模式暫時沒店家 🥺";
+    bearTalk.textContent = "🐻 嘉飽熊：「雞肉飯清單還沒準備好！」";
+    resultDesc.textContent = "目前沒有標記為雞肉飯模式的店家。";
+    renderTags({ tags: ["雞肉飯模式"] });
+    document.querySelector("#resultCard").scrollIntoView({behavior:"smooth", block:"center"});
+    return;
+  }
+
+  diceIcon.classList.remove("rolling");
+  void diceIcon.offsetWidth;
+  diceIcon.classList.add("rolling");
+
+  resultName.textContent = "雞肉飯模式啟動中...";
+  bearTalk.textContent = "🐻 嘉飽熊：「嘉義人的靈魂，今天從 25 間裡挑一碗！」";
+  resultDesc.textContent = "只會從雞肉飯模式名單裡骰，包含隱藏版選項。";
+
+  let chosen = list[Math.floor(Math.random() * list.length)];
+  if (list.length > 1 && chosen.name === lastName) {
+    const other = list.filter(r => r.name !== lastName);
+    chosen = other[Math.floor(Math.random() * other.length)];
+  }
+
+  setTimeout(() => setResult(chosen, true), 560);
+}
+
 document.querySelector("#rollBtn").addEventListener("click", roll);
-document.querySelector("#againBtn").addEventListener("click", roll);
+document.querySelector("#againBtn").addEventListener("click", rerollCurrentMode);
 favoriteBtn.addEventListener("click", toggleFavorite);
 rollFavoriteBtn.addEventListener("click", rollFromFavorites);
+const chickenModeBtn = document.querySelector("#chickenModeBtn");
+if (chickenModeBtn) chickenModeBtn.addEventListener("click", rollChickenMode);
 
 clearFavoritesBtn.addEventListener("click", () => {
   const items = getFavorites();
@@ -397,24 +555,94 @@ clearFavoritesBtn.addEventListener("click", () => {
   updateFavoriteButton();
 });
 
-document.querySelector("#luckyBtn").addEventListener("click", () => {
+function resetFilters({ rollAfter = false } = {}) {
   selectedTime = "不限";
   selectedType = "不限";
   selectedPrice = "不限";
+  selectedKeyword = "";
+  currentMode = "normal";
+  setModeBadge("normal");
+  if (searchInput) searchInput.value = "";
   document.querySelectorAll(".active").forEach(el => el.classList.remove("active"));
   document.querySelector('#timeGroup [data-value="不限"]').classList.add("active");
   document.querySelector('#priceGroup [data-value="不限"]').classList.add("active");
   document.querySelector('#typeGroup [data-value="不限"]').classList.add("active");
   updateCount();
-  roll();
+  if (rollAfter) roll();
+}
+
+document.querySelector("#luckyBtn").addEventListener("click", () => {
+  resetFilters({ rollAfter: true });
 });
+
+if (resetBtn) {
+  resetBtn.addEventListener("click", () => {
+    resetFilters();
+    showToast("條件已重置，可以重新骰了");
+  });
+}
+
+if (searchInput) {
+  searchInput.addEventListener("input", () => {
+    selectedKeyword = searchInput.value;
+    currentMode = "normal";
+    setModeBadge("normal");
+    updateCount();
+  });
+}
+
+if (clearSearchBtn) {
+  clearSearchBtn.addEventListener("click", () => {
+    selectedKeyword = "";
+    if (searchInput) searchInput.value = "";
+    updateCount();
+    searchInput?.focus();
+  });
+}
+
+if (copyBtn) {
+  copyBtn.addEventListener("click", async () => {
+    if (!currentRestaurant) return;
+    const text = `${currentRestaurant.name}｜${currentRestaurant.area}｜${currentRestaurant.price}`;
+    try {
+      await navigator.clipboard.writeText(text);
+      showToast("已複製店名，可以貼給朋友了");
+    } catch {
+      showToast(currentRestaurant.name);
+    }
+  });
+}
+
+function applyTheme(theme) {
+  const isDark = theme === "dark";
+  document.body.classList.toggle("dark", isDark);
+  document.querySelector("#themeBtn").textContent = isDark ? "☀️" : "🌙";
+}
+
+applyTheme(localStorage.getItem(STORAGE_THEME) || "light");
 
 document.querySelector("#themeBtn").addEventListener("click", () => {
-  document.body.classList.toggle("dark");
-  document.querySelector("#themeBtn").textContent = document.body.classList.contains("dark") ? "☀️" : "🌙";
+  const nextTheme = document.body.classList.contains("dark") ? "light" : "dark";
+  localStorage.setItem(STORAGE_THEME, nextTheme);
+  applyTheme(nextTheme);
 });
 
+function renderStats() {
+  if (!statsGrid || !Array.isArray(restaurants)) return;
+  const order = ["燒肉", "咖哩", "火鍋", "美式", "日式", "中式", "小吃", "咖啡甜點", "早餐", "義式", "異國料理", "酒吧", "宵夜", "熱炒", "鐵板燒", "素食", "燒烤"];
+  const counts = restaurants.reduce((acc, item) => {
+    (item.types || []).forEach(type => acc[type] = (acc[type] || 0) + 1);
+    return acc;
+  }, {});
+  statsGrid.innerHTML = order
+    .filter(type => counts[type])
+    .map(type => `<div><b>${counts[type]}</b><span>${escapeHTML(type)}</span></div>`)
+    .join("");
+}
+
+setModeBadge("normal");
 updateCount();
+renderStats();
 renderTopList();
 renderFavoriteList();
 updateFavoriteButton();

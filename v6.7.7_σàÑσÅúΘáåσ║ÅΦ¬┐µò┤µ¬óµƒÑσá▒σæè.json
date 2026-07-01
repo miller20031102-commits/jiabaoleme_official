@@ -1,0 +1,18 @@
+{
+  "version": "v6.7.7",
+  "base": "v6.7.6 表單連結正式版",
+  "changes": [
+    "版面順序改為：今天吃什麼/分類按鈕 → 店家內容 → 推薦店家入口 → 抖內支持入口",
+    "移除主視覺區塊內過早出現的推薦店家小入口",
+    "推薦店家卡片移到收錄統計之後",
+    "抖內支持區塊移入 main 內容並放在推薦店家入口後方",
+    "抖內文案改為支持維護網站更新"
+  ],
+  "recommend_form_url": "https://forms.gle/X3v3eB8JikEPe9L9A",
+  "checks": {
+    "recommend_card_after_stats": true,
+    "donate_after_recommend": true,
+    "early_hero_recommend_removed": true,
+    "form_link_kept": true
+  }
+}

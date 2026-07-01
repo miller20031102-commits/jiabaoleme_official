@@ -1,0 +1,96 @@
+{
+  "version": "v6.7.4",
+  "base": "v6.7.3_分類完整校正版",
+  "total_restaurants": 448,
+  "curry_type_count": 21,
+  "updated_or_added": [
+    {
+      "status": "updated",
+      "name": "好好家慢熟咖哩"
+    },
+    {
+      "status": "updated",
+      "name": "舊時光新鮮事 老屋咖哩專賣"
+    },
+    {
+      "status": "updated",
+      "name": "大人味 日印咖喱"
+    },
+    {
+      "status": "updated",
+      "name": "盛食咖哩店 嘉義店"
+    },
+    {
+      "status": "updated",
+      "name": "國王的菜 印度餐廳"
+    },
+    {
+      "status": "updated",
+      "name": "白梗咖哩"
+    },
+    {
+      "status": "updated",
+      "name": "胖卡咖哩"
+    },
+    {
+      "status": "updated",
+      "name": "穀谷"
+    },
+    {
+      "status": "updated",
+      "name": "初·仨食"
+    },
+    {
+      "status": "updated",
+      "name": "丸野 丼咖喱定食專門店"
+    },
+    {
+      "status": "updated",
+      "name": "八谷 豬排 咖哩 民族店"
+    },
+    {
+      "status": "updated",
+      "name": "初和風精緻咖哩"
+    },
+    {
+      "status": "updated",
+      "name": "主廚帽印度餐廳 嘉義店"
+    },
+    {
+      "status": "updated",
+      "name": "香香 煎粿 咖喱飯 專賣店"
+    },
+    {
+      "status": "added",
+      "name": "泰舍 泰式料理 嘉義康達盛通店"
+    },
+    {
+      "status": "updated",
+      "name": "巷子裡的小餐館"
+    },
+    {
+      "status": "added",
+      "name": "裕屋商店｜ヒロヤ商店"
+    },
+    {
+      "status": "added",
+      "name": "丸飯食事處 嘉鄉店"
+    },
+    {
+      "status": "added",
+      "name": "榮 丼飯 定食"
+    }
+  ],
+  "skipped": [
+    {
+      "name": "柴魚亭-私廚咖哩",
+      "reason": "使用者貼的資料位置為高雄市苓雅區，本站目前以嘉義市為主，先不加入避免嘉義地圖混入高雄店。"
+    }
+  ],
+  "checks": {
+    "night_type_count": 14,
+    "bar_type_count": 17,
+    "night_bar_overlap": [],
+    "missing_from_user_list_after_update": []
+  }
+}

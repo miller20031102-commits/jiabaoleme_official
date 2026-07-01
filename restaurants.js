@@ -1952,8 +1952,7 @@ const restaurants = [
     "area": "東區",
     "types": [
       "小吃",
-      "中式",
-      "雞肉飯"
+      "中式"
     ],
     "times": [
       "午餐",
@@ -2296,8 +2295,9 @@ const restaurants = [
     "name": "花淺蔥 Brunch Osteria",
     "area": "西區",
     "types": [
-      "美式",
-      "咖啡甜點"
+      "早餐",
+      "義式",
+      "美式"
     ],
     "times": [
       "早午餐",
@@ -2466,7 +2466,7 @@ const restaurants = [
     "name": "美麗春天",
     "area": "嘉義市",
     "types": [
-      "小吃"
+      "早餐"
     ],
     "times": [
       "早午餐"
@@ -2483,7 +2483,7 @@ const restaurants = [
     "name": "土佐",
     "area": "嘉義市",
     "types": [
-      "小吃"
+      "早餐"
     ],
     "times": [
       "早午餐",
@@ -2675,8 +2675,7 @@ const restaurants = [
     "name": "胡椒餅專賣店 和平路",
     "area": "東區",
     "types": [
-      "小吃",
-      "咖啡甜點"
+      "小吃"
     ],
     "times": [
       "午餐",
@@ -3690,7 +3689,7 @@ const restaurants = [
     "name": "樂檸漢堡",
     "area": "嘉義市",
     "types": [
-      "小吃"
+      "美式"
     ],
     "times": [
       "午餐",
@@ -3763,29 +3762,10 @@ const restaurants = [
     ]
   },
   {
-    "name": "1961海鮮炭烤",
-    "area": "嘉義市",
-    "types": [
-      "小吃"
-    ],
-    "times": [
-      "午餐",
-      "晚餐"
-    ],
-    "price": "$1-200",
-    "rating": "—",
-    "desc": "1961海鮮炭烤，嘉義在地推薦店家。",
-    "map": "https://www.google.com/maps/search/?api=1&query=1961海鮮炭烤 嘉義市",
-    "tags": [
-      "嘉義脆友推薦",
-      "新加入"
-    ]
-  },
-  {
     "name": "打貓冰菓室",
     "area": "嘉義市",
     "types": [
-      "小吃"
+      "咖啡甜點"
     ],
     "times": [
       "午餐",
@@ -3805,7 +3785,7 @@ const restaurants = [
     "name": "阿娥豆花",
     "area": "嘉義市",
     "types": [
-      "小吃"
+      "咖啡甜點"
     ],
     "times": [
       "午餐",
@@ -3824,7 +3804,7 @@ const restaurants = [
     "name": "一銀仙草",
     "area": "嘉義市",
     "types": [
-      "小吃"
+      "咖啡甜點"
     ],
     "times": [
       "午餐",
@@ -3862,7 +3842,7 @@ const restaurants = [
     "name": "巴倫司康",
     "area": "嘉義市",
     "types": [
-      "小吃"
+      "咖啡甜點"
     ],
     "times": [
       "午餐",
@@ -3919,7 +3899,7 @@ const restaurants = [
     "name": "榮興茶行",
     "area": "嘉義市",
     "types": [
-      "小吃"
+      "咖啡甜點"
     ],
     "times": [
       "午餐",
@@ -3938,7 +3918,7 @@ const restaurants = [
     "name": "嘉義新莊紅茶",
     "area": "嘉義市",
     "types": [
-      "小吃"
+      "咖啡甜點"
     ],
     "times": [
       "午餐",
@@ -3957,7 +3937,7 @@ const restaurants = [
     "name": "健康鮮果屋",
     "area": "嘉義市",
     "types": [
-      "小吃"
+      "咖啡甜點"
     ],
     "times": [
       "午餐",
@@ -4014,7 +3994,8 @@ const restaurants = [
     "name": "炒螺肉",
     "area": "嘉義市",
     "types": [
-      "小吃"
+      "小吃",
+      "熱炒"
     ],
     "times": [
       "午餐",
@@ -4189,7 +4170,9 @@ const restaurants = [
     "name": "澄澄 Kitchen & Market",
     "area": "嘉義市",
     "types": [
-      "中式"
+      "中式",
+      "義式",
+      "酒吧"
     ],
     "times": [
       "午餐",
@@ -5539,8 +5522,8 @@ const restaurants = [
     "name": "福芳酒食 FUFUN",
     "area": "嘉義市",
     "types": [
-      "酒吧",
-      "熱炒"
+      "熱炒",
+      "酒吧"
     ],
     "times": [
       "晚餐"
@@ -6027,8 +6010,7 @@ const restaurants = [
     "name": "Eat fun小廚房",
     "area": "嘉義市",
     "types": [
-      "義式",
-      "咖啡甜點"
+      "義式"
     ],
     "times": [
       "午餐",
@@ -6148,7 +6130,8 @@ const restaurants = [
     "name": "88快炒",
     "area": "嘉義市",
     "types": [
-      "熱炒"
+      "熱炒",
+      "中式"
     ],
     "times": [
       "晚餐"
@@ -6186,8 +6169,7 @@ const restaurants = [
     "name": "山而已原葉茶本舖",
     "area": "嘉義市",
     "types": [
-      "飲料",
-      "中式"
+      "咖啡甜點"
     ],
     "times": [
       "午餐",
@@ -6864,29 +6846,10 @@ const restaurants = [
     ]
   },
   {
-    "name": "皇家豆花",
-    "area": "嘉義市",
-    "types": [
-      "咖啡甜點"
-    ],
-    "times": [
-      "午餐",
-      "晚餐"
-    ],
-    "price": "$200-400",
-    "rating": "4.5",
-    "desc": "社群推薦新增店家",
-    "tags": [
-      "嘉義脆友推薦"
-    ],
-    "map": "https://www.google.com/maps/search/?api=1&query=皇家豆花 嘉義"
-  },
-  {
     "name": "山柒-披薩製所",
     "area": "嘉義市",
     "types": [
-      "義式",
-      "咖啡甜點"
+      "義式"
     ],
     "times": [
       "午餐",
@@ -7458,7 +7421,7 @@ const restaurants = [
     "name": "蕃茄村 嘉義興美店",
     "area": "東區",
     "types": [
-      "小吃"
+      "早餐"
     ],
     "times": [
       "早午餐"
@@ -7704,25 +7667,6 @@ const restaurants = [
     "map": "https://www.google.com/maps/search/?api=1&query=米伴鐵板料理 嘉義"
   },
   {
-    "name": "米伴 鐵板料理",
-    "area": "西區",
-    "types": [
-      "鐵板燒"
-    ],
-    "times": [
-      "午餐",
-      "晚餐"
-    ],
-    "price": "$200-400",
-    "rating": "4.6",
-    "desc": "嘉義人氣鐵板燒。",
-    "tags": [
-      "鐵板燒",
-      "嘉飽熊推薦"
-    ],
-    "map": "https://www.google.com/maps/search/?api=1&query=米伴 鐵板料理 嘉義"
-  },
-  {
     "name": "花漾創意鐵板料理",
     "area": "東區",
     "types": [
@@ -7936,7 +7880,7 @@ const restaurants = [
     "area": "東區",
     "types": [
       "燒烤",
-      "海鮮"
+      "宵夜"
     ],
     "times": [
       "晚餐",
@@ -7972,7 +7916,8 @@ const restaurants = [
     "name": "嘉樂福碳烤 烤肉 燒烤 BBQ（嘉佳福）",
     "area": "西區",
     "types": [
-      "燒烤"
+      "燒烤",
+      "宵夜"
     ],
     "times": [
       "晚餐",
@@ -7992,7 +7937,7 @@ const restaurants = [
     "types": [
       "燒烤",
       "熱炒",
-      "海鮮"
+      "宵夜"
     ],
     "times": [
       "晚餐",
@@ -8044,48 +7989,10 @@ const restaurants = [
     "map": "https://www.google.com/maps/search/?api=1&query=忠鑫快炒 嘉義"
   },
   {
-    "name": "88 快炒",
-    "area": "東區",
-    "types": [
-      "熱炒",
-      "中式"
-    ],
-    "times": [
-      "午餐",
-      "晚餐"
-    ],
-    "price": "$1-200",
-    "rating": "4.6",
-    "desc": "嘉義在地推薦店家。",
-    "tags": [
-      "嘉飽熊推薦"
-    ],
-    "map": "https://www.google.com/maps/search/?api=1&query=88 快炒 嘉義"
-  },
-  {
-    "name": "福芳酒食FUFUN",
-    "area": "東區",
-    "types": [
-      "熱炒",
-      "居酒屋"
-    ],
-    "times": [
-      "晚餐"
-    ],
-    "price": "$400-600",
-    "rating": "4.6",
-    "desc": "嘉義在地推薦店家。",
-    "tags": [
-      "嘉飽熊推薦"
-    ],
-    "map": "https://www.google.com/maps/search/?api=1&query=福芳酒食FUFUN 嘉義"
-  },
-  {
     "name": "常旺熱炒",
     "area": "西區",
     "types": [
-      "熱炒",
-      "海鮮"
+      "熱炒"
     ],
     "times": [
       "晚餐"
@@ -8114,24 +8021,6 @@ const restaurants = [
       "嘉飽熊推薦"
     ],
     "map": "https://www.google.com/maps/search/?api=1&query=山哥平價熱炒 嘉義"
-  },
-  {
-    "name": "來呷飯 川食堂(嘉義中山店)",
-    "area": "東區",
-    "types": [
-      "中式"
-    ],
-    "times": [
-      "午餐",
-      "晚餐"
-    ],
-    "price": "$200-400",
-    "rating": "4.7",
-    "desc": "嘉義在地推薦店家。",
-    "tags": [
-      "嘉飽熊推薦"
-    ],
-    "map": "https://www.google.com/maps/search/?api=1&query=來呷飯 川食堂(嘉義中山店) 嘉義"
   },
   {
     "name": "大吃大喝 美食熱炒",
@@ -8168,25 +8057,6 @@ const restaurants = [
     "map": "https://www.google.com/maps/search/?api=1&query=熱炒九九 嘉義"
   },
   {
-    "name": "澄澄 Kitchen& Market",
-    "area": "東區",
-    "types": [
-      "義式",
-      "咖啡甜點"
-    ],
-    "times": [
-      "午餐",
-      "晚餐"
-    ],
-    "price": "$400-1000",
-    "rating": "4.9",
-    "desc": "嘉義在地推薦店家。",
-    "tags": [
-      "嘉飽熊推薦"
-    ],
-    "map": "https://www.google.com/maps/search/?api=1&query=澄澄 Kitchen& Market 嘉義"
-  },
-  {
     "name": "胖胖哥熱炒",
     "area": "西區",
     "types": [
@@ -8221,25 +8091,6 @@ const restaurants = [
       "嘉飽熊推薦"
     ],
     "map": "https://www.google.com/maps/search/?api=1&query=暮暮製所早午餐 嘉義"
-  },
-  {
-    "name": "Nose man鼻孔先生手作早午餐",
-    "area": "東區",
-    "types": [
-      "早餐"
-    ],
-    "times": [
-      "早餐",
-      "早午餐"
-    ],
-    "price": "$1-200",
-    "rating": "4.6",
-    "desc": "嘉義早餐與早午餐推薦。",
-    "tags": [
-      "早餐推薦",
-      "嘉飽熊推薦"
-    ],
-    "map": "https://www.google.com/maps/search/?api=1&query=Nose man鼻孔先生手作早午餐 嘉義"
   },
   {
     "name": "綠洲oasis",
@@ -8553,7 +8404,6 @@ const restaurants = [
     "area": "嘉義市",
     "types": [
       "小吃",
-      "麵食",
       "宵夜"
     ],
     "times": [
@@ -8591,7 +8441,6 @@ const restaurants = [
     "name": "初次見麵鍋燒",
     "area": "嘉義市",
     "types": [
-      "鍋燒",
       "小吃",
       "宵夜"
     ],
@@ -8689,7 +8538,6 @@ const restaurants = [
     "area": "西區",
     "types": [
       "咖哩",
-      "泰式",
       "異國料理"
     ],
     "times": [
@@ -8890,24 +8738,24 @@ const restaurants = [
     ]
   },
   {
-    "name": "CITTA！今天有炸",
+    "name": "CITTA！義式冰淇淋專門店",
     "area": "嘉義市",
     "types": [
-      "小吃",
-      "美式"
+      "咖啡甜點"
     ],
     "times": [
-      "下午茶",
-      "晚餐",
-      "宵夜"
+      "下午茶"
     ],
     "price": "$1-200",
     "rating": "",
-    "desc": "炸物小吃選項，下午茶、晚餐或宵夜想吃酥脆可以骰。",
-    "map": "https://www.google.com/maps/search/?api=1&query=CITTA 今天有炸 嘉義市",
+    "desc": "義式冰淇淋 Gelato 專門店，適合下午茶、飯後甜點或想吃冰的時候。",
+    "map": "https://www.google.com/maps/search/?api=1&query=CITTA 義式冰淇淋 嘉義市",
     "tags": [
       "嘉義脆友推薦",
-      "炸物"
+      "表單推薦",
+      "義式冰淇淋",
+      "Gelato",
+      "甜點"
     ]
   },
   {
@@ -9159,8 +9007,7 @@ const restaurants = [
     "area": "東區",
     "types": [
       "小吃",
-      "中式",
-      "咖哩"
+      "中式"
     ],
     "times": [
       "午餐",

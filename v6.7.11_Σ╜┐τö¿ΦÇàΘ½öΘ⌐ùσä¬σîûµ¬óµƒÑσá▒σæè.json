@@ -1,0 +1,23 @@
+{
+  "version": "v6.7.11",
+  "total_restaurants": 451,
+  "chicken_mode_restaurants": 25,
+  "main_fixes": [
+    "新增直接搜尋店名/關鍵字功能，搜尋會同步影響可骰店家數",
+    "新增雞肉飯分類按鈕，雞肉飯模式仍保留為獨立快速入口",
+    "修正模式提示：一般、雞肉飯、收藏模式會顯示不同徽章與說明",
+    "再骰一次會維持目前模式，不會從雞肉飯模式跳回不限",
+    "新增重置條件按鈕，使用者卡住時可快速回到不限",
+    "新增複製店名按鈕，方便分享給朋友",
+    "新增收藏/移除/重置提示 toast，提升操作回饋",
+    "深色模式會保存，下次打開仍維持選擇",
+    "目前收錄分類統計改由 restaurants.js 動態產生，避免數字手動寫錯",
+    "排行榜與收藏列表輸出加入 HTML escaping，降低資料文字造成版面錯亂風險"
+  ],
+  "checks": {
+    "javascript_syntax": "passed by node --check script.js",
+    "category_duplicate_check": "passed",
+    "css_brace_balance": "passed",
+    "restaurant_data_count": "passed"
+  }
+}

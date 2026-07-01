@@ -1,0 +1,18 @@
+{
+  "version": "v6.2",
+  "total_restaurants": 352,
+  "type_button_duplicates": {},
+  "time_buttons": [
+    "不限",
+    "早午餐",
+    "午餐",
+    "下午茶",
+    "晚餐",
+    "宵夜"
+  ],
+  "restaurant_exact_duplicates": {},
+  "afternoon_tea_in_types_should_be_empty": [],
+  "lingbingbing_found": true,
+  "old_wrong_name_found": false,
+  "checks_passed": true
+}

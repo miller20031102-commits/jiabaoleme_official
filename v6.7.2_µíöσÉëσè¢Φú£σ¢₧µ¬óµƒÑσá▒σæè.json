@@ -1,0 +1,11 @@
+{
+  "version": "v6.7.2",
+  "base": "嘉飽了沒_v6.7.1_宵夜酒吧分離完整版.zip",
+  "fix": "補回桔吉力早餐，並加入「吉吉利」別名標籤避免辨識漏掉",
+  "total_restaurants": 445,
+  "contains_桔吉力早餐": true,
+  "night_count": 15,
+  "bar_count": 17,
+  "night_bar_overlap": 0,
+  "created_at": "2026-06-30"
+}

@@ -1,0 +1,13 @@
+{
+  "total_restaurants": 334,
+  "removed_exact_duplicates": [],
+  "duplicate_buttons_after_fix_excluding_intentional": {},
+  "duplicate_exact_names_after_fix": {},
+  "notes": [
+    "來呷飯中山店與興業店是不同分店，保留。",
+    "宵夜同時是時段與分類，data-value 重複是刻意保留，不是分類按鈕重複。",
+    "不限同時存在於時段、預算、分類，屬正常。",
+    "已將甜點/早午餐等別名整理到可見分類，避免使用者看得到店但按不到分類。",
+    "已加入 tags 欄位與結果頁標籤顯示。"
+  ]
+}

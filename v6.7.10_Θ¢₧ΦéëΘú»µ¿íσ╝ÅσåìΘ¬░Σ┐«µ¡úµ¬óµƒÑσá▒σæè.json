@@ -1,0 +1,14 @@
+{
+  "version": "v6.7.10",
+  "fixes": [
+    "修正雞肉飯模式按完後，按『再骰一次』會回到不限條件的問題",
+    "新增 currentMode 狀態：normal / chicken / favorites",
+    "再骰一次會依照目前模式重新骰：雞肉飯模式只從25間雞肉飯名單抽"
+  ],
+  "checks": {
+    "restaurants_total": 451,
+    "chicken_mode_count": 25,
+    "syntax_script_js": "node --check passed",
+    "again_button_handler": "#againBtn now calls rerollCurrentMode() instead of roll()"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "version": "v6.7.5",
+  "update": "新增回報店家 / 推薦店家入口",
+  "base": "v6.7.4 咖哩分類完整版",
+  "changed_files": [
+    "index.html",
+    "style.css",
+    "script.js",
+    "README.md"
+  ],
+  "form_fields": [
+    "店名",
+    "地址",
+    "類型：雞肉飯 / 咖哩 / 宵夜 / 咖啡 / 小吃 / 甜點 / 酒吧",
+    "推薦原因",
+    "是否有停車",
+    "價格區間"
+  ],
+  "note": "Google 表單網址目前為 placeholder，需在 script.js 的 RECOMMEND_FORM_URL 替換成正式表單連結。"
+}

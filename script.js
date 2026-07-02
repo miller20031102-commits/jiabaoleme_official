@@ -114,6 +114,7 @@ const resetBtn = document.querySelector("#resetBtn");
 const copyBtn = document.querySelector("#copyBtn");
 const filterHint = document.querySelector("#filterHint");
 const statsGrid = document.querySelector("#statsGrid");
+const statsNote = document.querySelector("#statsNote");
 
 function todayKey() {
   const now = new Date();
@@ -340,7 +341,7 @@ function pickOne() {
     currentRestaurant = null;
     resultName.textContent = "這組合暫時沒店家 😵";
     bearTalk.textContent = "🐻 嘉飽熊：「換個預算、分類或時段再骰一次！」";
-    resultDesc.textContent = "目前資料庫沒有符合條件的店家，之後可以再補更多資料。";
+    resultDesc.textContent = "目前資料庫沒有符合條件的店家，之後可以再補更多資料，也可以用回報入口推薦。";
     areaText.textContent = "📍 嘉義市";
     typeText.textContent = `🍽️ ${selectedType}`;
     priceText.textContent = `💰 ${selectedPrice}`;
@@ -524,7 +525,7 @@ function rollChickenMode() {
   diceIcon.classList.add("rolling");
 
   resultName.textContent = "雞肉飯模式啟動中...";
-  bearTalk.textContent = "🐻 嘉飽熊：「嘉義人的靈魂，今天從 25 間裡挑一碗！」";
+  bearTalk.textContent = `🐻 嘉飽熊：「嘉義人的靈魂，今天從 ${list.length} 間裡挑一碗！」`;
   resultDesc.textContent = "只會從雞肉飯模式名單裡骰，包含隱藏版選項。";
 
   let chosen = list[Math.floor(Math.random() * list.length)];
@@ -563,7 +564,7 @@ function resetFilters({ rollAfter = false } = {}) {
   currentMode = "normal";
   setModeBadge("normal");
   if (searchInput) searchInput.value = "";
-  document.querySelectorAll(".active").forEach(el => el.classList.remove("active"));
+  document.querySelectorAll("#timeGroup .chip.active, #priceGroup .chip.active, #typeGroup .category.active").forEach(el => el.classList.remove("active"));
   document.querySelector('#timeGroup [data-value="不限"]').classList.add("active");
   document.querySelector('#priceGroup [data-value="不限"]').classList.add("active");
   document.querySelector('#typeGroup [data-value="不限"]').classList.add("active");
@@ -629,7 +630,7 @@ document.querySelector("#themeBtn").addEventListener("click", () => {
 
 function renderStats() {
   if (!statsGrid || !Array.isArray(restaurants)) return;
-  const order = ["燒肉", "咖哩", "火鍋", "美式", "日式", "中式", "小吃", "咖啡甜點", "早餐", "義式", "異國料理", "酒吧", "宵夜", "熱炒", "鐵板燒", "素食", "燒烤"];
+  const order = ["燒肉", "咖哩", "火鍋", "美式", "日式", "中式", "小吃", "咖啡甜點", "早餐", "義式", "異國料理", "雞肉飯", "酒吧", "宵夜", "熱炒", "鐵板燒", "素食", "燒烤"];
   const counts = restaurants.reduce((acc, item) => {
     (item.types || []).forEach(type => acc[type] = (acc[type] || 0) + 1);
     return acc;
@@ -638,6 +639,10 @@ function renderStats() {
     .filter(type => counts[type])
     .map(type => `<div><b>${counts[type]}</b><span>${escapeHTML(type)}</span></div>`)
     .join("");
+
+  if (statsNote) {
+    statsNote.textContent = `目前共收錄 ${restaurants.length} 間店家。店家可重複歸類，所以分類數加總會大於實際店數。`;
+  }
 }
 
 setModeBadge("normal");
@@ -648,24 +653,25 @@ renderFavoriteList();
 updateFavoriteButton();
 
 
-// v6.7.5 推薦店家入口：正式 Google 表單網址放這裡
+// v6.7.20 表單入口：推薦/回報店家與今日好康分開
 const RECOMMEND_FORM_URL = "https://forms.gle/X3v3eB8JikEPe9L9A";
+const GOODIE_FORM_URL = "https://forms.gle/JpXfyGjDMYBZP7nA9";
 
-function setupRecommendStoreButtons() {
-  const buttons = [
-    document.querySelector("#recommendStoreBtn"),
-    document.querySelector("#recommendStoreBtn2")
-  ].filter(Boolean);
+function setupFormButtons(selectorList, url, alertText) {
+  const buttons = selectorList
+    .map(selector => document.querySelector(selector))
+    .filter(Boolean);
 
   buttons.forEach(btn => {
-    btn.href = RECOMMEND_FORM_URL;
+    btn.href = url;
     btn.addEventListener("click", event => {
-      if (RECOMMEND_FORM_URL.includes("REPLACE_WITH_YOUR_FORM_LINK")) {
+      if (url.includes("REPLACE_WITH_YOUR_FORM_LINK")) {
         event.preventDefault();
-        alert("推薦店家表單連結還沒換上！請到 script.js 把 RECOMMEND_FORM_URL 改成你的 Google 表單網址。");
+        alert(alertText);
       }
     });
   });
 }
 
-setupRecommendStoreButtons();
+setupFormButtons(["#recommendStoreBtn", "#recommendStoreBtn2"], RECOMMEND_FORM_URL, "推薦/回報店家表單連結還沒換上！");
+setupFormButtons(["#goodieFormBtn", "#goodieFormBtn2"], GOODIE_FORM_URL, "今日好康投稿表單連結還沒換上！");
